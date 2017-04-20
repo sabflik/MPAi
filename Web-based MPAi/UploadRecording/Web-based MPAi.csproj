@@ -1654,6 +1654,7 @@
   <ItemGroup>
     <Content Include="Play.aspx" />
     <Content Include="Save.aspx" />
+    <Content Include="Speak.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1689,8 +1690,16 @@
     <Compile Include="Save.aspx.designer.cs">
       <DependentUpon>Save.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Speak.aspx.cs">
+      <DependentUpon>Speak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Speak.aspx.designer.cs">
+      <DependentUpon>Speak.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\" />
     <Folder Include="uploads\" />
   </ItemGroup>
   <PropertyGroup>

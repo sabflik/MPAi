@@ -255,3 +255,7 @@ paket-files/
 uploads/
 Audio/
 *.wav
+
+# MFCs
+MFCs/
+*.mfc

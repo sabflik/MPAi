@@ -60,7 +60,7 @@
     <div style="margin:0 auto; width:500px; height:100px;">
             <section style="padding: 5px;">
                 <ul>
-                    <li><a class="active" href="index.aspx">Speak</a></li>
+                    <li><a class="active" href="Speak.aspx">Speak</a></li>
                     <li><a class="active" href="Listen.aspx">Listen</a></li>
                 </ul>
                 <br />
