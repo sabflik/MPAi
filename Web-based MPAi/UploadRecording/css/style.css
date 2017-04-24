@@ -1,10 +1,18 @@
+body {
+    /*background-color: #eee;*/
+    background-color: white;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
 a {
-    color: #2f889a;
-    text-decoration: none;
+    text-decoration: none !important;
+    color: black;
 }
 
 img {
     max-width: 100%;
+    margin: auto;
+    display: block;
 }
 
 .cd-switcher:after {
@@ -47,16 +55,24 @@ ul {
     background-color: white;
 }
 
+#navigation {
+    background-color: white;
+}
+
+.navbar-right {
+    margin: 7.5px -15px;
+}
+
 #wrapper {
     margin-right: auto;
     margin-left: auto;
-    background-color:red;
+    background-color: white;
     padding: 0px;
 }
 
 #main-content {
     background-color:white;
-    margin: 10px;
+    margin: 1px;
     width: auto;
 }
 
@@ -94,17 +110,13 @@ ul {
     margin: auto;
 }
 
-.btn {
-    width: 100%;
-}
-
 .btn-red {
     background-color: #AB0F12;
     color: white;
 }
 
-.btn:hover, .btn:focus {
-    background-color: #000000;
+.btn-red:hover, .btn-red:focus {
+    background-color: #7f0b0d;
     color: white;
 }
 
@@ -119,7 +131,7 @@ ul {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
     padding-top: 60px;
 }
 
@@ -130,4 +142,51 @@ ul {
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     max-width: 600px;
+}
+
+/* Base Button Style */
+.btn {
+  width: 100%;
+}
+
+.menu-card {
+    overflow: auto;
+    padding: 20px;
+}
+
+.menu-card > h2 {
+    text-align: center;
+    color: white;
+}
+
+.col-sm-6 a .menu-card {
+    background-color: #AB0F12;
+    border: #AB0F12 solid 1px;
+}
+
+.col-sm-6 a:hover .menu-card, .col-sm-6 a:active .menu-card {
+   /*box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);*/
+   border: #AB0F12 solid 1px;
+   background-color: #7f0b0d;
+}
+
+    .kwicks > li {
+        background-color: white;
+    }
+
+.menu-description {
+    color: white;
+    text-align: left;
+    margin: 0;
+    padding: 10px 10px 0px 10px;
+}
+
+#about-content {
+    margin-top: 30px;
+    padding: 20px;
+    width: auto;
+}
+
+p {
+    margin: 0;
 }
