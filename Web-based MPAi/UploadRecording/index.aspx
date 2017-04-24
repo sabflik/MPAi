@@ -9,97 +9,103 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
-	<style>
-		* {	border-radius: 0 !important; }
+	<!-- Gem jQuery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-		#navigation > .container {
-			margin-right: auto;
-			margin-left: auto;
-			height: 150px;
-		}
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-		#headerLogo {
-			display: block;
-			margin: auto;
-			height: 100%;
-		}
-
-		#wrapper {
-			margin-right: auto;
-			margin-left: auto;
-		}
-
-		.form-signin {
-			max-width: 330px;
-			padding: 15px;
-			margin: 0 auto;
-		}
-
-			.form-signin .form-control {
-				position: relative;
-				height: auto;
-				padding: 10px;
-				font-size: 16px;
-			}
-
-		.input-group {
-			margin: 5px;
-		}
-
-		#loginLogo {
-			display: block;
-			margin: auto;
-		}
-
-		.card-container.card {
-			max-width: 350px;
-			padding: 40px 40px;
-			margin: 0 auto;
-		}
-
-		.card {
-			background-color: #F7F7F7;
-			padding: 20px 25px 30px;
-			margin: 0 auto 25px;
-			margin-top: 50px;
-		}
-
-		.btn {
-			background-color: #AB0F12;
-		}
-		.btn:hover {
-			background-color: #000000;
-		}
-	</style>
+	<script src="JavaScript/main.js"></script>
 </head>
 
 <body>
 
 	<!--Nvaigation Bar-->
-	<nav class="navbar navbar-default " id="navigation">
+	<nav class="navbar navbar-default navbar-fixed" id="navigation">
 		<div class="container">
-			<img id="headerLogo" src="Resources/header.png">
+			<div class="navbar-header">
+				<a href="index.aspx">
+					<img id="headerLogo" src="Resources/headerImage.png" alt="MPAi: A Maori Pronunciation Aid">
+				</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#0" id="loginButton">Login</a></li>
+				<li><a href="#0" id="signUpButton">Sign Up</a></li>
+			</ul>
 		</div>
 	</nav>
 
+	<!--Modal Login/SignUp forms-->
+	<div class="modal" id="modal-forms">
+		<div class="modal-content">
+			<ul class="cd-switcher">
+				<li><a href="#0">Login</a></li>
+				<li><a href="#0">Sign Up</a></li>
+			</ul>
+			<!-- log in form -->
+			<div id="cd-login">
+				<form class="form-signin" action="Speak.aspx" method="post">
+
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+						<input type="text" class="form-control" placeholder="Enter Username" name="user" required>
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+						<input type="password" class="form-control" placeholder="Enter Password" name="pass" required>
+					</div>
+
+					<div class="checkbox input-group">
+						<label>	<input type="checkbox" value="remember">Remember Me</label>
+					</div>
+
+					<input class="btn btn-lg btn-block btn-red" type="submit" value="Login">
+				</form>
+			</div>
+			<!-- sign up form -->
+			<div id="cd-signup">
+				<form class="form-signin" action="Speak.aspx" method="post">
+
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
+						<input type="text" class="form-control" placeholder="Enter Username" name="user" required>
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+						<input type="password" class="form-control" placeholder="Enter Password" name="pass" required>
+					</div>
+
+					<div class="input-group">
+						<span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
+						<input type="password" class="form-control" placeholder="Confirm Password" name="confirmPass" required>
+					</div>
+
+					<h4>My voice is</h4>
+
+					<div class="btn-group inline" data-toggle="buttons" style="width:100%;">
+						<label class="btn btn-lg" style="color:dodgerblue; width:50%;">
+							<input type="radio" name="options" id="masculine" >Masculine
+						</label>
+						<label class="btn btn-lg" style="color:hotpink; width:50%;">
+							<input type="radio" name="options" id="feminine">Feminine
+						</label>
+					</div>
+					<p>*This can be changed later from the Settings menu</p>
+
+					<input class="btn btn-lg btn-block btn-red" type="submit" value="Sign Up">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--Home Page content-->
 	<div id="wrapper" class="container">
-		<div class="card card-container">
-			<img id="loginLogo" src="Resources/LoginLogo.png" width="150">
-
-			<form class="form-signin" action="Speak.aspx" method="post">
-				<div class="input-group">
-					<span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span>
-					<input type="text" class="form-control" placeholder="Enter Username" name="user" required>
-				</div>
-
-				<div class="input-group">
-					<span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span>
-					<input type="password" class="form-control" placeholder="Enter Password" name="pass" required>
-				</div>
-				<input class="btn btn-lg btn-primary btn-block" type="submit" value="Login">
-				<a href="#" class="btn btn-lg btn-primary btn-block">Register</a>
-			</form>
+		<div id="main-content" class="container">
+			Something
 		</div>
 	</div>
 </body>

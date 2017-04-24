@@ -792,6 +792,7 @@
     <Content Include="Audio\youngmale-word-tuu-L1Y02M.wav" />
     <Content Include="Audio\youngmale-word-tuu-L1Y03M.wav" />
     <Content Include="Audio\youngmale-word-tuu-L1Y05M.wav" />
+    <Content Include="css\style.css" />
     <Content Include="HTK\Dictionaries\lexicon.txt" />
     <Content Include="HTK\Evaluations\result.txt" />
     <Content Include="HTK\Tools\Cluster.exe" />
@@ -830,6 +831,7 @@
     <Content Include="HTK\Tools\LSubset.exe" />
     <Content Include="index.aspx" />
     <Content Include="JavaScript\BackUpMediaStreamRecorder.js" />
+    <Content Include="JavaScript\main.js" />
     <Content Include="Listen.aspx" />
     <Content Include="packages.config" />
     <Content Include="HTK\Batches\DataPreparer.bat" />
@@ -1653,6 +1655,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Play.aspx" />
+    <Content Include="Resources\headerImage.png" />
     <Content Include="Save.aspx" />
     <Content Include="Speak.aspx" />
     <Content Include="Web.config">
@@ -1699,7 +1702,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
     <Folder Include="uploads\" />
   </ItemGroup>
   <PropertyGroup>
