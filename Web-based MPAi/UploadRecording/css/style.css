@@ -2,6 +2,11 @@ body {
     /*background-color: #eee;*/
     background-color: white;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    padding-top: 120px;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 0;
 }
 
 a {
@@ -64,15 +69,9 @@ ul {
 }
 
 #wrapper {
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0;
     background-color: white;
-    padding: 0px;
-}
-
-#main-content {
-    background-color:white;
-    margin: 1px;
+    padding: 0;
     width: auto;
 }
 
@@ -152,6 +151,7 @@ ul {
 .menu-card {
     overflow: auto;
     padding: 20px;
+    background-color: transparent;
 }
 
 .menu-card > h2 {
@@ -159,12 +159,13 @@ ul {
     color: white;
 }
 
-.col-sm-6 a .menu-card {
+.col-sm-4 a .menu-card {
     background-color: #AB0F12;
     border: #AB0F12 solid 1px;
+    max-width: 300px;
 }
 
-.col-sm-6 a:hover .menu-card, .col-sm-6 a:active .menu-card {
+.col-sm-4 a:hover .menu-card, .col-sm-4 a:active .menu-card {
    /*box-shadow: 0 0 5px rgba(52, 54, 66, 0.1);*/
    border: #AB0F12 solid 1px;
    background-color: #7f0b0d;
@@ -181,12 +182,20 @@ ul {
     padding: 10px 10px 0px 10px;
 }
 
-#about-content {
-    margin-top: 30px;
-    padding: 20px;
-    width: auto;
-}
-
 p {
     margin: 0;
+}
+
+#section-1 {
+    background-color: #f8f8f8;
+}
+
+#section-2 {
+    background-color: white;
+}
+
+section {
+    padding: 50px 0;
+    border-width: 0 0 1px;
+    border: 1px solid #e7e7e7;
 }

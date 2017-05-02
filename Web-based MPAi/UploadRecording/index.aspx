@@ -24,8 +24,8 @@
 <body>
 
 	<!--Nvaigation Bar-->
-	<nav class="navbar navbar-default navbar-fixed" id="navigation">
-		<div class="container">
+	<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+		<div class="container" style="width:100%">
 			<div class="navbar-header">
 				<a href="index.aspx">
 					<img id="headerLogo" src="Resources/headerImage.png" alt="MPAi: A Maori Pronunciation Aid">
@@ -37,62 +37,86 @@
 			</ul>
 		</div>
 	</nav>
+	<nav class="navbar navbar-default navbar-fixed-top" style="top: 70px;">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a href="index.aspx">
+					<h4>Home</h4>
+				</a></li>
+				<li><a href="Listen.aspx">
+					<h4>Listen</h4>
+				</a></li>
+				<li><a href="Speak.aspx">
+					<h4>Speak</h4>
+				</a></li>
+				<li><a href="#0">
+					<h4>Scoreboard</h4>
+				</a></li>
+			</ul>
+		</div>
+	</nav>
 
 	<!--Home Page content-->
 	<div id="wrapper" class="container">
-		<div id="main-content" class="container">
-			<section>
-				<div class="container" style="width: auto;">
-					<div class="row">
-						<div class="col-sm-6 col-md-4">
-							<a href="Listen.aspx">
-								<div class="menu-card">
-									<img src="Resources/Sound-Music-icon.png" alt="Pattern" />
-									<h2>Listen</h2>
-									<p class="menu-description">Listen and learn to pronounce common Maori words and phrases</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a href="Speak.aspx">
-								<div class="menu-card">
-									<img src="Resources/Microphone-icon.png" alt="Pattern" />
-									<h2>Speak</h2>
-									<p class="menu-description">Test your Maori pronunciation skills and receive feedback</p>
-								</div>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a>
-								<div class="menu-card">
-									<img src="Resources/Document-icon.png" alt="Pattern" />
-									<h2>Scoreboard</h2>
-									<p class="menu-description">See your progress and view your pronunciation history</p>
-								</div>
-							</a>
-						</div>
+		<section id="section-1">
+			<div class="container" id="menu-cards" style="width: 80%;">
+				<div class="row">
+					<div class="col-xs-12 col-sm-4">
+						<a href="Listen.aspx">
+							<div class="menu-card">
+								<img src="Resources/Sound-Music-icon.png" alt="Pattern" />
+								<h2>Listen</h2>
+								<p class="menu-description">Listen and learn to pronounce common Maori words and phrases</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<a href="Speak.aspx">
+							<div class="menu-card">
+								<img src="Resources/Microphone-icon.png" alt="Pattern" />
+								<h2>Speak</h2>
+								<p class="menu-description">Test your Maori pronunciation skills and receive feedback</p>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<a>
+							<div class="menu-card">
+								<img src="Resources/Document-icon.png" alt="Pattern" />
+								<h2>Scoreboard</h2>
+								<p class="menu-description">See your progress and view your pronunciation history</p>
+							</div>
+						</a>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section>
-				<div id="about-content" class="container">
-					<h1>About MPAi</h1>
-					<p>
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-					</p>
+		<section id="section-2">
+			<div id="about-content" class="container" style="width: 80%;">
+				<h1>About MPAi</h1>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
 
-					<p>
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-					</p>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
 
-					<p>
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-					</p>
-				</div>
-
-			</section>
-		</div>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<p>
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
+		</section>		
 	</div>
 
 	<!--Modal Login/SignUp forms-->
