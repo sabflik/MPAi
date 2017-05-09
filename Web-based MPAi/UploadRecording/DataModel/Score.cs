@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace UploadRecording.DataModel
 {
     [Table("Score")]
-    public class Score
+    public partial class Score
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ScoreId { get; set; }
