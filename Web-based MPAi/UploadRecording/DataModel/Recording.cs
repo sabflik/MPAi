@@ -2,10 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UploadRecording.DataModel
 {
-    public class Recording
+    [Table("Recording")]
+    public partial class Recording
     {
+        [Required]
+        public Speaker speaker { get; set; }
+ 
+        [ForeignKey("WordId")]
+        public virtual Word Word { get; set; }
+        public int WordId { get; set; }
+
+        [Required]
+        [StringLength(64)]
+        [Index(IsUnique = true)]
+        public string Name { get; set; }
+
+        [Required]
+        [StringLength(256)]
+        public string FilePath { get; set; }
     }
 }
