@@ -1,144 +1,109 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Listen.aspx.cs" Inherits="UploadRecording.Listen" %>
 
+<!--Some code adapted from http://demo.tutorialzine.com/2015/03/html5-music-player/-->
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-        <title>MPAi-Listen</title>
-        <meta charset="utf-8" />
-        <style>
-            input {
-                border: 1px solid rgb(49, 79, 79);
-                border-radius: 3px;
-                font-size: 1em;
-                width: 100px;
-                text-align: center;
-                vertical-align: bottom;
-            }
+	<title>MPAi-Listen</title>
+	<meta charset="utf-8" />
 
-            button {
-                border: 1px solid rgb(49, 79, 79);
-                border-radius: 3px;
-                vertical-align: bottom;
-                height: auto;
-                font-size: inherit;
-            }
-            select {
-                border: 1px solid rgb(49, 79, 79);
-                border-radius: 3px;
-                vertical-align: bottom;
-                font-size: inherit;
-            }
+	<link rel="stylesheet/less" type="text/css" href="css/dropdown.less" />
 
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
+	<script src='http://code.jquery.com/jquery-1.11.0.min.js' type='text/javascript'></script>
 
-            li {
-                float: left;
-            }
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            li a:hover {
-                background-color: #111;
-            }
-        }
-        </style>
-    </head>
+	<script src="JavaScript/wavesurfer.min.js"></script>
+</head>
 <body>
-    <div style="margin:0 auto; width:500px; height:100px;">
-            <section style="padding: 5px;">
-                <ul>
-                    <li><a class="active" href="Speak.aspx">Speak</a></li>
-                    <li><a class="active" href="Listen.aspx">Listen</a></li>
-                </ul>
-                <br />
-                <div>
-                    <label>Category: </label>
-                    <select id ="category">
-                        <option value="youngfemale">Young Female</option>
-                        <option value="oldfemale">Old Female</option>
-                        <option value="youngmale">Young Male</option>
-                        <option value="oldmale">Old Male</option>
-                    </select>
-                    <label for="maoriWord">Maori word:</label>
-                    <input type="text" id="maoriWord"/>
-                    <button id="search">Search</button>
-                    <br />
-                    <label style="color:purple">Please double the vowels to show long vowels.</label>
-                </div>
-            </section>
 
-            <section style ="padding: 5px;">
-                <div>
-                    <p>
-                        <audio id="player" src="" controls="controls">
-                        </audio> 
-                        <br />
-                        <button id="change">Change</button>
-                    </p>
-                </div>
-                <div id="result" style="color:purple"></div>
-            </section>
-    </div>
+	<!--Nvaigation Bar-->
+	<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+		<div class="container" style="width: 100%">
+			<div class="navbar-header">
+				<a href="index.aspx">
+					<img id="headerLogo" src="Resources/headerImage.png" alt="MPAi: A Maori Pronunciation Aid">
+				</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#0" id="loginButton">Login</a></li>
+				<li><a href="#0" id="signUpButton">Sign Up</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav class="navbar navbar-default navbar-fixed-top" style="top: 70px;">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a href="index.aspx">
+					<h4>Home</h4>
+				</a></li>
+				<li><a href="Listen.aspx">
+					<h4>Listen</h4>
+				</a></li>
+				<li><a href="Speak.aspx">
+					<h4>Speak</h4>
+				</a></li>
+				<li><a href="#0">
+					<h4>Scoreboard</h4>
+				</a></li>
+			</ul>
+		</div>
+	</nav>
 
-    <script>
+	<!--Listen Page Content-->
+	<div style="margin: 0 auto; width: 500px; height: 100px;">
+		<section style="padding: 5px;">
+			<br />
+			<div>
+				<label>Category: </label>
+				<select id="category">
+					<option value="youngfemale">Young Female</option>
+					<option value="oldfemale">Old Female</option>
+					<option value="youngmale">Young Male</option>
+					<option value="oldmale">Old Male</option>
+				</select>
+				<label for="maoriWord">Maori word:</label>
+				<input type="text" id="maoriWord" />
+				<button id="search">Search</button>
+				<br />
+				<label style="color: purple">Please double the vowels to show long vowels.</label>
+			</div>
+		</section>
 
-        var obj;
-        var count = 0;
+		<section style="padding: 5px;">
+			<div>
+				<p>
+					<button id="change">Change</button>
+				</p>
+			</div>
+			<div id="result" style="color: purple"></div>
+		</section>
 
-        // Button 'search' action
-        document.querySelector('#search').onclick = function () {
-            var wordName = maoriWord.value;
-            var wordCategory = category.value;
+		<%--<input type="text" id="ajax" list="json-datalist" placeholder="Search...">
+		<datalist id="json-datalist"></datalist>--%>
+	</div>
 
-            var formData = new FormData();
-            formData.append('wordName', wordName);
-            formData.append('wordCategory', wordCategory);
+	<br />
+	<br />
 
-            xhr('Play.aspx', formData, function (responseText) {
-                if (responseText == "nothing") {
-                    document.getElementById('result').innerHTML = "Sorry, the word cannot be found.";
-                } else {
-                    obj = JSON.parse(responseText);
-                    count = 0;
-                    document.getElementById("result").innerHTML = +obj.resultJsonTable.length + " different pronunciations available, and this is No." + (count + 1);
-                    player.src = obj.resultJsonTable[0].path;
-                }
-            });
-        };
-        // Button 'change' action
-        document.querySelector('#change').onclick = function () {
-            count++;
-            if (count >= obj.resultJsonTable.length) {
-                count = 0;
-            }
-            player.src = obj.resultJsonTable[count].path;
-            document.getElementById("result").innerHTML = obj.resultJsonTable.length + " different pronunciations available, and this is No." + (count + 1);
-        };
+	<!--Audio Player-->
+	<div id="media-player" class="container" style="width: 80%">
+		<div id="wave"></div>
 
-        // xhr fuction
-        function xhr(url, formData, callback) {
-            var request = new XMLHttpRequest();
-            request.onreadystatechange = function () {
-                if (request.readyState == 4 && request.status == 200) {
-                    callback(request.responseText);
-                }
-            };
-            request.open('POST', url);
-            request.send(formData);
-        }
-    </script>
+		<div id="control-bar">
+
+			<div class="player-control">
+				<button id="play-pause-button" title="Play"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+			</div>
+
+		</div>
+	</div>
+	
+
+	<script src="JavaScript/Listen.js"></script>
+	
 </body>
 </html>

@@ -199,3 +199,7 @@ section {
     border-width: 0 0 1px;
     border: 1px solid #e7e7e7;
 }
+
+#media-player {
+    background-color: #f8f8f8;
+}
