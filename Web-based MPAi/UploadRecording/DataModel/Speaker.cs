@@ -5,7 +5,8 @@ using System.Web;
 
 namespace UploadRecording.DataModel
 {
-    public class Speaker
+    public enum Speaker
     {
+        KAUMATUA_MALE, KUIA_FEMALE, MODERN_MALE, MODERN_FEMALE
     }
 }
