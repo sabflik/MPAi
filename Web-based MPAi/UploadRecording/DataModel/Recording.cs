@@ -18,11 +18,6 @@ namespace UploadRecording.DataModel
         public int WordId { get; set; }
 
         [Required]
-        [StringLength(64)]
-        [Index(IsUnique = true)]
-        public string Name { get; set; }
-
-        [Required]
         [StringLength(256)]
         public string FilePath { get; set; }
     }
