@@ -11,7 +11,7 @@ namespace UploadRecording.DataModel
     public partial class Recording
     {
         [Required]
-        public Speaker speaker { get; set; }
+        public Speaker Speaker { get; set; }
  
         [ForeignKey("WordId")]
         public virtual Word Word { get; set; }
