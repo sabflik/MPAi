@@ -1674,6 +1674,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataModel\MPAiContext.cs" />
     <Compile Include="DataModel\Word.cs" />
     <Compile Include="DataModel\Speaker.cs" />
     <Compile Include="DataModel\Recording.cs" />
