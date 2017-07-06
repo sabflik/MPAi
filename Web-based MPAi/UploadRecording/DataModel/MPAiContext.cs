@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -25,26 +26,42 @@ namespace UploadRecording.DataModel
         }
 
         // Variables representing the set of values taken out of the database.
-        public virtual DbSet<Recording> Recording { get; set; }
-        public virtual DbSet<Score> Score { get; set; }
-        public virtual DbSet<User> User { get; set; }
-        public virtual DbSet<Word> Word { get; set; }
+        public virtual DbSet<Recording> RecordingSet { get; set; }
+        public virtual DbSet<Score> ScoreSet { get; set; }
+        public virtual DbSet<User> UserSet { get; set; }
+        public virtual DbSet<Word> WordSet { get; set; }
 
         public static MPAiContext InitializeDBModel()
         {
             MPAiContext DBModel;
             DBModel = new MPAiContext();
             DBModel.Database.Initialize(false);
-            DBModel.Recording.Load();
-            DBModel.Score.Load();
-            DBModel.User.Load();
-            DBModel.Word.Load();
+            DBModel.RecordingSet.Load();
+            DBModel.ScoreSet.Load();
+            DBModel.UserSet.Load();
+            DBModel.WordSet.Load();
             return DBModel;
         }
 
         public void AddOrUpdateRecordingFile(String filePath)
         {
             // Dynamically create recordings and words.
+            // Move parsing to a class later
+            String wordName = System.IO.Path.GetFileName(filePath);
+            // Filenames are always in the format speaker-category-name-label.wav
+            wordName = wordName.Split('-')[2];
+            // Create the word if it doesn't exist, get the name from the filename.
+            Word newWord = WordSet.SingleOrDefault(x => x.Name.Equals(wordName));
+            if (newWord == null)
+            {
+                newWord = new Word()
+                {
+                    Name = wordName
+                };
+                WordSet.AddOrUpdate(x => x.Name, newWord);
+                SaveChanges();
+            }
+            // Create the recording if it doesn't exist, associate it with the Word.
         }
     }
 
