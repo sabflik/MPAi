@@ -1,25 +1,4 @@
-﻿//$('#record-stop-button').on('click', function () {
-//    var selector = $(this).find('span');
-//    if (selector.hasClass('glyphicon glyphicon-record')) {
-//        selector.removeClass('glyphicon glyphicon-record')
-//        selector.addClass('glyphicon glyphicon-stop')
-
-//        playbackWave.hide();
-//        recordWave.show();
-
-//        microphone.start();
-//    } else {
-//        selector.removeClass('glyphicon glyphicon-stop')
-//        selector.addClass('glyphicon glyphicon-record')
-
-//        recordWave.hide();
-//        playbackWave.show();
-
-//        microphone.stop();
-//    }
-//});
-
-var player = videojs("myAudio",
+﻿var player = videojs("myAudio",
 		{
 		    controls: true,
 		    width: 800,

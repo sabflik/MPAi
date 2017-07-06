@@ -16,7 +16,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
+	<link href="//vjs.zencdn.net/5.11.6/video-js.min.css" rel="stylesheet">
+
+	<script src="//vjs.zencdn.net/5.11.6/video.min.js"></script>
 	<script src="JavaScript/wavesurfer.min.js"></script>
+	<script src="//collab-project.github.io/videojs-wavesurfer/dist/videojs.wavesurfer.min.js"></script>
 </head>
 <body>
 
@@ -54,7 +58,7 @@
 	</nav>
 
 	<!--Listen Page Content-->
-	<div style="margin: 0 auto; width: 500px; height: 100px;">
+	<div class="container" style="margin: 0 auto; width: 500px; height: 100px;">
 		<section style="padding: 5px;">
 			<br />
 			<div>
@@ -91,15 +95,7 @@
 
 	<!--Audio Player-->
 	<div id="media-player" class="container" style="width: 80%">
-		<div id="wave"></div>
-
-		<div id="control-bar">
-
-			<div class="player-control">
-				<button id="play-pause-button" title="Play"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
-			</div>
-
-		</div>
+		<audio id="myAudio" class="video-js vjs-default-skin"></audio>
 	</div>
 	
 

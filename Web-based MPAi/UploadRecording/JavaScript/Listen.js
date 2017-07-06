@@ -1,22 +1,23 @@
-﻿var wavesurfer = Object.create(WaveSurfer);
+﻿var player = videojs("myAudio",
+		{
+		    controls: true,
+		    width: 800,
+		    height: 200,
+		    plugins: {
+		        wavesurfer: {
+		            waveColor: "#588efb",
+		            progressColor: "#f043a4",
+		            debug: true,
+		            cursorWidth: 1,
+		            msDisplayMax: 20,
+		            hideScrollbar: true
+		        }
+		    }
+		});
 
-wavesurfer.init({
-    container: document.querySelector('#wave'),
-    cursorColor: '#aaa',
-    cursorWidth: 1,
-    height: 80,
-    waveColor: '#588efb',
-    progressColor: '#f043a4'
-});
-
-
-$('#play-pause-button').on('click', function () {
-    wavesurfer.playPause();
-});
-
-$(window).resize(function () {
-    wavesurfer.drawer.containerWidth = wavesurfer.drawer.container.clientWidth;
-    wavesurfer.drawBuffer();
+// error handling
+player.on('error', function (error) {
+    console.log('error:', error);
 });
 
 
@@ -41,7 +42,7 @@ document.querySelector('#search').onclick = function () {
             obj = JSON.parse(responseText);
             count = 0;
             document.getElementById("result").innerHTML = +obj.resultJsonTable.length + " different pronunciations available, and this is No." + (count + 1);
-            wavesurfer.load(obj.resultJsonTable[0].path);
+            player.waveform.load(obj.resultJsonTable[0].path);
         }
     });
 };
@@ -51,7 +52,7 @@ document.querySelector('#change').onclick = function () {
     if (count >= obj.resultJsonTable.length) {
         count = 0;
     }
-    wavesurfer.load(obj.resultJsonTable[count].path);
+    player.waveform.load(obj.resultJsonTable[count].path);
     document.getElementById("result").innerHTML = obj.resultJsonTable.length + " different pronunciations available, and this is No." + (count + 1);
 };
 

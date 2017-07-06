@@ -13,24 +13,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<%--	<link href="http://cdnjs.cloudflare.com/ajax/libs/video.js/4.12.3/video-js.css" rel="stylesheet">
-	<link href="css/videojs.record.css" rel="stylesheet">--%>
-
 	<link href="//vjs.zencdn.net/5.11.6/video-js.min.css" rel="stylesheet">
 	<link href="https://collab-project.github.io/videojs-record/dist/css/videojs.record.min.css" rel="stylesheet">
 
-
 	<script src="//vjs.zencdn.net/5.11.6/video.min.js"></script>
 
-	<%--<script src="https://cdn.WebRTC-Experiment.com/MediaStreamRecorder.js"></script>
-	<%--<script src="JavaScript/OldMediaStreamRecorder.js"></script>--%>
-
-	<!-- for Edige/FF/Chrome/Opera/etc. getUserMedia support -->
-
-	<%--<script src="https://cdn.WebRTC-Experiment.com/gumadapter.js"></script>
-
-	<script src="//cdn.webrtc-experiment.com/RecordRTC.js"></script>
-	<script src="https://cdn.rawgit.com/chris-rudmin/Recorderjs/master/src/recorder.js" async></script>--%>
 	<script src="JavaScript/recorder.js"></script>
 	<script src="JavaScript/wavesurfer.min.js"></script>
 	<script src="//collab-project.github.io/videojs-wavesurfer/dist/wavesurfer.microphone.min.js"></script>
@@ -51,10 +38,6 @@
    controls */
 		.vjs-using-native-controls .vjs-control-bar {
 			display: flex !important;
-		}
-
-		#myAudio {
-			background-color: #FFFFFF;
 		}
 
 		input {
@@ -122,8 +105,6 @@
 			<label style="color: purple">Please double the vowels to show long vowels.</label>
 			<br />
 			<br />
-			<button id="start-recording">Record</button>
-			<button id="stop-recording" disabled>Stop</button>
 			<button id="analyse-recording" disabled>Analyse</button>
 			<button id="save-recording" disabled>Download</button>
 		</section>
