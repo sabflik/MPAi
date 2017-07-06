@@ -4,279 +4,157 @@
 
 <html lang="en">
 
-    <head runat="server">
-        <title>MPAi-Speak</title>
+<head runat="server">
+	<title>MPAi-Speak</title>
 
-        <script src="https://cdn.WebRTC-Experiment.com/MediaStreamRecorder.js"></script>
-        <%--<script src="JavaScript/OldMediaStreamRecorder.js"></script>--%>
+	<script src='http://code.jquery.com/jquery-1.11.0.min.js' type='text/javascript'></script>
 
-        <!-- for Edige/FF/Chrome/Opera/etc. getUserMedia support -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-        <script src="https://cdn.WebRTC-Experiment.com/gumadapter.js"></script>
+	<%--	<link href="http://cdnjs.cloudflare.com/ajax/libs/video.js/4.12.3/video-js.css" rel="stylesheet">
+	<link href="css/videojs.record.css" rel="stylesheet">--%>
 
-        <style>
-            input {
-                border: 1px solid rgb(49, 79, 79);
-                border-radius: 3px;
-                font-size: 1em;
-                width: 100px;
-                text-align: center;
-            }
+	<link href="//vjs.zencdn.net/5.11.6/video-js.min.css" rel="stylesheet">
+	<link href="https://collab-project.github.io/videojs-record/dist/css/videojs.record.min.css" rel="stylesheet">
 
-            button {
-                border: 1px solid rgb(49, 79, 79);
-                border-radius: 3px;
-                vertical-align: middle;
-                height: auto;
-                font-size: inherit;
-            }
 
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
+	<script src="//vjs.zencdn.net/5.11.6/video.min.js"></script>
 
-            li {
-                float: left;
-            }
+	<%--<script src="https://cdn.WebRTC-Experiment.com/MediaStreamRecorder.js"></script>
+	<%--<script src="JavaScript/OldMediaStreamRecorder.js"></script>--%>
 
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
+	<!-- for Edige/FF/Chrome/Opera/etc. getUserMedia support -->
 
-            li a:hover {
-                background-color: #111;
-            }
-        </style>
-    </head>
+	<%--<script src="https://cdn.WebRTC-Experiment.com/gumadapter.js"></script>
 
-    <body>
+	<script src="//cdn.webrtc-experiment.com/RecordRTC.js"></script>
+	<script src="https://cdn.rawgit.com/chris-rudmin/Recorderjs/master/src/recorder.js" async></script>--%>
+	<script src="JavaScript/recorder.js"></script>
+	<script src="JavaScript/wavesurfer.min.js"></script>
+	<script src="//collab-project.github.io/videojs-wavesurfer/dist/wavesurfer.microphone.min.js"></script>
+	<script src="//collab-project.github.io/videojs-wavesurfer/dist/videojs.wavesurfer.min.js"></script>
 
-        <div style="margin:0 auto; width:500px; height:100px;">
-            
-            <section class="experiment" style="padding: 5px;">
-                <ul>
-                    <li><a class="active" href="Speak.aspx">Speak</a></li>
-                    <li><a class="active" href="Listen.aspx">Listen</a></li>
-                </ul>
-                <br />
-                <label for="maoriWord">Your Maori word to pronounce:</label>
-                <input type="text" id="maoriWord"/>
-                <label id="alertWord" style="color:red"></label>
-                <br />
-                <label style="color:purple">Please double the vowels to show long vowels.</label>
-                <br />
-                <br />
-                <button id="start-recording">Record</button>
-                <button id="stop-recording" disabled>Stop</button>
-                <button id="analyse-recording" disabled>Analyse</button>
-                <button id="save-recording" disabled>Download</button>
-            </section>
+	<script src="JavaScript/videojs.record.js"></script>
+	<script src="JavaScript/videojs.record.recorderjs.js"></script>
 
-            <section class="experiment" style="padding: 5px;">
-                <div id="audios-container"></div>
-                <audio id="recording"></audio>
-                <label id ="edgeNotice" style ="color:green;"></label>
-            </section>
-            <section class="experiment" style="padding: 5px;">
-                <div id="result" style="color:purple"></div>
-            </section>
-            <script>
-                // declare variables
-                var mediaConstraints = {
-                    audio: true
-                };
-                var mediaRecorder;
-                var currentBlob;
-                var audiosContainer = document.getElementById('audios-container');
-                var currentTimeStamp;
-                var currentSecondStamp;
-                var recordingPlayer;
+	<style>
+		/* place fullscreen control on right side of the player */
+		.video-js .vjs-control.vjs-fullscreen-control {
+			position: absolute;
+			right: 0;
+		}
 
-                function captureUserMedia(mediaConstraints, successCallback, errorCallback) {
-                    navigator.mediaDevices.getUserMedia(mediaConstraints).then(successCallback).catch(errorCallback);
-                }
+		/* make sure the custom controls are always visible because
+   the plugin hides and replace the video.js native mobile
+   controls */
+		.vjs-using-native-controls .vjs-control-bar {
+			display: flex !important;
+		}
 
-                document.querySelector('#start-recording').onclick = function () {
-                    this.disabled = true;
-                    document.querySelector('#stop-recording').disabled = false;
-                    document.querySelector('#save-recording').disabled = true;
-                    document.querySelector('#analyse-recording').disabled = true;
-                    document.querySelector('#save-recording').textContent = "Download";
-                    audiosContainer.innerHTML = "";
-                    currentBlob = null;
-                    edgeNotice.innerText = "";
-                    result.innerText = "";
-                    captureUserMedia(mediaConstraints, onMediaSuccess, onMediaError);
-                };
+		#myAudio {
+			background-color: #FFFFFF;
+		}
 
-                document.querySelector('#stop-recording').onclick = function () {
-                    this.disabled = true;
-                    mediaRecorder.stop();
-                    if (!IsChrome) {
-                        mediaRecorder.stream.stop();
-                    }
-                    document.querySelector('#start-recording').disabled = false;
-                    document.querySelector('#save-recording').disabled = false;
-                    document.querySelector('#analyse-recording').disabled = false;
-                    // delete auio player on Edge
-                    if (IsEdge) {
-                        audiosContainer.remove(recordingPlayer);
-                        edgeNotice.innerText = "Successfully recorded!";
-                    }
-                };
+		input {
+			border: 1px solid rgb(49, 79, 79);
+			border-radius: 3px;
+			font-size: 1em;
+			width: 100px;
+			text-align: center;
+		}
 
-                document.querySelector('#save-recording').onclick = function () {
-                    mediaRecorder.save();
-                };
+		button {
+			border: 1px solid rgb(49, 79, 79);
+			border-radius: 3px;
+			vertical-align: middle;
+			height: auto;
+			font-size: inherit;
+		}
+	</style>
+</head>
 
-                document.querySelector('#analyse-recording').onclick = function () {
-                    this.disabled = true;
-                    analyse(currentBlob);
-                };
+<body>
 
-                document.querySelector('#maoriWord').oninput = function () {
-                    alertWord.innerText = "";
-                    if (audiosContainer.innerHTML != "" && document.querySelector("#stop-recording").disabled == true) {
-                        document.querySelector('#analyse-recording').disabled = false;
-                    }
-                }
+	<!--Nvaigation Bar-->
+	<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+		<div class="container" style="width: 100%">
+			<div class="navbar-header">
+				<a href="index.aspx">
+					<img id="headerLogo" src="Resources/headerImage.png" alt="MPAi: A Maori Pronunciation Aid">
+				</a>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#0" id="loginButton">Login</a></li>
+				<li><a href="#0" id="signUpButton">Sign Up</a></li>
+			</ul>
+		</div>
+	</nav>
+	<nav class="navbar navbar-default navbar-fixed-top" style="top: 70px;">
+		<div class="container">
+			<ul class="nav navbar-nav">
+				<li><a href="index.aspx">
+					<h4>Home</h4>
+				</a></li>
+				<li><a href="Listen.aspx">
+					<h4>Listen</h4>
+				</a></li>
+				<li><a href="Speak.aspx">
+					<h4>Speak</h4>
+				</a></li>
+				<li><a href="#0">
+					<h4>Scoreboard</h4>
+				</a></li>
+			</ul>
+		</div>
+	</nav>
 
-                // Record audio
-                function onMediaSuccess(stream) {
-                    var audio = document.createElement('audio');
-                    audio = mergeProps(audio, {
-                        controls: false,
-                        muted: true,
-                        src: URL.createObjectURL(stream)
-                    });
-                    audio.play();
-                    audiosContainer.appendChild(audio);
+	<!--Speak Page Content-->
+	<div class="container" style="margin: 0 auto; width: 500px; height: 100px;">
 
-                    mediaRecorder = new MediaStreamRecorder(stream);
-                    mediaRecorder.stream = stream;
-                    mediaRecorder.mimeType = 'audio/wav';
-                    mediaRecorder.audioChannels = 1;
-                    mediaRecorder.ondataavailable = function (blob) {
-                        var timeStamp = new Date().getTime().toString();
-                        var currentdate = new Date();
-                        var secondStamp = currentdate.getDate() + "-"
-                                    + (currentdate.getMonth() + 1) + "-"
-                                    + currentdate.getFullYear() + "@"
-                                    + currentdate.getHours() + "-"
-                                    + currentdate.getMinutes() + "-"
-                                    + currentdate.getSeconds();
+		<section class="experiment" style="padding: 5px;">
+			<br />
+			<label for="maoriWord">Your Maori word to pronounce:</label>
+			<input type="text" id="maoriWord" />
+			<label id="alertWord" style="color: red"></label>
+			<br />
+			<label style="color: purple">Please double the vowels to show long vowels.</label>
+			<br />
+			<br />
+			<button id="start-recording">Record</button>
+			<button id="stop-recording" disabled>Stop</button>
+			<button id="analyse-recording" disabled>Analyse</button>
+			<button id="save-recording" disabled>Download</button>
+		</section>
 
-                        // Amend dowload button text
-                        document.querySelector("#save-recording").textContent = "Download (" + bytesToSize(blob.size) + ")";
-                        // Add a player to play the recording
-                        recordingPlayer = document.createElement('audio');
-                        recordingPlayer = mergeProps(audio, {
-                            controls: true,
-                            muted: false,
-                            src: URL.createObjectURL(blob)
-                        });
-                        //recordingPlayer.play();
-                        audiosContainer.appendChild(recordingPlayer);
+		<section class="experiment" style="padding: 5px;">
+			<div id="audios-container"></div>
+			<audio id="recording"></audio>
+			<label id="edgeNotice" style="color: green;"></label>
+		</section>
+		<section class="experiment" style="padding: 5px;">
+			<div id="result" style="color: purple"></div>
+		</section>
+	</div>
 
-                        // delete the extra link
-                        if (secondStamp == currentSecondStamp && timeStamp != currentTimeStamp) {
-                            a.parentNode.removeChild(a);
-                        }
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
+	<br />
 
-                        // Save to currentBlob
-                        if (currentBlob == null) {
-                            // Firefox produces two blobs with the second one invalid
-                            currentBlob = blob;
-                            currentTimeStamp = timeStamp;
-                            currentSecondStamp = secondStamp;
-                        } else {
-                            blob = null;
-                        }
-                    };
+	<!--Audio Player-->
+	<div id="media-player" class="container" style="width: 80%">
+		<audio id="myAudio" class="video-js vjs-default-skin"></audio>
+	</div>
+	
+	<script src="JavaScript/Speak.js"></script>
 
-                    // get another blob after 30 seconds
-                    var timeInterval = 30 * 1000;
-                    mediaRecorder.start(timeInterval);
-                }
 
-                function onMediaError(e) {
-                    console.error('media error', e);
-                }
-
-                // below function via: http://goo.gl/B3ae8c
-                function bytesToSize(bytes) {
-                    var k = 1024;
-                    var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
-                    if (bytes === 0) return '0 Bytes';
-                    var i = parseInt(Math.floor(Math.log(bytes) / Math.log(k)), 10);
-                    return (bytes / Math.pow(k, i)).toPrecision(3) + ' ' + sizes[i];
-                }
-
-                // initialization
-                window.onbeforeunload = function () {
-                    document.querySelector('#start-recording').disabled = false;
-                    document.querySelector('#stop-recording').disabled = true;
-                    document.querySelector('#save-recording').disabled = true;
-                    document.querySelector('#analyse-recording').disabled = true;
-                    document.getElementById(maoriWord.id).value = "";
-                };
-
-                // analyse function
-                function analyse(blob) {
-                    if (maoriWord.value == "") {
-                        document.getElementById(alertWord.id).innerText = "Please input your word!";
-                        document.getElementById(maoriWord.id).focus();
-                        document.getElementById(maoriWord.id).select();
-                    } else {
-                        upload(blob, callBack);
-                        function callBack(data) {
-                            if (data == "nothing") {
-                                document.getElementById('result').innerHTML = "Sorry, your pronunciation cannot be recognised.";
-                            } else {
-                                document.getElementById('result').innerHTML = "Your pronunciation is recognised as: " + data;
-                            }
-                        }
-                    }
-                }
-
-                // upload audio file to server
-                function upload(blob, callBack) {
-                    var time = new Date().getTime().toString();
-                    var currentdate = new Date();
-                    var datetime = currentdate.getDate() + "-"
-                                    + (currentdate.getMonth() + 1) + "-"
-                                    + currentdate.getFullYear() + "@"
-                                    + currentdate.getHours() + "-"
-                                    + currentdate.getMinutes() + "-"
-                                    + currentdate.getSeconds() + "@";
-                    var fileName = datetime + time + '.wav';
-
-                    var formData = new FormData();
-                    formData.append('fileName', fileName);
-                    formData.append('blob', blob);
-
-                    xhr('Save.aspx', formData, callBack);
-                }
-
-                function xhr(url, formData, callback) {
-                    var request = new XMLHttpRequest();
-                    request.onreadystatechange = function () {
-                        if (request.readyState == 4 && request.status == 200) {
-                            callback(request.responseText);
-                        }
-                    };
-                    request.open('POST', url);
-                    request.send(formData);
-                }
-            </script>
-        </div>
-    </body>
+</body>
 </html>
