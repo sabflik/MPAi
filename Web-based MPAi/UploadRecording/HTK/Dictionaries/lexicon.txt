@@ -1,91 +1,91 @@
 SENT-END	[]	sil
 SENT-START	[]	sil
-aroha	[aroha]
-awa	[awa]
-enoho	[enoho]
-haeremai	[haeremai]
-hangi	[hangi]
-hapü	[hapü]
+aroha	[aroha]	a r o h a
+awa	[awa]	a w a
+enoho	[enoho]	e n o h o
+haeremai	[haeremai]	h ae r e m ai
+hangi	[hangi]	h aa N ii
+hapü	[hapü]	h a p uu
 hau	[hau]	h au
 hei	[hei]	h ei
 hoe	[hoe]	h oe
 hoihoi	[hoihoi]	h oi h oi
-hongi	[hongi]
+hongi	[hongi]	h o N i
 hou	[hou]	h ou
 hë	[hë]	h ee 
 hï	[hï]	h ii 
-iwa	[iwa]
-iwi	[iwi]
-kakiteano	[kakiteano]
-kapai	[kapai]
-kainga	[kainga]
-karakia	[karakia]
-karanga	[karanga]
-kaumätua	[kaumätua]
-kei	[kei]	k ei 
-kete	[kete]
-kiaora	[kiaora]
-koha	[koha]
-korero	[korero]
-kuia	[kuia]
+iwa	[iwa]	i w	a	
+iwi	[iwi]	i w i
+kakiteano	[kakiteano]	k a k i t e a n oo
+kapai	[kapai]	k a p ai
+kainga	[kainga]	k aa i N a
+karakia	[karakia]	k a r a k i a
+karanga	[karanga]	k a r a N a
+kaumätua	[kaumätua]	k au m aa t u a
+kei	[kei]	k ei
+kete	[kete]	k e t e
+kiaora	[kiaora]	k i a o r a
+koha	[koha]	k o h a
+korero	[korero]	k oo r e r e
+kuia	[kuia]	k u i a
 kë	[kë]	k ee 
 kï	[kï]	k ii 
 mao	[mao]	m ao
-maori	[maori]
-marae	[marae]
-matariki	[matariki]
+maori	[maori] m aa o r i
+marae	[marae] m a r ae
+matariki	[matariki] m a t a r i k i
 matiu	[matiu]	m a t i u
 mau	[mau]	m au
-maunga	[maunga]
-mihi	[mihi]
-moana	[moana]
-mokopuna	[mokopuna]
+maunga	[maunga] m au N a
+mihi	[mihi]	m i h i
+moana	[moana]	m o a n a
+mokopuna	[mokopuna]	m o k o p u n a
 moutere	[moutere]	m ou t e r e
 mätao	[mätao]	m aa t ao 
 mätau	[mätau]	m aa t au 
 mätou	[mätou]	m aa t ou 
-ono	[ono]
+ono	[ono]	o n o
 pae	[pae]	p ae
 pai	[pai]	p ai
 pao	[pao]	p ao
 pau	[pau]	p au
 pou	[pou]	p ou
-powhiri	[powhiri]
-puku	[puku]
+powhiri	[powhiri]	p oo f i r i
+puku	[puku]	p u k u
 pö	[pö]	p oo
-rangatiratanga	[rangatiratanga]
-rima	[rima]
-rua	[rua]
+rangatiratanga	[rangatiratanga] r a N a t i r a t a N a	
+rima	[rima]	r i m a
+rua	[rua]	r u a
 sil	[sil]	sil
 silence	[silence]	sil
 tae	[tae]	t ae
-tahi	[tahi]
+tahi	[tahi]	t a h i
 tai	[tai]	t ai
-tamariki	[tamariki]
-tangi	[tangi]
-taringa	[taringa]
-tauhou	[tauhou]
-tekau	[tekau]
-tenakoe	[tenakoe]
-tikanga	[tikanga]
-timata	[timata]
+tamariki	[tamariki]	t a m a r i k i
+tangi	[tangi]	t a N i
+taringa	[taringa]	t a r i N a
+tauhou	[tauhou]	t au h ou
+tekau	[tekau]	t e k au
+tenakoe	[tenakoe]	t ee n aa k oe
+tikanga	[tikanga]	t i k a N a
+timata	[timata]	t ii m a t a
 toetoe	[toetoe]	t oe t oe
 toi	[toi]	t oi
-toru	[toru]
-turanga	[turanga]
+toru	[toru]	t o r u
+turanga	[turanga]	t uu r a N a
 täne	[täne]	t aa n e
 tënei	[tënei]	t ee n ei
 tü	[tü]	t uu
-wa	[wa]
-waewae	[waewae]
-wahi	[wahi]
-waiata	[waiata]
-wairua	[wairua]
-waka	[waka]
-waru	[waru]
-wha	[wha]
-whanau	[whanau]
-whare	[whare]
-whitu	[whitu]
+wa	[wa]	w aa
+waewae	[waewae]	w ae w ae
+wahi	[wahi]	w aa h i
+waiata	[waiata]	w ai a t a
+wairua	[wairua]	w ai r u a
+waka	[waka]	w a k a
+waru	[waru]	w a r u
+wha	[wha]	f aa
+whanau	[whanau]	f aa n au
+whare	[whare]	f a r e
+whitu	[whitu]	f i t u
 
 
