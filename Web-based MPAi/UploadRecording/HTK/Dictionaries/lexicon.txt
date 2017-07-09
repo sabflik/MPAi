@@ -1,91 +1,91 @@
-SENT-END [] sil
-SENT-START [] sil
-aroha
-awa
-enoho
-haeremai
-hangi
-hapü
-hau        [hau]        h au
-hei        [hei]        h ei
-hoe        [hoe]        h oe
-hoihoi     [hoihoi]     h oi h oi
-hongi
-hou        [hou]        h ou
-hë         [hë]         h ee 
-hï         [hï]         h ii 
-iwa
-iwi
-kakiteano
-kapai
-kainga
-karakia
-karanga
-kaumätua
-kei        [kei]        k ei 
-kete
-kiaora
-koha
-korero
-kuia
-kë         [kë]         k ee 
-kï         [kï]         k ii 
-mao        [mao]        m ao
-maori
-marae
-matariki
-matiu      [matiu]      m a t i u
-mau        [mau]        m au
-maunga
-mihi
-moana
-mokopuna
-moutere    [moutere]    m ou t e r e
-mätao      [mätao]      m aa t ao 
-mätau      [mätau]      m aa t au 
-mätou      [mätou]      m aa t ou 
-ono
-pae        [pae]        p ae
-pai        [pai]        p ai
-pao        [pao]        p ao
-pau        [pau]        p au
-pou        [pou]        p ou
-powhiri
-puku
-pö         [pö]         p oo
-rangatiratanga
-rima
-rua
-sil        [sil]        sil
-silence    [silence]    sil
-tae        [tae]        t ae
-tahi
-tai        [tai]        t ai
-tamariki
-tangi
-taringa
-tauhou
-tekau
-tenakoe
-tikanga
-timata
-toetoe     [toetoe]     t oe t oe
-toi        [toi]        t oi
-toru
-turanga
-täne       [täne]       t aa n e
-tënei      [tënei]      t ee n ei
-tü         [tü]         t uu
-wa
-waewae
-wahi
-waiata
-wairua
-waka
-waru
-wha
-whanau
-whare
-whitu
+SENT-END	[] sil
+SENT-START	[] sil
+aroha	[aroha]
+awa	[awa]
+enoho	[enoho]
+haeremai	[haeremai]
+hangi	[hangi]
+hapü	[hapü]
+hau	[hau]        h au
+hei	[hei]        h ei
+hoe	[hoe]        h oe
+hoihoi	[hoihoi]     h oi h oi
+hongi	[hongi]
+hou	[hou]        h ou
+hë	[hë]         h ee 
+hï	[hï]         h ii 
+iwa	[iwa]
+iwi	[iwi]
+kakiteano	[kakiteano]
+kapai	[kapai]
+kainga	[kainga]
+karakia	[karakia]
+karanga	[karanga]
+kaumätua	[kaumätua]
+kei	[kei]        k ei 
+kete	[kete]
+kiaora	[kiaora]
+koha	[koha]
+korero	[korero]
+kuia	[kuia]
+kë	[kë]         k ee 
+kï	[kï]         k ii 
+mao	[mao]        m ao
+maori	[maori]
+marae	[marae]
+matariki	[matariki]
+matiu	[matiu]      m a t i u
+mau	[mau]        m au
+maunga	[maunga]
+mihi	[mihi]
+moana	[moana]
+mokopuna	[mokopuna]
+moutere	[moutere]    m ou t e r e
+mätao	[mätao]      m aa t ao 
+mätau	[mätau]      m aa t au 
+mätou	[mätou]      m aa t ou 
+ono	[ono]
+pae	[pae]        p ae
+pai	[pai]        p ai
+pao	[pao]        p ao
+pau	[pau]        p au
+pou	[pou]        p ou
+powhiri	[powhiri]
+puku	[puku]
+pö	[pö]         p oo
+rangatiratanga	[rangatiratanga]
+rima	[rima]
+rua	[rua]
+sil	[sil]        sil
+silence	[silence]    sil
+tae	[tae]        t ae
+tahi	[tahi]
+tai	[tai]        t ai
+tamariki	[tamariki]
+tangi	[tangi]
+taringa	[taringa]
+tauhou	[tauhou]
+tekau	[tekau]
+tenakoe	[tenakoe]
+tikanga	[tikanga]
+timata	[timata]
+toetoe	[toetoe]     t oe t oe
+toi	[toi]        t oi
+toru	[toru]
+turanga	[turanga]
+täne	[täne]       t aa n e
+tënei	[tënei]      t ee n ei
+tü	[tü]         t uu
+wa	[wa]
+waewae	[waewae]
+wahi	[wahi]
+waiata	[waiata]
+wairua	[wairua]
+waka	[waka]
+waru	[waru]
+wha	[wha]
+whanau	[whanau]
+whare	[whare]
+whitu	[whitu]
 
 
