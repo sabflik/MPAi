@@ -10,6 +10,9 @@ namespace UploadRecording.DataModel
     [Table("Recording")]
     public partial class Recording
     {
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int RecordingId { get; set; }
+
         [Required]
         public Speaker Speaker { get; set; }
  
