@@ -1,19 +1,19 @@
-SENT-END	[] sil
-SENT-START	[] sil
+SENT-END	[]	sil
+SENT-START	[]	sil
 aroha	[aroha]
 awa	[awa]
 enoho	[enoho]
 haeremai	[haeremai]
 hangi	[hangi]
 hapü	[hapü]
-hau	[hau]        h au
-hei	[hei]        h ei
-hoe	[hoe]        h oe
-hoihoi	[hoihoi]     h oi h oi
+hau	[hau]	h au
+hei	[hei]	h ei
+hoe	[hoe]	h oe
+hoihoi	[hoihoi]	h oi h oi
 hongi	[hongi]
-hou	[hou]        h ou
-hë	[hë]         h ee 
-hï	[hï]         h ii 
+hou	[hou]	h ou
+hë	[hë]	h ee 
+hï	[hï]	h ii 
 iwa	[iwa]
 iwi	[iwi]
 kakiteano	[kakiteano]
@@ -22,45 +22,45 @@ kainga	[kainga]
 karakia	[karakia]
 karanga	[karanga]
 kaumätua	[kaumätua]
-kei	[kei]        k ei 
+kei	[kei]	k ei 
 kete	[kete]
 kiaora	[kiaora]
 koha	[koha]
 korero	[korero]
 kuia	[kuia]
-kë	[kë]         k ee 
-kï	[kï]         k ii 
-mao	[mao]        m ao
+kë	[kë]	k ee 
+kï	[kï]	k ii 
+mao	[mao]	m ao
 maori	[maori]
 marae	[marae]
 matariki	[matariki]
-matiu	[matiu]      m a t i u
-mau	[mau]        m au
+matiu	[matiu]	m a t i u
+mau	[mau]	m au
 maunga	[maunga]
 mihi	[mihi]
 moana	[moana]
 mokopuna	[mokopuna]
-moutere	[moutere]    m ou t e r e
-mätao	[mätao]      m aa t ao 
-mätau	[mätau]      m aa t au 
-mätou	[mätou]      m aa t ou 
+moutere	[moutere]	m ou t e r e
+mätao	[mätao]	m aa t ao 
+mätau	[mätau]	m aa t au 
+mätou	[mätou]	m aa t ou 
 ono	[ono]
-pae	[pae]        p ae
-pai	[pai]        p ai
-pao	[pao]        p ao
-pau	[pau]        p au
-pou	[pou]        p ou
+pae	[pae]	p ae
+pai	[pai]	p ai
+pao	[pao]	p ao
+pau	[pau]	p au
+pou	[pou]	p ou
 powhiri	[powhiri]
 puku	[puku]
-pö	[pö]         p oo
+pö	[pö]	p oo
 rangatiratanga	[rangatiratanga]
 rima	[rima]
 rua	[rua]
-sil	[sil]        sil
-silence	[silence]    sil
-tae	[tae]        t ae
+sil	[sil]	sil
+silence	[silence]	sil
+tae	[tae]	t ae
 tahi	[tahi]
-tai	[tai]        t ai
+tai	[tai]	t ai
 tamariki	[tamariki]
 tangi	[tangi]
 taringa	[taringa]
@@ -69,13 +69,13 @@ tekau	[tekau]
 tenakoe	[tenakoe]
 tikanga	[tikanga]
 timata	[timata]
-toetoe	[toetoe]     t oe t oe
-toi	[toi]        t oi
+toetoe	[toetoe]	t oe t oe
+toi	[toi]	t oi
 toru	[toru]
 turanga	[turanga]
-täne	[täne]       t aa n e
-tënei	[tënei]      t ee n ei
-tü	[tü]         t uu
+täne	[täne]	t aa n e
+tënei	[tënei]	t ee n ei
+tü	[tü]	t uu
 wa	[wa]
 waewae	[waewae]
 wahi	[wahi]
