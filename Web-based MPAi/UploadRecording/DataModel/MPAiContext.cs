@@ -10,9 +10,18 @@ namespace UploadRecording.DataModel
 {
     public class MPAiContext : DbContext
     {
-
         private String path = "C:\\Users\\adm.Jayden\\Work Folders\\Documents\\MPAiDatabase";
-        public string Path { get => path; set => path = value; }
+        public string Path
+        {
+            get
+            {
+                return path;
+            }
+            set
+            {
+                path = value;
+            }
+        }
 
         public MPAiContext() : base("name=MPAiModel")
         {
@@ -47,9 +56,28 @@ namespace UploadRecording.DataModel
         {
             // Dynamically create recordings and words.
             // Move parsing to a class later
-            String wordName = System.IO.Path.GetFileName(filePath);
+            String fileName = System.IO.Path.GetFileName(filePath);
             // Filenames are always in the format speaker-category-name-label.wav
-            wordName = wordName.Split('-')[2];
+            String wordName = fileName.Split('-')[2];
+            Speaker? speaker;
+            switch (fileName.Split('-')[0])
+            {
+                case ("oldfemale"):
+                    speaker = Speaker.KUIA_FEMALE;
+                    break;
+                case ("oldmale"):
+                    speaker = Speaker.KAUMATUA_MALE;
+                    break;
+                case ("youngfemale"):
+                    speaker = Speaker.MODERN_FEMALE;
+                    break;
+                case ("youngmale"):
+                    speaker = Speaker.MODERN_MALE;
+                    break;
+                default:
+                    speaker = null;
+                    break;
+            }
             // Create the word if it doesn't exist, get the name from the filename.
             Word newWord = WordSet.SingleOrDefault(x => x.Name.Equals(wordName));
             if (newWord == null)
@@ -58,10 +86,28 @@ namespace UploadRecording.DataModel
                 {
                     Name = wordName
                 };
+
                 WordSet.AddOrUpdate(x => x.Name, newWord);
                 SaveChanges();
             }
             // Create the recording if it doesn't exist, associate it with the Word.
+            Recording newRecording = RecordingSet.SingleOrDefault(x => x.FilePath.Equals(filePath));
+            if (newRecording == null)
+            {
+                newWord = WordSet.SingleOrDefault(x => x.Name.Equals(newWord.Name));
+                newRecording = new Recording()
+                {
+                    FilePath = filePath,
+                    Speaker = (Speaker)speaker,
+                    Word = newWord
+                };
+                RecordingSet.AddOrUpdate(x => x.FilePath, newRecording);
+
+                newWord.Recordings.Add(newRecording);
+                WordSet.AddOrUpdate(x => x.Name, newWord);
+
+                SaveChanges();
+            }
         }
     }
 
