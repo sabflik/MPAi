@@ -25,13 +25,19 @@ namespace UploadRecording.DataModel
 
         public MPAiContext() : base("name=MPAiModel")
         {
+
             if (!Directory.Exists(System.IO.Path.Combine(Path, "Database")))
             {
+                // If the folder doesn't exist, create it and initialise the database.
                 Directory.CreateDirectory(System.IO.Path.Combine(Path, "Database"));
+                Database.SetInitializer<MPAiContext>(new MPAiContextInitializer());
+            }
+            else
+            {
+                // If the database folder exists, the database has already been created, and doesn't need intialising.
+                Database.SetInitializer<MPAiContext>(null);
             }
             AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.Combine(Path, "Database"));
-
-            Database.SetInitializer<MPAiContext>(new MPAiContextInitializer());
         }
 
         // Variables representing the set of values taken out of the database.
