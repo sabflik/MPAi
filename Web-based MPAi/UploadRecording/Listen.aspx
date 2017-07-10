@@ -86,10 +86,12 @@
 			<div id="result" style="color: purple"></div>
 		</section>
 
-		<%--<input type="text" id="ajax" list="json-datalist" placeholder="Search...">
-		<datalist id="json-datalist"></datalist>--%>
+		<input type="text" id="ajax" list="json-datalist" placeholder="Search...">
+		<datalist id="json-datalist"></datalist>
 	</div>
 
+	<br />
+	<br />
 	<br />
 	<br />
 
@@ -98,7 +100,7 @@
 		<audio id="myAudio" class="video-js vjs-default-skin"></audio>
 	</div>
 	
-
+	<script src="JavaScript/dropdown.js"></script>
 	<script src="JavaScript/Listen.js"></script>
 	
 </body>
