@@ -77,6 +77,11 @@ k+e
 k-e+t
 e-t+e
 t-e
+k+i
+i-a+o
+a-o+r
+o-r+a
+r-a
 k+oo
 k-oo+r
 oo-r+e
@@ -164,6 +169,8 @@ r+i
 r-i+m
 i-m+a
 m-a
+r+u
+r-u+a
 t+ae
 t-ae
 t+a
@@ -230,7 +237,6 @@ w-ai+a
 ai-a+t
 w-ai+r
 ai-r+u
-r-u+a
 w+a
 w-a+k
 a-k+a
@@ -242,6 +248,9 @@ f-aa
 f-aa+n
 aa-n+au
 n-au
+f+a
+f-a+r
+a-r+e
 f+i
 f-i+t
 i-t+u
