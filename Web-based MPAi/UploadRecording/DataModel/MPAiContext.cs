@@ -58,32 +58,44 @@ namespace UploadRecording.DataModel
             return DBModel;
         }
 
-        public void AddOrUpdateRecordingFile(String filePath)
+        /// <summary>
+        /// Returns a Speaker object from the given file path, according to MPAi naming conventions.
+        /// </summary>
+        /// <param name="fileName">The recording file name</param>
+        /// <returns>A speaker object representing the speaker of the recording.</returns>
+        private Speaker SpeakerFromFile(String fileName)
         {
-            // Dynamically create recordings and words.
-            // Move parsing to a class later
-            String fileName = System.IO.Path.GetFileName(filePath);
-            // Filenames are always in the format speaker-category-name-label.wav
-            String wordName = fileName.Split('-')[2];
-            Speaker? speaker;
             switch (fileName.Split('-')[0])
             {
                 case ("oldfemale"):
-                    speaker = Speaker.KUIA_FEMALE;
-                    break;
+                    return Speaker.KUIA_FEMALE;
                 case ("oldmale"):
-                    speaker = Speaker.KAUMATUA_MALE;
-                    break;
+                    return Speaker.KAUMATUA_MALE;
                 case ("youngfemale"):
-                    speaker = Speaker.MODERN_FEMALE;
-                    break;
+                    return Speaker.MODERN_FEMALE;
                 case ("youngmale"):
-                    speaker = Speaker.MODERN_MALE;
-                    break;
+                    return Speaker.MODERN_MALE;
                 default:
-                    speaker = null;
-                    break;
+                    return Speaker.UNIDENTIFIED;
             }
+        }
+
+        /// <summary>
+        /// Returns a word from the given file path, according to MPAi naming conventions.
+        /// </summary>
+        /// <param name="fileName">The recording file name</param>
+        /// <returns>A speaker object representing the speaker of the recording.</returns>
+        private String WordNameFromFile(String fileName)
+        {
+            return fileName.Split('-')[2];
+        }
+
+        public void AddRecordingFileIfNotExists(String filePath)
+        {
+            // Dynamically create recordings and words.
+            String fileName = System.IO.Path.GetFileName(filePath);
+            String wordName = WordNameFromFile(fileName);
+            Speaker speaker = SpeakerFromFile(fileName);
             // Create the word if it doesn't exist, get the name from the filename.
             Word newWord = WordSet.SingleOrDefault(x => x.Name.Equals(wordName));
             if (newWord == null)
@@ -104,7 +116,7 @@ namespace UploadRecording.DataModel
                 newRecording = new Recording()
                 {
                     FilePath = filePath,
-                    Speaker = (Speaker)speaker,
+                    Speaker = speaker,
                     Word = newWord
                 };
                 RecordingSet.AddOrUpdate(x => x.FilePath, newRecording);
@@ -137,7 +149,7 @@ namespace UploadRecording.DataModel
                 {
                     if (fInfo.Extension.Contains("wav"))
                     {
-                        context.AddOrUpdateRecordingFile(Path.Combine(fInfo.DirectoryName, fInfo.FullName));
+                        context.AddRecordingFileIfNotExists(Path.Combine(fInfo.DirectoryName, fInfo.FullName));
                     }
                 }
             }
