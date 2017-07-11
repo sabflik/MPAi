@@ -42,13 +42,13 @@ REM	****************************
 REM	make "%HMMs%hmm1"-3 based on "%HMMs%hmm0"
 REM	****************************
 if not exist "%HMMs%hmm1" (mkdir "%HMMs%hmm1")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF0.mlf" -t 250.0 150.0 1000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm0/macros" -H "%HMMs%hmm0/hmmdefs" -M "%HMMs%hmm1" "%Dictionaries%monophones0"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF0.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm0/macros" -H "%HMMs%hmm0/hmmdefs" -M "%HMMs%hmm1" "%Dictionaries%monophones0"
 
 if not exist "%HMMs%hmm2" (mkdir "%HMMs%hmm2")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF0.mlf" -t 250.0 150.0 1000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm1/macros" -H "%HMMs%hmm1/hmmdefs" -M "%HMMs%hmm2" "%Dictionaries%monophones0"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF0.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm1/macros" -H "%HMMs%hmm1/hmmdefs" -M "%HMMs%hmm2" "%Dictionaries%monophones0"
 
 if not exist "%HMMs%hmm3" (mkdir "%HMMs%hmm3")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF0.mlf" -t 250.0 150.0 1000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm2/macros" -H "%HMMs%hmm2/hmmdefs" -M "%HMMs%hmm3" "%Dictionaries%monophones0"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF0.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm2/macros" -H "%HMMs%hmm2/hmmdefs" -M "%HMMs%hmm3" "%Dictionaries%monophones0"
 
 REM	****************************
 REM	make "%HMMs%hmm5"-7 based on "%Params%sil.hed"
@@ -57,10 +57,10 @@ if not exist "%HMMs%hmm5" (mkdir "%HMMs%hmm5")
 "%Tools%HHEd" -H "%HMMs%hmm4/macros" -H "%HMMs%hmm4/hmmdefs" -M "%HMMs%hmm5" "%Params%sil.hed" "%Dictionaries%monophones1"
 
 if not exist "%HMMs%hmm6" (mkdir "%HMMs%hmm6")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF1.mlf" -t 250.0 150.0 1000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm5/macros" -H "%HMMs%hmm5/hmmdefs" -M "%HMMs%hmm6" "%Dictionaries%monophones1"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF1.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm5/macros" -H "%HMMs%hmm5/hmmdefs" -M "%HMMs%hmm6" "%Dictionaries%monophones1"
 
 if not exist "%HMMs%hmm7" (mkdir "%HMMs%hmm7")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF1.mlf" -t 250.0 150.0 1000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm6/macros" -H "%HMMs%hmm6/hmmdefs" -M "%HMMs%hmm7" "%Dictionaries%monophones1"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%PhoneMLF1.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm6/macros" -H "%HMMs%hmm6/hmmdefs" -M "%HMMs%hmm7" "%Dictionaries%monophones1"
 
 REM	****************************
 REM	Re-aligning the training data 
@@ -71,10 +71,10 @@ REM	****************************
 REM	make "%HMMs%hmm8"-9 based on a %MLFs%AlignedMLF.mlf
 REM	****************************
 if not exist "%HMMs%hmm8" (mkdir "%HMMs%hmm8")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%AlignedMLF.mlf" -t 250.0 150.0 1000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm7/macros" -H "%HMMs%hmm7/hmmdefs" -M "%HMMs%hmm8" "%Dictionaries%monophones1"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%AlignedMLF.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm7/macros" -H "%HMMs%hmm7/hmmdefs" -M "%HMMs%hmm8" "%Dictionaries%monophones1"
 
 if not exist "%HMMs%hmm9" (mkdir "%HMMs%hmm9")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%AlignedMLF.mlf" -t 250.0 150.0 1000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm8/macros" -H "%HMMs%hmm8/hmmdefs" -M "%HMMs%hmm9" "%Dictionaries%monophones1"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFs%AlignedMLF.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm8/macros" -H "%HMMs%hmm8/hmmdefs" -M "%HMMs%hmm9" "%Dictionaries%monophones1"
 
 REM	****************************
 REM	make "%HMMs%hmm10"
@@ -90,10 +90,10 @@ REM	****************************
 REM	make "%HMMs%hmm11"-12, as well as statistic file stats
 REM	****************************
 if not exist "%HMMs%hmm11" (mkdir "%HMMs%hmm11")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFS%triphoneMLF.mlf" -t 250.0 150.0 1000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm10/macros" -H "%HMMs%hmm10/hmmdefs" -M "%HMMs%hmm11" "%Dictionaries%triphones1" 
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFS%triphoneMLF.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm10/macros" -H "%HMMs%hmm10/hmmdefs" -M "%HMMs%hmm11" "%Dictionaries%triphones1" 
 
 if not exist "%HMMs%hmm12" (mkdir "%HMMs%hmm12")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFS%triphoneMLF.mlf" -t 250.0 150.0 1000.0 -s "%HMMs%stats" -S "%HMMs%train.scp" -H "%HMMs%hmm11/macros" -H "%HMMs%hmm11/hmmdefs" -M "%HMMs%hmm12" "%Dictionaries%triphones1"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFS%triphoneMLF.mlf" -s "%HMMs%stats" -S "%HMMs%train.scp" -H "%HMMs%hmm11/macros" -H "%HMMs%hmm11/hmmdefs" -M "%HMMs%hmm12" "%Dictionaries%triphones1"
 
 "%Tools%HDMan" -b sp -n "%Dictionaries%FullPhoneList" -g "%Params%mktriphones.ded" -l HDMan.Log "%Dictionaries%tri-dictionary" "%Dictionaries%lexicon.txt"
 
@@ -110,9 +110,9 @@ if not exist "%HMMs%hmm13" (mkdir "%HMMs%hmm13")
 "%Tools%HHEd" -H "%HMMs%hmm12/macros" -H "%HMMs%hmm12/hmmdefs" -M "%HMMs%hmm13" "%Params%tree.hed" "%Dictionaries%triphones1"
 
 if not exist "%HMMs%hmm14" (mkdir "%HMMs%hmm14")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFS%triphoneMLF.mlf"  -t 250.0 150.0 3000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm13/macros" -H "%HMMs%hmm13/hmmdefs" -M "%HMMs%hmm14" "%Dictionaries%tiedlist"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFS%triphoneMLF.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm13/macros" -H "%HMMs%hmm13/hmmdefs" -M "%HMMs%hmm14" "%Dictionaries%tiedlist"
 
 if not exist "%HMMs%hmm15" (mkdir "%HMMs%hmm15")
-"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFS%triphoneMLF.mlf"  -t 250.0 150.0 3000.0 -S "%HMMs%train.scp" -H "%HMMs%hmm14/macros" -H "%HMMs%hmm14/hmmdefs" -M "%HMMs%hmm15" "%Dictionaries%tiedlist"
+"%Tools%HERest" -C "%Params%HMMs.conf" -I "%MLFS%triphoneMLF.mlf" -S "%HMMs%train.scp" -H "%HMMs%hmm14/macros" -H "%HMMs%hmm14/hmmdefs" -M "%HMMs%hmm15" "%Dictionaries%tiedlist"
 
 pause&exit
