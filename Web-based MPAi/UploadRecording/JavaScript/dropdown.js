@@ -1,6 +1,8 @@
+//Code modified from: https://codepen.io/matt-west/pen/jKnzG
+
 // Get the <datalist> and <input> elements.
 var dataList = document.getElementById('json-datalist');
-var input = document.getElementById('ajax');
+var input = document.getElementById('maoriWord');
 
 // Create a new XMLHttpRequest.
 var request = new XMLHttpRequest();
@@ -12,21 +14,65 @@ request.onreadystatechange = function (response) {
             // Parse the JSON
             var jsonOptions = JSON.parse(request.responseText);
 
-            // Loop over the JSON array.
-            jsonOptions.forEach(function (item) {
-                // Create a new <option> element.
-                var option = document.createElement('option');
-                // Set the value using the item in the JSON array.
-                option.value = item;
-                // Add the <option> element to the <datalist>.
-                dataList.appendChild(option);
+            var words = [];
+
+            $.each(jsonOptions.oldfemale, function (i, v) {
+                if ($.inArray(v.name, words) === -1) {
+                    // Create a new <option> element.
+                    var option = document.createElement('option');
+                    // Set the value using the item in the JSON array.
+                    option.value = v.name;
+                    // Add the <option> element to the <datalist>.
+                    dataList.appendChild(option);
+
+                    words.push(v.name);
+                }
+            });
+
+            $.each(jsonOptions.oldmale, function (i, v) {
+                if ($.inArray(v.name, words) === -1) {
+                    // Create a new <option> element.
+                    var option = document.createElement('option');
+                    // Set the value using the item in the JSON array.
+                    option.value = v.name;
+                    // Add the <option> element to the <datalist>.
+                    dataList.appendChild(option);
+
+                    words.push(v.name);
+                }
+            });
+
+            $.each(jsonOptions.youngmale, function (i, v) {
+                if ($.inArray(v.name, words) === -1) {
+                    // Create a new <option> element.
+                    var option = document.createElement('option');
+                    // Set the value using the item in the JSON array.
+                    option.value = v.name;
+                    // Add the <option> element to the <datalist>.
+                    dataList.appendChild(option);
+
+                    words.push(v.name);
+                }
+            });
+
+            $.each(jsonOptions.youngfemale, function (i, v) {
+                if ($.inArray(v.name, words) === -1) {
+                    // Create a new <option> element.
+                    var option = document.createElement('option');
+                    // Set the value using the item in the JSON array.
+                    option.value = v.name;
+                    // Add the <option> element to the <datalist>.
+                    dataList.appendChild(option);
+
+                    words.push(v.name);
+                }
             });
 
             // Update the placeholder text.
-            input.placeholder = "e.g. datalist";
+            input.placeholder = "Search...";
         } else {
             // An error occured :(
-            input.placeholder = "Couldn't load datalist options :(";
+            input.placeholder = "Error loading word options";
         }
     }
 };
@@ -35,5 +81,5 @@ request.onreadystatechange = function (response) {
 input.placeholder = "Loading options...";
 
 // Set up and make the request.
-request.open('GET', 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4621/html-elements.json', true);
+request.open('GET', 'Dropdown.aspx', true);
 request.send();

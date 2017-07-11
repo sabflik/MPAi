@@ -58,7 +58,7 @@
 	</nav>
 
 	<!--Listen Page Content-->
-	<div class="container" style="margin: 0 auto; width: 500px; height: 100px;">
+	<div class="container" style="margin: 0 auto;">
 		<section style="padding: 5px;">
 			<br />
 			<div>
@@ -70,7 +70,8 @@
 					<option value="oldmale">Old Male</option>
 				</select>
 				<label for="maoriWord">Maori word:</label>
-				<input type="text" id="maoriWord" />
+				<input type="text" id="maoriWord" list="json-datalist" placeholder="Search...">
+				<datalist id="json-datalist"></datalist>
 				<button id="search">Search</button>
 				<br />
 				<label style="color: purple">Please double the vowels to show long vowels.</label>
@@ -84,24 +85,21 @@
 				</p>
 			</div>
 			<div id="result" style="color: purple"></div>
+
+
+
 		</section>
 
-		<input type="text" id="ajax" list="json-datalist" placeholder="Search...">
-		<datalist id="json-datalist"></datalist>
+		<!--Audio Player-->
+		<div id="media-player" class="container" style="width: 80%">
+			<audio id="myAudio" class="video-js vjs-default-skin"></audio>
+		</div>
 	</div>
 
-	<br />
-	<br />
-	<br />
-	<br />
 
-	<!--Audio Player-->
-	<div id="media-player" class="container" style="width: 80%">
-		<audio id="myAudio" class="video-js vjs-default-skin"></audio>
-	</div>
-	
+
 	<script src="JavaScript/dropdown.js"></script>
 	<script src="JavaScript/Listen.js"></script>
-	
+
 </body>
 </html>
