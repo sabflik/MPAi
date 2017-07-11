@@ -94,12 +94,13 @@
 	</nav>
 
 	<!--Speak Page Content-->
-	<div class="container" style="margin: 0 auto; width: 500px; height: 100px;">
+	<div class="container" style="margin: 0 auto;">
 
 		<section class="experiment" style="padding: 5px;">
 			<br />
 			<label for="maoriWord">Your Maori word to pronounce:</label>
-			<input type="text" id="maoriWord" />
+			<input type="text" id="maoriWord" list="json-datalist" placeholder="Search...">
+			<datalist id="json-datalist"></datalist>
 			<label id="alertWord" style="color: red"></label>
 			<br />
 			<label style="color: purple">Please double the vowels to show long vowels.</label>
@@ -117,25 +118,15 @@
 		<section class="experiment" style="padding: 5px;">
 			<div id="result" style="color: purple"></div>
 		</section>
+
+		<!--Audio Player-->
+		<div id="media-player" class="container" style="width: 80%">
+			<audio id="myAudio" class="video-js vjs-default-skin"></audio>
+		</div>
 	</div>
 
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-	<br />
-
-	<!--Audio Player-->
-	<div id="media-player" class="container" style="width: 80%">
-		<audio id="myAudio" class="video-js vjs-default-skin"></audio>
-	</div>
-	
+	<script src="JavaScript/dropdown.js"></script>
 	<script src="JavaScript/Speak.js"></script>
-
 
 </body>
 </html>
