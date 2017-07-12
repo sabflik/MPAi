@@ -1,17 +1,38 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Speak.aspx.cs" Inherits="MPAi_WebApp.Speak" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
+    <!--Speak Page Content-->
+	<div class="container" style="margin: 0 auto;">
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+		<section class="experiment" style="padding: 5px;">
+			<br />
+			<label for="maoriWord">Your Maori word to pronounce:</label>
+			<input type="text" id="maoriWord" list="json-datalist" placeholder="Search...">
+			<datalist id="json-datalist"></datalist>
+			<label id="alertWord" style="color: red"></label>
+			<br />
+			<label style="color: purple">Please double the vowels to show long vowels.</label>
+			<br />
+			<br />
+			<button id="analyse-recording" disabled>Analyse</button>
+			<button id="save-recording" disabled>Download</button>
+		</section>
+
+		<section class="experiment" style="padding: 5px;">
+			<div id="audios-container"></div>
+			<audio id="recording"></audio>
+			<label id="edgeNotice" style="color: green;"></label>
+		</section>
+		<section class="experiment" style="padding: 5px;">
+			<div id="result" style="color: purple"></div>
+		</section>
+
+		<!--Audio Player-->
+		<div id="media-player" class="container" style="width: 80%">
+			<audio id="myAudio" class="video-js vjs-default-skin"></audio>
+		</div>
+	</div>
+
+	<script src="JavaScript/dropdown.js"></script>
+	<script src="JavaScript/Speak.js"></script>
 </asp:Content>

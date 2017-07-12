@@ -31,6 +31,9 @@ document.querySelector('#search').onclick = function () {
 	var wordName = maoriWord.value;
 	var wordCategory = category.value;
 
+	console.log("Name: " + wordName);
+	console.log("Category: " + wordCategory);
+
 	var formData = new FormData();
 	formData.append('wordName', wordName);
 	formData.append('wordCategory', wordCategory);

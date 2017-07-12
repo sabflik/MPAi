@@ -2,7 +2,6 @@ body {
     /*background-color: #eee;*/
     background-color: white;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-    padding-top: 120px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -62,10 +61,6 @@ ul {
 
 #navigation {
     background-color: white;
-}
-
-.navbar-right {
-    margin: 7.5px -15px;
 }
 
 #wrapper {
