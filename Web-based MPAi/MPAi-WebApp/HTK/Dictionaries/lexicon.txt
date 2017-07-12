@@ -1,0 +1,37 @@
+SENT-END [] sil
+SENT-START [] sil
+hau        [hau]        h au
+hei        [hei]        h ei
+hoe        [hoe]        h oe
+hoihoi     [hoihoi]     h oi h oi
+hou        [hou]        h ou
+hë         [hë]         h ee 
+hï         [hï]         h ii 
+kei        [kei]        k ei 
+kë         [kë]         k ee 
+kï         [kï]         k ii 
+mao        [mao]        m ao
+matiu      [matiu]      m a t i u
+mau        [mau]        m au
+moutere    [moutere]    m ou t e r e
+mätao      [mätao]      m aa t ao 
+mätau      [mätau]      m aa t au 
+mätou      [mätou]      m aa t ou 
+pae        [pae]        p ae
+pai        [pai]        p ai
+pao        [pao]        p ao
+pau        [pau]        p au
+pou        [pou]        p ou
+pö         [pö]         p oo
+sil        [sil]        sil
+silence    [silence]    sil
+tae        [tae]        t ae
+tai        [tai]        t ai
+toetoe     [toetoe]     t oe t oe
+toi        [toi]        t oi
+täne       [täne]       t aa n e
+tënei      [tënei]      t ee n ei
+tü         [tü]         t uu
+
+
+
