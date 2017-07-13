@@ -25,7 +25,7 @@
 		<section style="padding: 5px;">
 			<div>
 				<p>
-					<button id="change">Change</button>
+					<input type="button" id="change" value="Change" />
 				</p>
 			</div>
 			<div id="result" style="color: purple"></div>
