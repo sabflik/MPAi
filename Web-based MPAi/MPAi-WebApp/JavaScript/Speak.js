@@ -66,49 +66,49 @@ function captureUserMedia(mediaConstraints, successCallback, errorCallback) {
 	navigator.mediaDevices.getUserMedia(mediaConstraints).then(successCallback).catch(errorCallback);
 }
 
-document.querySelector('#start-recording').onclick = function () {
-	this.disabled = true;
-	document.querySelector('#stop-recording').disabled = false;
-	document.querySelector('#save-recording').disabled = true;
-	document.querySelector('#analyse-recording').disabled = true;
-	document.querySelector('#save-recording').textContent = "Download";
-	audiosContainer.innerHTML = "";
-	currentBlob = null;
-	edgeNotice.innerText = "";
-	result.innerText = "";
-	captureUserMedia(mediaConstraints, onMediaSuccess, onMediaError);
-};
+//document.querySelector('#start-recording').onclick = function () {
+//	this.disabled = true;
+//	document.querySelector('#stop-recording').disabled = false;
+//	document.querySelector('#save-recording').disabled = true;
+//	document.querySelector('#analyse-recording').disabled = true;
+//	document.querySelector('#save-recording').textContent = "Download";
+//	audiosContainer.innerHTML = "";
+//	currentBlob = null;
+//	edgeNotice.innerText = "";
+//	result.innerText = "";
+//	captureUserMedia(mediaConstraints, onMediaSuccess, onMediaError);
+//};
 
-document.querySelector('#stop-recording').onclick = function () {
-	this.disabled = true;
-	mediaRecorder.stop();
-	if (!IsChrome) {
-		mediaRecorder.stream.stop();
-	}
-	document.querySelector('#start-recording').disabled = false;
-	document.querySelector('#save-recording').disabled = false;
-	document.querySelector('#analyse-recording').disabled = false;
-	// delete auio player on Edge
-	if (IsEdge) {
-		audiosContainer.remove(recordingPlayer);
-		edgeNotice.innerText = "Successfully recorded!";
-	}
-};
+//document.querySelector('#stop-recording').onclick = function () {
+//	this.disabled = true;
+//	mediaRecorder.stop();
+//	if (!IsChrome) {
+//		mediaRecorder.stream.stop();
+//	}
+//	document.querySelector('#start-recording').disabled = false;
+//	document.querySelector('#save-recording').disabled = false;
+//	document.querySelector('#analyse-recording').disabled = false;
+//	// delete auio player on Edge
+//	if (IsEdge) {
+//		audiosContainer.remove(recordingPlayer);
+//		edgeNotice.innerText = "Successfully recorded!";
+//	}
+//};
 
-document.querySelector('#save-recording').onclick = function () {
-	mediaRecorder.save();
-};
+//document.querySelector('#save-recording').onclick = function () {
+//	mediaRecorder.save();
+//};
 
-document.querySelector('#analyse-recording').onclick = function () {
-	this.disabled = true;
-	analyse(currentBlob);
-};
+//document.querySelector('#analyse-recording').onclick = function () {
+//	this.disabled = true;
+//	analyse(currentBlob);
+//};
 
 document.querySelector('#maoriWord').oninput = function () {
 	alertWord.innerText = "";
-	if (audiosContainer.innerHTML !== "" && document.querySelector("#stop-recording").disabled === true) {
-		document.querySelector('#analyse-recording').disabled = false;
-	}
+	//if (audiosContainer.innerHTML !== "" && document.querySelector("#stop-recording").disabled === true) {
+	//	document.querySelector('#analyse-recording').disabled = false;
+	//}
 };
 
 // Record audio
@@ -137,7 +137,7 @@ function onMediaSuccess(stream) {
 					+ currentdate.getSeconds();
 
 		// Amend dowload button text
-		document.querySelector("#save-recording").textContent = "Download (" + bytesToSize(blob.size) + ")";
+		//document.querySelector("#save-recording").textContent = "Download (" + bytesToSize(blob.size) + ")";
 		// Add a player to play the recording
 		recordingPlayer = document.createElement('audio');
 		recordingPlayer = mergeProps(audio, {
@@ -184,10 +184,10 @@ function bytesToSize(bytes) {
 
 // initialization
 window.onbeforeunload = function () {
-	document.querySelector('#start-recording').disabled = false;
-	document.querySelector('#stop-recording').disabled = true;
-	document.querySelector('#save-recording').disabled = true;
-	document.querySelector('#analyse-recording').disabled = true;
+	//document.querySelector('#start-recording').disabled = false;
+	//document.querySelector('#stop-recording').disabled = true;
+	//document.querySelector('#save-recording').disabled = true;
+	//document.querySelector('#analyse-recording').disabled = true;
 	document.getElementById(maoriWord.id).value = "";
 };
 

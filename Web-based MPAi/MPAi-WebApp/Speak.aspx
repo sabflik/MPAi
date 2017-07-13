@@ -12,10 +12,6 @@
 			<label id="alertWord" style="color: red"></label>
 			<br />
 			<label style="color: purple">Please double the vowels to show long vowels.</label>
-			<br />
-			<br />
-			<button id="analyse-recording" disabled>Analyse</button>
-			<button id="save-recording" disabled>Download</button>
 		</section>
 
 		<section class="experiment" style="padding: 5px;">
