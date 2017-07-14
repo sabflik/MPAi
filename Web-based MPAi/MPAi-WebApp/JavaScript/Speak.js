@@ -48,6 +48,11 @@ player.on('finishRecord', function () {
 	analyse(blob);
 });
 
+$(window).resize(function () {
+    player.wavesurfer.drawer.containerWidth = player.wavesurfer.drawer.container.clientWidth;
+    player.wavesurfer.drawBuffer();
+});
+
 
 
 

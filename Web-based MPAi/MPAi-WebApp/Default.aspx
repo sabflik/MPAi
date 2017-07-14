@@ -25,7 +25,7 @@
 						</a>
 					</div>
 					<div class="col-xs-12 col-sm-4">
-						<a>
+						<a href="Scoreboard.aspx">
 							<div class="menu-card">
 								<img src="Resources/Document-icon.png" alt="Pattern" />
 								<h2>Scoreboard</h2>

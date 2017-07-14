@@ -20,7 +20,10 @@ player.on('error', function (error) {
 	console.log('error:', error);
 });
 
-
+$(window).resize(function () {
+    player.wavesurfer.drawer.containerWidth = player.width;
+    player.wavesurfer.drawBuffer();
+});
 
 
 var obj;
