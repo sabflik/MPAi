@@ -202,3 +202,8 @@ section {
 #myAudio {
     background-color: #FFFFFF;
 }
+
+#doughnut {
+    width: 400px;
+    height: 400px;
+}
