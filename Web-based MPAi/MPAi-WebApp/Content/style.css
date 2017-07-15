@@ -2,6 +2,7 @@ body {
     /*background-color: #eee;*/
     background-color: white;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    min-width: 500px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -201,9 +202,4 @@ section {
 
 #myAudio {
     background-color: #FFFFFF;
-}
-
-#doughnut {
-    width: 400px;
-    height: 400px;
 }

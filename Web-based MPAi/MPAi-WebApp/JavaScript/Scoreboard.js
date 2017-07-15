@@ -8,8 +8,11 @@ $(document).ready(function () {
         if (data === undefined || data === null) {
             console.log("ERROR: Couldn't retrieve data");
         } else {
-            console.log("Score"+ data.score);
-            populateDonut(data.score);
+            console.log("Current Score" + data.currentScore);
+            populateDonut(data.currentScore);
+
+            console.log("Number of Scores" + data.scores.length);
+            populateTimeScale(data.scores);
         }
     });  
 });
@@ -40,7 +43,7 @@ function populateDonut(score) {
 
     //Set text in middle of doughnut
     //Code adapted from https://jsfiddle.net/cmyker/ooxdL2vj/
-    Chart.pluginService.register({
+    var centreTextPlugin = {
         beforeDraw: function (chart) {
             var width = chart.chart.width,
                 height = chart.chart.height,
@@ -51,18 +54,19 @@ function populateDonut(score) {
             ctx.font = fontSize + "em sans-serif";
             ctx.textBaseline = "middle";
 
-            var text = score+"%",
+            var text = score + "%",
                 textX = Math.round((width - ctx.measureText(text).width) / 2),
                 textY = height / 2;
 
             ctx.fillText(text, textX, textY);
             ctx.save();
         }
-    });
+    };
 
-    var chart = new Chart(document.getElementById('doughnut'), {
+    new Chart(document.getElementById('doughnut'), {
         type: 'doughnut',
         data: data,
+        plugins: [centreTextPlugin],
         options: {
             responsive: true,
             legend: { display: false },
@@ -70,6 +74,84 @@ function populateDonut(score) {
         }
     });
 }
+
+
+/*TIME SCALE graph
+This graph shows progress of user's scores over time
+*/
+function populateTimeScale(scores) {
+
+    var ctx = document.getElementById("timeScale");
+
+    var dataset = [];
+
+    for (var i = 0; i < scores.length; i++) {
+        dataset.push({
+            x: moment(scores[i].time, 'DD/MM/YYYY'),
+            y: scores[i].score
+        });
+    }
+
+    var data = {
+        datasets: [{
+            label: 'MPAi Score',
+            data: dataset,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 2
+        }]
+    };
+
+    var options = {
+        animation: false,
+        layout: {
+            padding: {
+                left: 20,
+                right: 20,
+                top: 0,
+                bottom: 0
+            }
+        },
+        legend: {
+            display: false
+        },
+        scales: {
+            xAxes: [{
+                type: 'time',
+                time: {
+                    unit: 'month'
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Time'
+                }
+            }, ],
+            yAxes: [{
+                ticks: {
+                    max: 100,
+                    min: 0,
+                    stepSize: 10
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Score'
+                }
+            }]
+        },
+    }
+
+    new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: options
+    });
+    Chart.defaults.global.defaultFontFamily = '"Open Sans", Arial, sans-serif';
+    Chart.defaults.global.defaultFontSize = 12;
+    Chart.defaults.global.defaultFontColor = '#000';
+    Chart.defaults.global.defaultFontStyle = 500;
+}
+
 
 
 // xhr fuction
