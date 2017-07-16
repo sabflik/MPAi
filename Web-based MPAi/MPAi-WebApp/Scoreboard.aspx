@@ -9,13 +9,13 @@
 				<div class="row">
 					<div class="col-xs-12 col-sm-8">
 						<div class="chart">
-							<label>Your progress:</label>
+							<label>My progress:</label>
 							<canvas id="timeScale"></canvas>
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-4">
 						<div class="chart">
-							<label>Your current score:</label>
+							<label>My current score:</label>
 							<canvas id="doughnut"></canvas>
 						</div>
 					</div>

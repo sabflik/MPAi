@@ -5,10 +5,14 @@
 	<div class="container" style="margin: 0 auto;">
 
 		<section class="experiment" style="padding: 5px;">
-			<br />
 			<label for="maoriWord">Your Maori word to pronounce:</label>
-			<input type="text" id="maoriWord" list="json-datalist" placeholder="Search...">
-			<datalist id="json-datalist"></datalist>
+			<div id="search-bar" class="input-group input-group-lg">
+					<input id="maoriWord" class="form-control" autofocus type="text" name="q" placeholder="Search...">
+
+					<span class="input-group-btn">
+						<input id="search" class="btn btn-default" type="button" value="Go!" />
+					</span>
+				</div>
 			<label id="alertWord" style="color: red"></label>
 			<br />
 			<label style="color: purple">Please double the vowels to show long vowels.</label>
@@ -23,12 +27,13 @@
 			<div id="result" style="color: purple"></div>
 		</section>
 
-		<!--Audio Player-->
-		<div id="media-player" class="container" style="width: 80%">
+		<section style="padding: 5px;">
+			<!--Audio Player-->
 			<audio id="myAudio" class="video-js vjs-default-skin"></audio>
-		</div>
+		</section>
 	</div>
 
+	<script src="JavaScript/jquery.auto-complete.js"></script>
 	<script src="JavaScript/dropdown.js"></script>
 	<script src="JavaScript/Speak.js"></script>
 </asp:Content>

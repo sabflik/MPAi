@@ -19,6 +19,7 @@
 
 	<link href="//vjs.zencdn.net/5.11.6/video-js.min.css" rel="stylesheet">
 	<link href="https://collab-project.github.io/videojs-record/dist/css/videojs.record.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="Content/jquery.auto-complete.css">
 
 	<script src="//vjs.zencdn.net/5.11.6/video.min.js"></script>
 
