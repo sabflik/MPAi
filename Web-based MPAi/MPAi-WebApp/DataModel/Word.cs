@@ -5,7 +5,7 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace UploadRecording.DataModel
+namespace MPAi_WebApp.DataModel
 {
     [Table("Word")]
     public partial class Word

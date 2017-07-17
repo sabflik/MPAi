@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 
-namespace UploadRecording.DataModel
+namespace MPAi_WebApp.DataModel
 {
     public class MPAiContext : DbContext
     {

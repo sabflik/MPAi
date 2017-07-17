@@ -1,0 +1,1494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8AA47B5-26E0-4646-A2B9-33EFA8F4753F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MPAi_WebApp</RootNamespace>
+    <AssemblyName>MPAi-WebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\jquery.auto-complete.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\videojs.record.css" />
+    <Content Include="Dropdown.aspx" />
+    <Content Include="HTK\Dictionaries\lexicon.txt" />
+    <Content Include="HTK\Evaluations\result.txt" />
+    <Content Include="HTK\Tools\Cluster.exe" />
+    <Content Include="HTK\Tools\HBuild.exe" />
+    <Content Include="HTK\Tools\HCompV.exe" />
+    <Content Include="HTK\Tools\HCopy.exe" />
+    <Content Include="HTK\Tools\HDMan.exe" />
+    <Content Include="HTK\Tools\HERest.exe" />
+    <Content Include="HTK\Tools\HHEd.exe" />
+    <Content Include="HTK\Tools\HInit.exe" />
+    <Content Include="HTK\Tools\HLEd.exe" />
+    <Content Include="HTK\Tools\HList.exe" />
+    <Content Include="HTK\Tools\HLMCopy.exe" />
+    <Content Include="HTK\Tools\HLRescore.exe" />
+    <Content Include="HTK\Tools\HLStats.exe" />
+    <Content Include="HTK\Tools\HMMIRest.exe" />
+    <Content Include="HTK\Tools\HParse.exe" />
+    <Content Include="HTK\Tools\HQuant.exe" />
+    <Content Include="HTK\Tools\HRest.exe" />
+    <Content Include="HTK\Tools\HResults.exe" />
+    <Content Include="HTK\Tools\HSGen.exe" />
+    <Content Include="HTK\Tools\HSLab.exe" />
+    <Content Include="HTK\Tools\HSmooth.exe" />
+    <Content Include="HTK\Tools\HVite.exe" />
+    <Content Include="HTK\Tools\LAdapt.exe" />
+    <Content Include="HTK\Tools\LBuild.exe" />
+    <Content Include="HTK\Tools\LFoF.exe" />
+    <Content Include="HTK\Tools\LGCopy.exe" />
+    <Content Include="HTK\Tools\LGList.exe" />
+    <Content Include="HTK\Tools\LGPrep.exe" />
+    <Content Include="HTK\Tools\LLink.exe" />
+    <Content Include="HTK\Tools\LMerge.exe" />
+    <Content Include="HTK\Tools\LNewMap.exe" />
+    <Content Include="HTK\Tools\LNorm.exe" />
+    <Content Include="HTK\Tools\LPlex.exe" />
+    <Content Include="HTK\Tools\LSubset.exe" />
+    <Content Include="JavaScript\BackUpMediaStreamRecorder.js" />
+    <Content Include="JavaScript\Chart.bundle.js" />
+    <Content Include="JavaScript\dropdown.js" />
+    <Content Include="JavaScript\jquery.auto-complete.js" />
+    <Content Include="JavaScript\Listen.js" />
+    <Content Include="JavaScript\main.js" />
+    <Content Include="JavaScript\recorder.js" />
+    <Content Include="JavaScript\Scoreboard.js" />
+    <Content Include="JavaScript\Speak.js" />
+    <Content Include="JavaScript\videojs.record.js" />
+    <Content Include="JavaScript\videojs.record.recorderjs.js" />
+    <Content Include="JavaScript\videojs.wavesurfer.js" />
+    <Content Include="JavaScript\wavesurfer.min.js" />
+    <Content Include="Listen.aspx" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Play.aspx" />
+    <Content Include="Save.aspx" />
+    <Content Include="Speak.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Json\audio.json" />
+    <Content Include="HTK\Batches\DataPreparer.bat" />
+    <Content Include="HTK\Batches\Experiment.bat" />
+    <Content Include="HTK\Batches\FileTest.bat" />
+    <Content Include="HTK\Batches\HDMan.Log" />
+    <Content Include="HTK\Batches\HMMGenerater.bat" />
+    <Content Include="HTK\Batches\HVite.log" />
+    <Content Include="HTK\Batches\LiveTest.bat" />
+    <Content Include="HTK\Batches\ModelEvaluater.bat" />
+    <Content Include="HTK\Batches\ModelEvaluaterModified.bat" />
+    <Content Include="HTK\Batches\RecordingPicker.bat" />
+    <Content Include="HTK\Batches\RecordingRenamer.bat" />
+    <Content Include="HTK\Dictionaries\dictionary" />
+    <Content Include="HTK\Dictionaries\FullPhoneList" />
+    <Content Include="HTK\Dictionaries\FullPhoneListAdded" />
+    <Content Include="HTK\Dictionaries\FullPhoneListMerged" />
+    <Content Include="HTK\Dictionaries\monophones0" />
+    <Content Include="HTK\Dictionaries\monophones1" />
+    <Content Include="HTK\Dictionaries\Prompts.pmpt" />
+    <Content Include="HTK\Dictionaries\tiedlist" />
+    <Content Include="HTK\Dictionaries\tri-dictionary" />
+    <Content Include="HTK\Dictionaries\triphones1" />
+    <Content Include="HTK\Dictionaries\WordList.wlist" />
+    <Content Include="HTK\Evaluations\evaluation.scp" />
+    <Content Include="HTK\Grammars\Grammar.gram" />
+    <Content Include="HTK\Grammars\WordNet.wdnet" />
+    <Content Include="HTK\HMMs\hmm0\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm0\macros" />
+    <Content Include="HTK\HMMs\hmm0\proto" />
+    <Content Include="HTK\HMMs\hmm0\vFloors" />
+    <Content Include="HTK\HMMs\hmm10\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm10\macros" />
+    <Content Include="HTK\HMMs\hmm11\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm11\macros" />
+    <Content Include="HTK\HMMs\hmm12\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm12\macros" />
+    <Content Include="HTK\HMMs\hmm13\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm13\macros" />
+    <Content Include="HTK\HMMs\hmm14\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm14\macros" />
+    <Content Include="HTK\HMMs\hmm15\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm15\macros" />
+    <Content Include="HTK\HMMs\hmm1\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm1\macros" />
+    <Content Include="HTK\HMMs\hmm2\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm2\macros" />
+    <Content Include="HTK\HMMs\hmm3\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm3\macros" />
+    <Content Include="HTK\HMMs\hmm4\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm4\macros" />
+    <Content Include="HTK\HMMs\hmm5\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm5\macros" />
+    <Content Include="HTK\HMMs\hmm6\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm6\macros" />
+    <Content Include="HTK\HMMs\hmm7\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm7\macros" />
+    <Content Include="HTK\HMMs\hmm8\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm8\macros" />
+    <Content Include="HTK\HMMs\hmm9\hmmdefs" />
+    <Content Include="HTK\HMMs\hmm9\macros" />
+    <Content Include="HTK\HMMs\stats" />
+    <Content Include="HTK\HMMs\train.scp" />
+    <Content Include="HTK\HMMs\trees" />
+    <Content Include="HTK\MFCs\11-5-2016%4010-18-28%401462918708461.mfc" />
+    <Content Include="HTK\MFCs\11-5-2016%4011-29-46%401462922986538.mfc" />
+    <Content Include="HTK\MFCs\11-5-2016%4012-44-42%401462927482523.mfc" />
+    <Content Include="HTK\MFCs\11-5-2016%4014-21-8%401462933268744.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-18-14%401499739494073.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-18-37%401499739517510.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-18-54%401499739534759.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-24-20%401499739860551.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-24-35%401499739875051.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-25-8%401499739908105.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-26-52%401499740012419.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-28-14%401499740094482.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-29-46%401499740186575.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-31-54%401499740314026.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-34-16%401499740456410.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-36-35%401499740595639.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-38-23%401499740703020.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4014-44-31%401499741071960.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4015-10-14%401499742614899.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4015-3-19%401499742199452.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4015-9-49%401499742589003.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-25-13%401499747113567.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-25-34%401499747134391.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-29-27%401499747367378.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-30-54%401499747454929.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-31-43%401499747503261.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-32-52%401499747572546.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-35-21%401499747721850.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-45-30%401499748330386.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-50-7%401499748607303.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4016-55-22%401499748922804.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4017-10-14%401499749814885.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4017-16-55%401499750215065.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4017-7-6%401499749626412.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4018-12-22%401499753542727.mfc" />
+    <Content Include="HTK\MFCs\11-7-2017%4018-13-9%401499753589806.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4013-0-55%401463101255078.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4013-1-16%401463101276096.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4013-1-39%401463101299550.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4013-1-5%401463101265590.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4013-1-57%401463101317402.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4013-2-22%401463101342476.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4014-28-36%401463106516156.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4014-28-4%401463106484852.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4014-36-53%401463107013058.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4014-37-27%401463107047535.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4014-50-38%401463107838192.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4014-50-55%401463107855524.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-15-7%401463109307222.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-19-23%401463109563429.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-22-16%401463109736791.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-22-24%401463109744428.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-29-56%401463110196143.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-30-29%401463110229176.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-32-19%401463110339112.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-33-51%401463110431191.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-36-59%401463110619493.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-37-14%401463110634028.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-39-24%401463110764779.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-41-17%401463110877003.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-42-12%401463110932409.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-42-18%401463110938053.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-42-5%401463110925529.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-44-23%401463111063636.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-44-28%401463111068051.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-46-20%401463111180384.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4015-56-4%401463111764897.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-1-37%401463112097199.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-17-43%401463113063565.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-19-29%401463113169795.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-19-38%401463113178236.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-20-37%401463113237267.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-20-49%401463113249179.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-21-33%401463113293819.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-21-43%401463113303681.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-45-12%401463114712928.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-45-28%401463114728951.mfc" />
+    <Content Include="HTK\MFCs\13-5-2016%4016-8-36%401463112516464.mfc" />
+    <Content Include="HTK\MFCs\15-6-2017%4016-43-2%401497501782654.mfc" />
+    <Content Include="HTK\MFCs\18-5-2016%4014-44-24%401463539464006.mfc" />
+    <Content Include="HTK\MFCs\18-5-2016%4014-44-58%401463539498134.mfc" />
+    <Content Include="HTK\MFCs\18-5-2016%4014-44-6%401463539446777.mfc" />
+    <Content Include="HTK\MFCs\19-4-2017%4018-6-14%401492581974959.mfc" />
+    <Content Include="HTK\MFCs\2-6-2016%4021-21-49%401464859309962.mfc" />
+    <Content Include="HTK\MFCs\20-4-2017%4021-0-20%401492678820271.mfc" />
+    <Content Include="HTK\MFCs\23-5-2016%4022-32-59%401463999579158.mfc" />
+    <Content Include="HTK\MFCs\27-6-2016%4023-35-52%401467027352539.mfc" />
+    <Content Include="HTK\MFCs\6-4-2017%4020-0-19%401491465619026.mfc" />
+    <Content Include="HTK\MFCs\6-7-2017%4015-37-22%401499312242028.mfc" />
+    <Content Include="HTK\MFCs\6-7-2017%4016-12-12%401499314332829.mfc" />
+    <Content Include="HTK\MFCs\6-7-2017%4016-13-5%401499314385493.mfc" />
+    <Content Include="HTK\MFCs\6-7-2017%4016-20-39%401499314839910.mfc" />
+    <Content Include="HTK\MFCs\6-7-2017%4016-22-43%401499314963735.mfc" />
+    <Content Include="HTK\MFCs\6-7-2017%4016-24-54%401499315094686.mfc" />
+    <Content Include="HTK\MFCs\6-7-2017%4016-24-9%401499315049796.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%4016-21-0%401499401260493.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-49-31%401499370571743.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-49-41%401499370581394.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-49-47%401499370587467.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-49-54%401499370594250.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-50-0%401499370600059.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-50-25%401499370625489.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-50-33%401499370633515.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-50-38%401499370638714.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-50-42%401499370642939.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-50-51%401499370651188.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-50-57%401499370657471.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-51-1%401499370661026.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-51-11%401499370671366.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-51-42%401499370702077.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-51-52%401499370712739.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-52-0%401499370720485.mfc" />
+    <Content Include="HTK\MFCs\7-7-2017%407-53-4%401499370784754.mfc" />
+    <Content Include="HTK\MFCs\7253534962 %281%29.mfc" />
+    <Content Include="HTK\MFCs\7253534962.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-aroha-R003M-04.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hau-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hau-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hau-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hau-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hau-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hau-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hau-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hei-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hei-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hei-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hei-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hei-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hei-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hei-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hei-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoe-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoe-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoe-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoe-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoe-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoe-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoe-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoe-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoihoi-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoihoi-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoihoi-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoihoi-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoihoi-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoihoi-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hoihoi-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hou-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hou-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hou-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hou-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hou-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hou-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hou-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hou-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hë-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hë-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hë-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hë-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hë-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hë-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hë-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hë-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hï-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hï-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hï-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hï-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hï-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hï-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hï-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-hï-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kei-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kei-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kei-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kei-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kei-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kei-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kei-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kei-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kë-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kë-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kë-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kë-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kë-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kë-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kë-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kë-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kï-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kï-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kï-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kï-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kï-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kï-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kï-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-kï-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mao-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mao-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mao-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mao-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mao-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mao-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mao-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mao-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-matiu-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-matiu-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-matiu-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-matiu-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-matiu-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-matiu-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-matiu-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-matiu-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mau-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mau-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mau-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mau-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mau-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mau-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mau-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mau-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-moutere-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-moutere-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-moutere-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-moutere-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-moutere-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-moutere-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-moutere-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-moutere-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätao-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätao-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätao-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätao-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätao-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätau-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätau-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätau-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätau-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätau-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätau-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätou-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätou-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätou-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätou-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätou-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-mätou-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pae-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pae-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pae-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pae-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pae-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pae-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pae-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pae-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pai-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pai-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pai-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pai-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pai-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pai-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pai-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pai-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pao-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pao-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pao-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pao-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pao-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pao-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pao-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pao-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pau-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pau-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pau-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pau-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pau-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pau-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pau-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pau-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pou-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pou-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pou-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pou-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pou-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pou-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pou-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pö-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pö-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pö-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pö-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pö-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pö-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-pö-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tae-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tae-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tae-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tae-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tae-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tae-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tae-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tai-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tai-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tai-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tai-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tai-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tai-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tai-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tai-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toetoe-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toetoe-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toetoe-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toetoe-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toetoe-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toetoe-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toetoe-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toetoe-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toi-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toi-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toi-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toi-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toi-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toi-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toi-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-toi-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-täne-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-täne-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-täne-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-täne-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-täne-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-täne-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-täne-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-täne-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tënei-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tënei-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tënei-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tënei-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tënei-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tënei-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tü-R001M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tü-R002M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tü-R003M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tü-R004M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tü-R005M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tü-R006M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tü-R007M.mfc" />
+    <Content Include="HTK\MFCs\oldfemale-word-tü-R008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hau-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hau-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hau-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hau-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hau-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hau-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hei-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hei-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hei-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hei-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hei-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hei-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoe-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoe-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoe-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoe-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoe-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoe-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoe-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoihoi-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoihoi-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoihoi-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoihoi-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoihoi-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoihoi-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hoihoi-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hou-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hou-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hou-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hou-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hou-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hou-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hë-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hë-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hë-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hë-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hë-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hë-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hï-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hï-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hï-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hï-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-hï-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kei-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kei-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kei-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kei-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kei-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kei-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kë-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kë-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kë-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kë-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kë-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kë-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kë-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kï-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kï-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kï-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kï-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kï-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kï-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-kï-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mao-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mao-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mao-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mao-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mao-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mao-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mao-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-matiu-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-matiu-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-matiu-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-matiu-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-matiu-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-matiu-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-matiu-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mau-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mau-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mau-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mau-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mau-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mau-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mau-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-moutere-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-moutere-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-moutere-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-moutere-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-moutere-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-moutere-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-moutere-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätao-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätao-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätao-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätao-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätao-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätao-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätau-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätau-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätau-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätau-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätau-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätau-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätou-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätou-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätou-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätou-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-mätou-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pae-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pae-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pae-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pae-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pae-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pae-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pai-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pai-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pai-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pai-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pai-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pai-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pao-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pao-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pao-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pao-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pao-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pao-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pao-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pau-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pau-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pau-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pau-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pau-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pau-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pau-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pou-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pou-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pou-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pou-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pou-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pou-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pou-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pö-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pö-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pö-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pö-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pö-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pö-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-pö-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tae-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tae-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tae-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tae-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tae-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tae-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tae-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tai-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tai-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tai-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tai-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tai-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tai-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tai-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toetoe-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toetoe-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toetoe-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toetoe-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toetoe-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toetoe-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toetoe-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toi-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toi-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toi-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toi-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toi-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toi-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-toi-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-täne-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-täne-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-täne-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-täne-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-täne-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-täne-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-täne-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tënei-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tënei-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tënei-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tënei-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tënei-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tënei-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tënei-K010M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tü-K004M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tü-K005M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tü-K006M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tü-K007M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tü-K008M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tü-K009M.mfc" />
+    <Content Include="HTK\MFCs\oldmale-word-tü-K010M.mfc" />
+    <Content Include="HTK\MFCs\recording.mfc" />
+    <Content Include="HTK\MFCs\script.scp" />
+    <Content Include="HTK\MFCs\youngfemale-word-hau-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hau-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hau-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hau-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hau-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hau-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hei-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hei-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hei-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hei-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hei-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hei-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoe-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoe-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoe-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoe-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoe-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoe-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoihoi-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoihoi-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoihoi-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoihoi-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoihoi-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hoihoi-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hou-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hou-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hou-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hou-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hou-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hou-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hë-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hë-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hë-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hë-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hë-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hë-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hï-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hï-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hï-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hï-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hï-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-hï-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kei-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kei-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kei-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kei-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kei-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kei-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kë-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kë-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kë-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kë-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kë-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kë-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kï-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kï-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kï-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kï-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kï-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-kï-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mao-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mao-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mao-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mao-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mao-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mao-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-matiu-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-matiu-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-matiu-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-matiu-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-matiu-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-matiu-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mau-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mau-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mau-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mau-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mau-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mau-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-moutere-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-moutere-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-moutere-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-moutere-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-moutere-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-moutere-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätao-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätao-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätao-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätao-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätao-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätao-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätau-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätau-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätau-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätau-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätau-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätau-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätou-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätou-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätou-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätou-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätou-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-mätou-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pae-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pae-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pae-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pae-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pae-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pae-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pai-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pai-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pai-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pai-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pai-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pai-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pao-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pao-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pao-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pao-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pao-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pao-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pau-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pau-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pau-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pau-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pau-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pau-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pou-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pou-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pou-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pou-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pou-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pou-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pö-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pö-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pö-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pö-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pö-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-pö-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tae-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tae-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tae-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tae-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tae-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tae-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tai-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tai-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tai-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tai-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tai-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tai-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toetoe-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toetoe-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toetoe-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toetoe-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toetoe-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toetoe-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toi-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toi-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toi-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toi-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toi-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-toi-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-täne-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-täne-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-täne-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-täne-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-täne-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-täne-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tënei-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tënei-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tënei-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tënei-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tënei-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tënei-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tü-L1H01M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tü-L1H02M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tü-L1H03M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tü-L1H04M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tü-L1H05M.mfc" />
+    <Content Include="HTK\MFCs\youngfemale-word-tü-L1H06M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hau-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hau-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hau-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hau-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hei-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hei-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hei-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hei-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hoe-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hoe-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hoe-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hoe-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hoihoi-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hoihoi-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hoihoi-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hoihoi-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hou-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hou-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hou-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hou-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hë-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hë-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hë-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hë-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hï-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hï-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hï-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-hï-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kei-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kei-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kei-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kei-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kë-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kë-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kë-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kë-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kï-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kï-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kï-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-kï-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mao-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mao-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mao-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mao-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-matiu-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-matiu-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-matiu-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-matiu-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mau-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mau-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mau-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mau-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-moutere-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-moutere-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-moutere-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-moutere-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätao-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätao-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätao-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätao-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätau-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätau-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätau-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätau-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätou-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätou-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätou-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-mätou-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pae-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pae-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pae-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pae-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pai-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pai-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pai-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pai-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pao-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pao-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pao-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pao-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pau-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pau-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pau-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pau-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pou-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pou-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pou-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pou-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pö-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pö-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pö-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-pö-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tae-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tae-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tae-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tae-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tai-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tai-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tai-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tai-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-toetoe-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-toetoe-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-toetoe-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-toetoe-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-toi-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-toi-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-toi-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-täne-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-täne-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-täne-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-täne-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tënei-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tënei-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tënei-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tënei-L1Y05M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tü-L1Y01M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tü-L1Y02M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tü-L1Y03M.mfc" />
+    <Content Include="HTK\MFCs\youngmale-word-tü-L1Y05M.mfc" />
+    <Content Include="HTK\MLFs\AlignedMLF.mlf" />
+    <Content Include="HTK\MLFs\PhoneMLF0.mlf" />
+    <Content Include="HTK\MLFs\PhoneMLF1.mlf" />
+    <Content Include="HTK\MLFs\RecMLF.mlf" />
+    <Content Include="HTK\MLFs\TriphoneMLF.mlf" />
+    <Content Include="HTK\MLFs\WordMLF.mlf" />
+    <Content Include="HTK\Params\global.ded" />
+    <Content Include="HTK\Params\HMMs.conf" />
+    <Content Include="HTK\Params\MFCs.conf" />
+    <Content Include="HTK\Params\mkphones0.led" />
+    <Content Include="HTK\Params\mkphones1.led" />
+    <Content Include="HTK\Params\mktri.hed" />
+    <Content Include="HTK\Params\mktri.led" />
+    <Content Include="HTK\Params\mktriphones.ded" />
+    <Content Include="HTK\Params\sil.hed" />
+    <Content Include="HTK\Params\Test.conf" />
+    <Content Include="HTK\Params\tree.hed" />
+    <Content Include="HTK\Perls\ChaSet.pl" />
+    <Content Include="HTK\Perls\EditTree.pl" />
+    <Content Include="HTK\Perls\maketrihed.pl" />
+    <Content Include="HTK\Perls\MergeFullPhoneList.pl" />
+    <Content Include="HTK\Perls\MFCs2Script.pl" />
+    <Content Include="HTK\Perls\prompts2mlf.pl" />
+    <Content Include="HTK\Perls\prompts2wlist.pl" />
+    <Content Include="HTK\Perls\RecordingRenamer.pl" />
+    <Content Include="HTK\Perls\Recordings2Prompts.pl" />
+    <Content Include="HTK\Perls\Script2Train.pl" />
+    <Content Include="HTK\Perls\ScriptGenerater.pl" />
+    <Content Include="Json\dummy.json" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scoreboard.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Site.Master" />
+    <Content Include="Statistics.aspx" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Site.Mobile.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AddPhoneNumber.aspx.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="DataModel\DbAdapter.cs" />
+    <Compile Include="DataModel\MPAiContext.cs" />
+    <Compile Include="DataModel\Recording.cs" />
+    <Compile Include="DataModel\Score.cs" />
+    <Compile Include="DataModel\Speaker.cs" />
+    <Compile Include="DataModel\User.cs" />
+    <Compile Include="DataModel\Word.cs" />
+    <Compile Include="Dropdown.aspx.cs">
+      <DependentUpon>Dropdown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dropdown.aspx.designer.cs">
+      <DependentUpon>Dropdown.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTKEngine.cs" />
+    <Compile Include="Listen.aspx.cs">
+      <DependentUpon>Listen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Listen.aspx.designer.cs">
+      <DependentUpon>Listen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Play.aspx.cs">
+      <DependentUpon>Play.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Play.aspx.designer.cs">
+      <DependentUpon>Play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Save.aspx.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Save.aspx.designer.cs">
+      <DependentUpon>Save.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Speak.aspx.cs">
+      <DependentUpon>Speak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Speak.aspx.designer.cs">
+      <DependentUpon>Speak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scoreboard.aspx.cs">
+      <DependentUpon>Scoreboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scoreboard.aspx.designer.cs">
+      <DependentUpon>Scoreboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="Statistics.aspx.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Statistics.aspx.designer.cs">
+      <DependentUpon>Statistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64796</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64796/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
