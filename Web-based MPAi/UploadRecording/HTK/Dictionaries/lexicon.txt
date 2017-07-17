@@ -3,9 +3,9 @@ SENT-START	[]	sil
 aroha	[aroha]	a r o h a
 awa	[awa]	a w a
 enoho	[enoho]	e n o h o
-haeremai	[haeremai]	h ae r e m ai
-hangi	[hängï]	h aa N ii
-hapuu	[hapü]	h a p uu
+haere_mai	[haere_mai]	h ae r e sp m ai
+hängï	[hängï]	h aa N ii
+hapü	[hapü]	h a p uu
 hau	[hau]	h au
 hei	[hei]	h ei
 hoe	[hoe]	h oe
@@ -16,22 +16,22 @@ hë	[hë]	h ee
 hï	[hï]	h ii 
 iwa	[iwa]	i w	a	
 iwi	[iwi]	i w i
-kainga	[käinga]	k aa i N a
-kakiteano	[kakiteanö]	k a k i t e a n oo
-kapai	[kapai]	k a p ai
+käinga	[käinga]	k aa i N a
+ka_kite_anö	[ka_kite_anö]	k a sp k i t e sp a n oo
+ka_pai	[ka_pai]	k a sp p ai
 karakia	[karakia]	k a r a k i a
 karanga	[karanga]	k a r a N a
-kaumaatua	[kaumätua]	k au m aa t u a
+kaumätua	[kaumätua]	k au m aa t u a
 kei	[kei]	k ei
 kete	[kete]	k e t e
-kiaora	[kiaora]	k i a o r a
+kia_ora	[kia_ora]	k i a sp o r a
 koha	[koha]	k o h a
-korero	[körero]	k oo r e r o
+körero	[körero]	k oo r e r o
 kuia	[kuia]	k u i a
 kë	[kë]	k ee 
 kï	[kï]	k ii
 mao	[mao]	m ao
-maori	[mäori] m aa o r i
+mäori	[mäori] m aa o r i
 marae	[marae] m a r ae
 matariki	[matariki] m a t a r i k i
 matiu	[matiu]	m a t i u
@@ -50,7 +50,7 @@ pai	[pai]	p ai
 pao	[pao]	p ao
 pau	[pau]	p au
 pou	[pou]	p ou
-powhiri	[pöwhiri]	p oo f i r i
+pöwhiri	[pöwhiri]	p oo f i r i
 puku	[puku]	p u k u
 pö	[pö]	p oo
 rangatiratanga	[rangatiratanga] r a N a t i r a t a N a	
@@ -66,25 +66,25 @@ tangi	[tangi]	t a N i
 taringa	[taringa]	t a r i N a
 tauhou	[tauhou]	t au h ou
 tekau	[tekau]	t e k au
-tena_koe	[tënäkoe]	t ee n aa k oe
+tënä_koe	[tënä_koe]	t ee n aa sp k oe
 tikanga	[tikanga]	t i k a N a
-timata	[tïmata]	t ii m a t a
+tïmata	[tïmata]	t ii m a t a
 toetoe	[toetoe]	t oe t oe
 toi	[toi]	t oi
 toru	[toru]	t o r u
-turanga	[türanga]	t uu r a N a
+türanga	[türanga]	t uu r a N a
 täne	[täne]	t aa n e
 tënei	[tënei]	t ee n ei
 tü	[tü]	t uu
-wa	[wä]	w aa
+wä	[wä]	w aa
 waewae	[waewae]	w ae w ae
-wahi	[wähi]	w aa h i
+wähi	[wähi]	w aa h i
 waiata	[waiata]	w ai a t a
 wairua	[wairua]	w ai r u a
 waka	[waka]	w a k a
 waru	[waru]	w a r u
-wha	[whä]	f aa
-whanau	[whänau]	f aa n au
+whä	[whä]	f aa
+whänau	[whänau]	f aa n au
 whare	[whare]	f a r e
 whitu	[whitu]	f i t u
 
