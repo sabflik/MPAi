@@ -2,7 +2,7 @@ SENT-END	[]	sil
 SENT-START	[]	sil
 aroha	[aroha]	a r o h a
 awa	[awa]	a w a
-enoho	[enoho]	e n o h o
+e_noho	[e_noho]	e sp n o h o
 haere_mai	[haere_mai]	h ae r e sp m ai
 hängï	[hängï]	h aa N ii
 hapü	[hapü]	h a p uu
