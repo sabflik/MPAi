@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MPAi_WebApp.DataModel;
+using Newtonsoft.Json;
 using System;
 using System.Data;
 using System.Diagnostics;
@@ -18,11 +19,20 @@ namespace MPAi_WebApp
             Debug.WriteLine("Name: " + name);
             Debug.WriteLine("Category: " + category);
 
+            /*
             // get data from Json
             string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\audio.json");
             string json = File.ReadAllText(jsonPath);
             DataSet dataSet = JsonConvert.DeserializeObject<DataSet>(json);
             DataTable dataTable = dataSet.Tables[category];
+            */
+
+            // Get data from database
+            DataTable dataTable;
+            using (MPAiContext context = MPAiContext.InitializeDBModel())
+            {
+                dataTable = DbAdapter.GenerateAudioDataTable(context, name, category);
+            }
 
             // make a new Dataset
             DataSet newDataSet = new DataSet("newDataSet");
@@ -37,27 +47,26 @@ namespace MPAi_WebApp
             newDataSet.Tables.Add(newDataTable);
 
             // set filtered data to a new Json
-            foreach (DataRow row in dataTable.Rows)
-            {
-                if (row["name"].Equals(name) && row["category"].Equals(category))
+                foreach (DataRow row in dataTable.Rows)
                 {
-                    DataRow newRow = newDataTable.NewRow();
-                    newRow["name"] = row["name"];
-                    newRow["category"] = row["category"];
-                    newRow["path"] = row["path"];
-                    newDataTable.Rows.Add(newRow);
+                    if (row["name"].Equals(name) && row["category"].Equals(category))
+                    {
+                        DataRow newRow = newDataTable.NewRow();
+                        newRow["name"] = row["name"];
+                        newRow["category"] = row["category"];
+                        newRow["path"] = row["path"];
+                        newDataTable.Rows.Add(newRow);
+                    }
                 }
-            }
-            string newJson;
-            if (newDataTable.Rows.Count == 0)
-            {
-                newJson = "nothing";
-            }
-            else
-            {
-                newJson = JsonConvert.SerializeObject(newDataSet, Formatting.Indented);
-            }
-
+                string newJson;
+                if (newDataTable.Rows.Count == 0)
+                {
+                    newJson = "nothing";
+                }
+                else
+                {
+                    newJson = JsonConvert.SerializeObject(newDataSet, Formatting.Indented);
+                }
             // Output result as JSON
             Response.Clear();
             Response.ContentType = "application/json; charset=utf-8";
