@@ -4,32 +4,34 @@ using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 
 namespace MPAi_WebApp.DataModel
 {
     public class MPAiContext : DbContext
     {
-        private String path = "C:\\Users\\adm.Jayden\\Work Folders\\Documents\\MPAiDatabase";
-        public string Path
+        // This is where the database files are placed. For convenience, this is the My Documents folder.
+        private String filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        public string FilePath
         {
             get
             {
-                return path;
+                return filePath;
             }
             set
             {
-                path = value;
+                filePath = value;
             }
         }
 
         public MPAiContext() : base("name=MPAiModel")
         {
 
-            if (!Directory.Exists(System.IO.Path.Combine(Path, "Database")))
+            if (!Directory.Exists(System.IO.Path.Combine(FilePath, "Database")))
             {
                 // If the folder doesn't exist, create it and initialise the database.
-                Directory.CreateDirectory(System.IO.Path.Combine(Path, "Database"));
+                Directory.CreateDirectory(System.IO.Path.Combine(FilePath, "Database"));
                 Database.SetInitializer<MPAiContext>(new MPAiContextInitializer());
             }
             else
@@ -37,7 +39,7 @@ namespace MPAi_WebApp.DataModel
                 // If the database folder exists, the database has already been created, and doesn't need intialising.
                 Database.SetInitializer<MPAiContext>(null);
             }
-            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.Combine(Path, "Database"));
+            AppDomain.CurrentDomain.SetData("DataDirectory", System.IO.Path.Combine(FilePath, "Database"));
         }
 
         // Variables representing the set of values taken out of the database.
@@ -131,8 +133,8 @@ namespace MPAi_WebApp.DataModel
 
     public class MPAiContextInitializer : CreateDatabaseIfNotExists<MPAiContext>
     {
-        private string AudioFolder = "C:\\Users\\adm.Jayden\\Work Folders\\Documents\\GitHub\\SabFlik\\MPAi\\Web-based MPAi\\UploadRecording\\Audio";
-
+        //private string AudioFolder = "C:\\Users\\adm.Jayden\\Work Folders\\Documents\\GitHub\\SabFlik\\MPAi\\Web-based MPAi\\MPAi-WebApp\\Audio";
+        private string AudioFolder = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"Audio");
         /// <summary>
         /// If the database doesn't exist, it is created.
         /// If it does exist, and the Audio folder a) exists and b) contains at least one .wav file, then
