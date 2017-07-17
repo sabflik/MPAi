@@ -24,6 +24,8 @@ namespace MPAi_WebApp.DataModel
         [Required]
         public float Percentage { get; set; }
 
+        [Required]
+        public DateTime Date { get; set; }
         // Add other fields if the scoreboard calls for it
     }
 }

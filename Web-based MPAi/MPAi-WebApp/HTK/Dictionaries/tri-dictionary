@@ -2,36 +2,35 @@ SENT-END        sil
 SENT-START      sil
 aroha           a+r a-r+o r-o+h o-h+a h-a sp
 awa             a+w a-w+a w-a sp
-enoho           e+n e-n+o n-o+h o-h+o h-o sp
-haeremai        h+ae h-ae+r ae-r+e r-e+m e-m+ai m-ai sp
-hangi           h+aa h-aa+N aa-N+ii N-ii sp
-hapuu           h+a h-a+p a-p+uu p-uu sp
+e_noho          e sp n+o n-o+h o-h+o h-o sp
+haere_mai       h+ae h-ae+r ae-r+e r-e sp m+ai m-ai sp
+hap\374         h+a h-a+p a-p+uu p-uu sp
 hau             h+au h-au sp
 hei             h+ei h-ei sp
 hoe             h+oe h-oe sp
 hoihoi          h+oi h-oi+h oi-h+oi h-oi sp
 hongi           h+o h-o+N o-N+i N-i sp
 hou             h+ou h-ou sp
+h\344ng\357     h+aa h-aa+N aa-N+ii N-ii sp
 h\353           h+ee h-ee sp
 h\357           h+ii h-ii sp
 iwa             i+w i-w+a w-a sp
 iwi             i+w i-w+i w-i sp
-kainga          k+aa k-aa+i aa-i+N i-N+a N-a sp
-kakiteano       k+a k-a+k a-k+i k-i+t i-t+e t-e+a e-a+n a-n+oo n-oo sp
-kapai           k+a k-a+p a-p+ai p-ai sp
+ka_kite_an\366  k+a k-a sp k+i k-i+t i-t+e t-e sp a+n a-n+oo n-oo sp
+ka_pai          k+a k-a sp p+ai p-ai sp
 karakia         k+a k-a+r a-r+a r-a+k a-k+i k-i+a i-a sp
 karanga         k+a k-a+r a-r+a r-a+N a-N+a N-a sp
-kaumaatua       k+au k-au+m au-m+aa m-aa+t aa-t+u t-u+a u-a sp
+kaum\344tua     k+au k-au+m au-m+aa m-aa+t aa-t+u t-u+a u-a sp
 kei             k+ei k-ei sp
 kete            k+e k-e+t e-t+e t-e sp
-kiaora          k+i k-i+a i-a+o a-o+r o-r+a r-a sp
+kia_ora         k+i k-i+a i-a sp o+r o-r+a r-a sp
 koha            k+o k-o+h o-h+a h-a sp
-korero          k+oo k-oo+r oo-r+e r-e+r e-r+o r-o sp
 kuia            k+u k-u+i u-i+a i-a sp
+k\344inga       k+aa k-aa+i aa-i+N i-N+a N-a sp
 k\353           k+ee k-ee sp
 k\357           k+ii k-ii sp
+k\366rero       k+oo k-oo+r oo-r+e r-e+r e-r+o r-o sp
 mao             m+ao m-ao sp
-maori           m+aa m-aa+o aa-o+r o-r+i r-i sp
 marae           m+a m-a+r a-r+ae r-ae sp
 matariki        m+a m-a+t a-t+a t-a+r a-r+i r-i+k i-k+i k-i sp
 matiu           m+a m-a+t a-t+i t-i+u i-u sp
@@ -41,6 +40,7 @@ mihi            m+i m-i+h i-h+i h-i sp
 moana           m+o m-o+a o-a+n a-n+a n-a sp
 mokopuna        m+o m-o+k o-k+o k-o+p o-p+u p-u+n u-n+a n-a sp
 moutere         m+ou m-ou+t ou-t+e t-e+r e-r+e r-e sp
+m\344ori        m+aa m-aa+o aa-o+r o-r+i r-i sp
 m\344tao        m+aa m-aa+t aa-t+ao t-ao sp
 m\344tau        m+aa m-aa+t aa-t+au t-au sp
 m\344tou        m+aa m-aa+t aa-t+ou t-ou sp
@@ -50,9 +50,9 @@ pai             p+ai p-ai sp
 pao             p+ao p-ao sp
 pau             p+au p-au sp
 pou             p+ou p-ou sp
-powhiri         p+oo p-oo+f oo-f+i f-i+r i-r+i r-i sp
 puku            p+u p-u+k u-k+u k-u sp
 p\366           p+oo p-oo sp
+p\366whiri      p+oo p-oo+f oo-f+i f-i+r i-r+i r-i sp
 rangatiratanga  r+a r-a+N a-N+a N-a+t a-t+i t-i+r i-r+a r-a+t a-t+a t-a+N a-N+a N-a sp
 rima            r+i r-i+m i-m+a m-a sp
 rua             r+u r-u+a u-a sp
@@ -66,24 +66,24 @@ tangi           t+a t-a+N a-N+i N-i sp
 taringa         t+a t-a+r a-r+i r-i+N i-N+a N-a sp
 tauhou          t+au t-au+h au-h+ou h-ou sp
 tekau           t+e t-e+k e-k+au k-au sp
-tena_koe        t+ee t-ee+n ee-n+aa n-aa+k aa-k+oe k-oe sp
 tikanga         t+i t-i+k i-k+a k-a+N a-N+a N-a sp
-timata          t+ii t-ii+m ii-m+a m-a+t a-t+a t-a sp
 toetoe          t+oe t-oe+t oe-t+oe t-oe sp
 toi             t+oi t-oi sp
 toru            t+o t-o+r o-r+u r-u sp
-turanga         t+uu t-uu+r uu-r+a r-a+N a-N+a N-a sp
 t\344ne         t+aa t-aa+n aa-n+e n-e sp
 t\353nei        t+ee t-ee+n ee-n+ei n-ei sp
+t\353n\344_koe  t+ee t-ee+n ee-n+aa n-aa sp k+oe k-oe sp
+t\357mata       t+ii t-ii+m ii-m+a m-a+t a-t+a t-a sp
 t\374           t+uu t-uu sp
-wa              w+aa w-aa sp
+t\374ranga      t+uu t-uu+r uu-r+a r-a+N a-N+a N-a sp
 waewae          w+ae w-ae+w ae-w+ae w-ae sp
-wahi            w+aa w-aa+h aa-h+i h-i sp
 waiata          w+ai w-ai+a ai-a+t a-t+a t-a sp
 wairua          w+ai w-ai+r ai-r+u r-u+a u-a sp
 waka            w+a w-a+k a-k+a k-a sp
 waru            w+a w-a+r a-r+u r-u sp
-wha             f+aa f-aa sp
-whanau          f+aa f-aa+n aa-n+au n-au sp
 whare           f+a f-a+r a-r+e r-e sp
 whitu           f+i f-i+t i-t+u t-u sp
+wh\344          f+aa f-aa sp
+wh\344nau       f+aa f-aa+n aa-n+au n-au sp
+w\344           w+aa w-aa sp
+w\344hi         w+aa w-aa+h aa-h+i h-i sp

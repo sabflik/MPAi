@@ -1,50 +1,50 @@
 VERSION=1.0
-N=89   L=171  
+N=90   L=173  
 I=0    W=!NULL               
 I=1    W=!NULL               
 I=2    W=SENT-START          
 I=3    W=aroha               
 I=4    W=!NULL               
 I=5    W=awa                 
-I=6    W=enoho               
-I=7    W=haeremai            
-I=8    W=hangi               
-I=9    W=hapuu               
-I=10   W=hau                 
-I=11   W=hei                 
-I=12   W=hoe                 
-I=13   W=hoihoi              
-I=14   W=hongi               
-I=15   W=hou                 
+I=6    W=e_noho              
+I=7    W=haere_mai           
+I=8    W=hap\374             
+I=9    W=hau                 
+I=10   W=hei                 
+I=11   W=hoe                 
+I=12   W=hoihoi              
+I=13   W=hongi               
+I=14   W=hou                 
+I=15   W=h\344ng\357         
 I=16   W=h\353               
 I=17   W=h\357               
 I=18   W=iwa                 
 I=19   W=iwi                 
-I=20   W=kainga              
-I=21   W=kakiteano           
-I=22   W=kapai               
-I=23   W=karakia             
-I=24   W=karanga             
-I=25   W=kaumaatua           
-I=26   W=kei                 
-I=27   W=kete                
-I=28   W=kiaora              
-I=29   W=koha                
-I=30   W=korero              
-I=31   W=kuia                
-I=32   W=k\353               
-I=33   W=k\357               
+I=20   W=ka_kite_an\366      
+I=21   W=ka_pai              
+I=22   W=karakia             
+I=23   W=karanga             
+I=24   W=kaum\344tua         
+I=25   W=kei                 
+I=26   W=kete                
+I=27   W=kia_ora             
+I=28   W=koha                
+I=29   W=kuia                
+I=30   W=k\344inga           
+I=31   W=k\353               
+I=32   W=k\357               
+I=33   W=k\366rero           
 I=34   W=mao                 
-I=35   W=maori               
-I=36   W=marae               
-I=37   W=matariki            
-I=38   W=matiu               
-I=39   W=mau                 
-I=40   W=maunga              
-I=41   W=mihi                
-I=42   W=moana               
-I=43   W=mokopuna            
-I=44   W=moutere             
+I=35   W=marae               
+I=36   W=matariki            
+I=37   W=matiu               
+I=38   W=mau                 
+I=39   W=maunga              
+I=40   W=mihi                
+I=41   W=moana               
+I=42   W=mokopuna            
+I=43   W=moutere             
+I=44   W=m\344ori            
 I=45   W=m\344tao            
 I=46   W=m\344tau            
 I=47   W=m\344tou            
@@ -54,42 +54,43 @@ I=50   W=pai
 I=51   W=pao                 
 I=52   W=pau                 
 I=53   W=pou                 
-I=54   W=powhiri             
-I=55   W=puku                
-I=56   W=p\366               
+I=54   W=puku                
+I=55   W=p\366               
+I=56   W=p\366whiri          
 I=57   W=rangatiratanga      
 I=58   W=rima                
 I=59   W=rua                 
 I=60   W=tae                 
-I=61   W=tai                 
-I=62   W=tamariki            
-I=63   W=tangi               
-I=64   W=taringa             
-I=65   W=tauhou              
-I=66   W=tekau               
-I=67   W=tena_koe            
+I=61   W=tahi                
+I=62   W=tai                 
+I=63   W=tamariki            
+I=64   W=tangi               
+I=65   W=taringa             
+I=66   W=tauhou              
+I=67   W=tekau               
 I=68   W=tikanga             
-I=69   W=timata              
-I=70   W=toetoe              
-I=71   W=toi                 
-I=72   W=toru                
-I=73   W=turanga             
-I=74   W=t\344ne             
-I=75   W=t\353nei            
+I=69   W=toetoe              
+I=70   W=toi                 
+I=71   W=toru                
+I=72   W=t\344ne             
+I=73   W=t\353nei            
+I=74   W=t\353n\344_koe      
+I=75   W=t\357mata           
 I=76   W=t\374               
-I=77   W=wa                  
+I=77   W=t\374ranga          
 I=78   W=waewae              
-I=79   W=wahi                
-I=80   W=waiata              
-I=81   W=wairua              
-I=82   W=waka                
-I=83   W=waru                
-I=84   W=wha                 
-I=85   W=whanau              
-I=86   W=whare               
-I=87   W=whitu               
-I=88   W=SENT-END            
-J=0     S=88   E=1    
+I=79   W=waiata              
+I=80   W=wairua              
+I=81   W=waka                
+I=82   W=waru                
+I=83   W=whare               
+I=84   W=whitu               
+I=85   W=wh\344              
+I=86   W=wh\344nau           
+I=87   W=w\344               
+I=88   W=w\344hi             
+I=89   W=SENT-END            
+J=0     S=89   E=1    
 J=1     S=0    E=2    
 J=2     S=2    E=3    
 J=3     S=3    E=4    
@@ -176,87 +177,89 @@ J=83    S=84   E=4
 J=84    S=85   E=4    
 J=85    S=86   E=4    
 J=86    S=87   E=4    
-J=87    S=2    E=5    
-J=88    S=2    E=6    
-J=89    S=2    E=7    
-J=90    S=2    E=8    
-J=91    S=2    E=9    
-J=92    S=2    E=10   
-J=93    S=2    E=11   
-J=94    S=2    E=12   
-J=95    S=2    E=13   
-J=96    S=2    E=14   
-J=97    S=2    E=15   
-J=98    S=2    E=16   
-J=99    S=2    E=17   
-J=100   S=2    E=18   
-J=101   S=2    E=19   
-J=102   S=2    E=20   
-J=103   S=2    E=21   
-J=104   S=2    E=22   
-J=105   S=2    E=23   
-J=106   S=2    E=24   
-J=107   S=2    E=25   
-J=108   S=2    E=26   
-J=109   S=2    E=27   
-J=110   S=2    E=28   
-J=111   S=2    E=29   
-J=112   S=2    E=30   
-J=113   S=2    E=31   
-J=114   S=2    E=32   
-J=115   S=2    E=33   
-J=116   S=2    E=34   
-J=117   S=2    E=35   
-J=118   S=2    E=36   
-J=119   S=2    E=37   
-J=120   S=2    E=38   
-J=121   S=2    E=39   
-J=122   S=2    E=40   
-J=123   S=2    E=41   
-J=124   S=2    E=42   
-J=125   S=2    E=43   
-J=126   S=2    E=44   
-J=127   S=2    E=45   
-J=128   S=2    E=46   
-J=129   S=2    E=47   
-J=130   S=2    E=48   
-J=131   S=2    E=49   
-J=132   S=2    E=50   
-J=133   S=2    E=51   
-J=134   S=2    E=52   
-J=135   S=2    E=53   
-J=136   S=2    E=54   
-J=137   S=2    E=55   
-J=138   S=2    E=56   
-J=139   S=2    E=57   
-J=140   S=2    E=58   
-J=141   S=2    E=59   
-J=142   S=2    E=60   
-J=143   S=2    E=61   
-J=144   S=2    E=62   
-J=145   S=2    E=63   
-J=146   S=2    E=64   
-J=147   S=2    E=65   
-J=148   S=2    E=66   
-J=149   S=2    E=67   
-J=150   S=2    E=68   
-J=151   S=2    E=69   
-J=152   S=2    E=70   
-J=153   S=2    E=71   
-J=154   S=2    E=72   
-J=155   S=2    E=73   
-J=156   S=2    E=74   
-J=157   S=2    E=75   
-J=158   S=2    E=76   
-J=159   S=2    E=77   
-J=160   S=2    E=78   
-J=161   S=2    E=79   
-J=162   S=2    E=80   
-J=163   S=2    E=81   
-J=164   S=2    E=82   
-J=165   S=2    E=83   
-J=166   S=2    E=84   
-J=167   S=2    E=85   
-J=168   S=2    E=86   
-J=169   S=2    E=87   
-J=170   S=4    E=88   
+J=87    S=88   E=4    
+J=88    S=2    E=5    
+J=89    S=2    E=6    
+J=90    S=2    E=7    
+J=91    S=2    E=8    
+J=92    S=2    E=9    
+J=93    S=2    E=10   
+J=94    S=2    E=11   
+J=95    S=2    E=12   
+J=96    S=2    E=13   
+J=97    S=2    E=14   
+J=98    S=2    E=15   
+J=99    S=2    E=16   
+J=100   S=2    E=17   
+J=101   S=2    E=18   
+J=102   S=2    E=19   
+J=103   S=2    E=20   
+J=104   S=2    E=21   
+J=105   S=2    E=22   
+J=106   S=2    E=23   
+J=107   S=2    E=24   
+J=108   S=2    E=25   
+J=109   S=2    E=26   
+J=110   S=2    E=27   
+J=111   S=2    E=28   
+J=112   S=2    E=29   
+J=113   S=2    E=30   
+J=114   S=2    E=31   
+J=115   S=2    E=32   
+J=116   S=2    E=33   
+J=117   S=2    E=34   
+J=118   S=2    E=35   
+J=119   S=2    E=36   
+J=120   S=2    E=37   
+J=121   S=2    E=38   
+J=122   S=2    E=39   
+J=123   S=2    E=40   
+J=124   S=2    E=41   
+J=125   S=2    E=42   
+J=126   S=2    E=43   
+J=127   S=2    E=44   
+J=128   S=2    E=45   
+J=129   S=2    E=46   
+J=130   S=2    E=47   
+J=131   S=2    E=48   
+J=132   S=2    E=49   
+J=133   S=2    E=50   
+J=134   S=2    E=51   
+J=135   S=2    E=52   
+J=136   S=2    E=53   
+J=137   S=2    E=54   
+J=138   S=2    E=55   
+J=139   S=2    E=56   
+J=140   S=2    E=57   
+J=141   S=2    E=58   
+J=142   S=2    E=59   
+J=143   S=2    E=60   
+J=144   S=2    E=61   
+J=145   S=2    E=62   
+J=146   S=2    E=63   
+J=147   S=2    E=64   
+J=148   S=2    E=65   
+J=149   S=2    E=66   
+J=150   S=2    E=67   
+J=151   S=2    E=68   
+J=152   S=2    E=69   
+J=153   S=2    E=70   
+J=154   S=2    E=71   
+J=155   S=2    E=72   
+J=156   S=2    E=73   
+J=157   S=2    E=74   
+J=158   S=2    E=75   
+J=159   S=2    E=76   
+J=160   S=2    E=77   
+J=161   S=2    E=78   
+J=162   S=2    E=79   
+J=163   S=2    E=80   
+J=164   S=2    E=81   
+J=165   S=2    E=82   
+J=166   S=2    E=83   
+J=167   S=2    E=84   
+J=168   S=2    E=85   
+J=169   S=2    E=86   
+J=170   S=2    E=87   
+J=171   S=2    E=88   
+J=172   S=4    E=89   

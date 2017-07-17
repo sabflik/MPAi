@@ -2,36 +2,35 @@ SENT-END        []              sil
 SENT-START      []              sil
 aroha           [aroha]         a r o h a sp
 awa             [awa]           a w a sp
-enoho           [enoho]         e n o h o sp
-haeremai        [haeremai]      h ae r e m ai sp
-hangi           [h\344ng\357]   h aa N ii sp
-hapuu           [hap\374]       h a p uu sp
+e_noho          [e_noho]        e sp n o h o sp
+haere_mai       [haere_mai]     h ae r e sp m ai sp
+hap\374         [hap\374]       h a p uu sp
 hau             [hau]           h au sp
 hei             [hei]           h ei sp
 hoe             [hoe]           h oe sp
 hoihoi          [hoihoi]        h oi h oi sp
 hongi           [hongi]         h o N i sp
 hou             [hou]           h ou sp
+h\344ng\357     [h\344ng\357]   h aa N ii sp
 h\353           [h\353]         h ee sp
 h\357           [h\357]         h ii sp
 iwa             [iwa]           i w a sp
 iwi             [iwi]           i w i sp
-kainga          [k\344inga]     k aa i N a sp
-kakiteano       [kakitean\366]  k a k i t e a n oo sp
-kapai           [kapai]         k a p ai sp
+ka_kite_an\366  [ka_kite_an\366] k a sp k i t e sp a n oo sp
+ka_pai          [ka_pai]        k a sp p ai sp
 karakia         [karakia]       k a r a k i a sp
 karanga         [karanga]       k a r a N a sp
-kaumaatua       [kaum\344tua]   k au m aa t u a sp
+kaum\344tua     [kaum\344tua]   k au m aa t u a sp
 kei             [kei]           k ei sp
 kete            [kete]          k e t e sp
-kiaora          [kiaora]        k i a o r a sp
+kia_ora         [kia_ora]       k i a sp o r a sp
 koha            [koha]          k o h a sp
-korero          [k\366rero]     k oo r e r o sp
 kuia            [kuia]          k u i a sp
+k\344inga       [k\344inga]     k aa i N a sp
 k\353           [k\353]         k ee sp
 k\357           [k\357]         k ii sp
+k\366rero       [k\366rero]     k oo r e r o sp
 mao             [mao]           m ao sp
-maori           [m\344ori]      m aa o r i sp
 marae           [marae]         m a r ae sp
 matariki        [matariki]      m a t a r i k i sp
 matiu           [matiu]         m a t i u sp
@@ -41,6 +40,7 @@ mihi            [mihi]          m i h i sp
 moana           [moana]         m o a n a sp
 mokopuna        [mokopuna]      m o k o p u n a sp
 moutere         [moutere]       m ou t e r e sp
+m\344ori        [m\344ori]      m aa o r i sp
 m\344tao        [m\344tao]      m aa t ao sp
 m\344tau        [m\344tau]      m aa t au sp
 m\344tou        [m\344tou]      m aa t ou sp
@@ -50,9 +50,9 @@ pai             [pai]           p ai sp
 pao             [pao]           p ao sp
 pau             [pau]           p au sp
 pou             [pou]           p ou sp
-powhiri         [p\366whiri]    p oo f i r i sp
 puku            [puku]          p u k u sp
 p\366           [p\366]         p oo sp
+p\366whiri      [p\366whiri]    p oo f i r i sp
 rangatiratanga  [rangatiratanga] r a N a t i r a t a N a sp
 rima            [rima]          r i m a sp
 rua             [rua]           r u a sp
@@ -64,24 +64,24 @@ tangi           [tangi]         t a N i sp
 taringa         [taringa]       t a r i N a sp
 tauhou          [tauhou]        t au h ou sp
 tekau           [tekau]         t e k au sp
-tena_koe        [t\353n\344koe] t ee n aa k oe sp
 tikanga         [tikanga]       t i k a N a sp
-timata          [t\357mata]     t ii m a t a sp
 toetoe          [toetoe]        t oe t oe sp
 toi             [toi]           t oi sp
 toru            [toru]          t o r u sp
-turanga         [t\374ranga]    t uu r a N a sp
 t\344ne         [t\344ne]       t aa n e sp
 t\353nei        [t\353nei]      t ee n ei sp
+t\353n\344_koe  [t\353n\344_koe] t ee n aa sp k oe sp
+t\357mata       [t\357mata]     t ii m a t a sp
 t\374           [t\374]         t uu sp
-wa              [w\344]         w aa sp
+t\374ranga      [t\374ranga]    t uu r a N a sp
 waewae          [waewae]        w ae w ae sp
-wahi            [w\344hi]       w aa h i sp
 waiata          [waiata]        w ai a t a sp
 wairua          [wairua]        w ai r u a sp
 waka            [waka]          w a k a sp
 waru            [waru]          w a r u sp
-wha             [wh\344]        f aa sp
-whanau          [wh\344nau]     f aa n au sp
 whare           [whare]         f a r e sp
 whitu           [whitu]         f i t u sp
+wh\344          [wh\344]        f aa sp
+wh\344nau       [wh\344nau]     f aa n au sp
+w\344           [w\344]         w aa sp
+w\344hi         [w\344hi]       w aa h i sp

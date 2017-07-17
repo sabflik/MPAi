@@ -1,4 +1,4 @@
-RO 100 "C:/Users/adm.Jayden/Work Folders/Documents/GitHub/SabFlik/MPAi/Web-based MPAi/UploadRecording/HTK/HMMs/stats"
+RO 100 "C:/Users/adm.Jayden/Work Folders/Documents/GitHub/SabFlik/MPAi/Web-based MPAi/MPAi-WebApp/HTK/HMMs/stats"
 
 TR 0
 
@@ -290,8 +290,8 @@ TB 350 "ST_sil_4_" {("sil","*-sil+*","sil+*","*-sil").state[4]}
  
 TR 1
 
-AU "C:/Users/adm.Jayden/Work Folders/Documents/GitHub/SabFlik/MPAi/Web-based MPAi/UploadRecording/HTK/Dictionaries/FullPhoneListMerged"
+AU "C:/Users/adm.Jayden/Work Folders/Documents/GitHub/SabFlik/MPAi/Web-based MPAi/MPAi-WebApp/HTK/Dictionaries/FullPhoneListMerged"
 
-CO "C:/Users/adm.Jayden/Work Folders/Documents/GitHub/SabFlik/MPAi/Web-based MPAi/UploadRecording/HTK/Dictionaries/tiedlist"
+CO "C:/Users/adm.Jayden/Work Folders/Documents/GitHub/SabFlik/MPAi/Web-based MPAi/MPAi-WebApp/HTK/Dictionaries/tiedlist"
 
-ST "C:/Users/adm.Jayden/Work Folders/Documents/GitHub/SabFlik/MPAi/Web-based MPAi/UploadRecording/HTK/HMMs/trees"
+ST "C:/Users/adm.Jayden/Work Folders/Documents/GitHub/SabFlik/MPAi/Web-based MPAi/MPAi-WebApp/HTK/HMMs/trees"
