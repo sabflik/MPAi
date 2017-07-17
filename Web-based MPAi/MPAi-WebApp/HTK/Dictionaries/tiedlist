@@ -1,20 +1,26 @@
+N
 t+aa
 t+ae
-t+ai t+ae
+t+ai
 a
 e
+f
 h
+t+au t+aa
 i
 k
 m
 n
+o
 p
 r
 t
 u
+w
 t+ee
+t+ii
 t+oe
-t+oi
+t+oi t+oe
 t+uu
 t-ae
 t-ai
@@ -23,10 +29,12 @@ t-au
 t-oe
 t-oi
 t-ou
+e-k+au
 t-uu
+k-e+t
 aa
-ae t-ae
-ai t-ai
+ae
+ai
 ao t-ao
 au t-au
 ee
@@ -38,66 +46,262 @@ oo
 ou t-ou
 sp
 uu t-uu
-aa-t+ao t+ae
-aa-t+au t+ae
-aa-t+ou
+k-i+a
+k-i+t
+k-o+h
+k-o+p
+aa-t+ao
+aa-t+au aa-t+ao
+aa-t+ou t+ae
+uu-r+a
+k-u+i
+a-h+i
+a-k+a
+a-k+i
+k-aa+i
+a-m+a
+a-n+a
+a-o+r
+a-r+a
+a-r+e
+a-r+i
+a-r+o
+a-r+u
+m-aa+o
 m-aa+t
+a-t+a
 a-t+i
-m+aa m
-m+ao m
-m+au m
+n-o+h
+a-w+a
+m+aa
+m+ao
+m+au m+ao
 m+ou m
+m-ai ai
 m-ao t-ao
 m-au t-au
-t-ee+n ee
-t-e+r e
+k-au+m
+t-uu+r t-uu
+m-au+N
+t-ee+n
+t-a+N
+t-a+h
+t-a+m
+t-a+r
+e-m+ai a-m+a
+t-e+a
+t-e+k k-e+t
+t-e+r
 h-oi+h
-t-i+u i
+w-aa+h
+t-i+k
+t-i+r
+t-i+u
+w-ae+w
+w-ai+a
+w-ai+r
+n-au
 n-ei ei
+n-oo oo
+t-o+r
+N-a
+N-i
+a-n+oo
+t-u+a
+w-a+k
+w-a+r
+f+aa
+aa-n+au
+f-aa aa
+w+aa
+w+ae
+w+ai
+w-aa aa
+w-ae
+a+r
+a+w
 oi-h+oi
-m-a+t a
+m-a+r
+m-a+t
+p-oo+f
+e+n
+f+a f
+f+i
 t-oe+t
+h+a
+h+o
+h-a a
+h-i
+h-o
+ai-a+t
+i+w
+i-a
 i-u u
-m+a m
-n-e e
-r-e e
+m-i+h
+k+a
+k+e
+k+i k
+k+o
+k+u
+k-a
+k-i
+k-u
+m+a
+m+i
+m+o
+m-a
+n-a N-a
+n-e
+n-o
+o+n
+p+u
+m-o+a
+m-o+k
+r+a
+r+i
+r+u
+r-a
+r-e
+r-i
+r-o n-o
+r-u
+t+a
+t+e t+ee
+t+i
+t+o
+t-a
+t-e e
+t-u
 sil
-p+ae
-p+ai p+ae
+u-a
+w+a
+w-a a
+w-i
+ae-w+ae
+ai-r+u
+N-ii ii
+au-m+aa
+p+ae p
+p+ai
 p+ao p
 p+au p
+aa-N+ii
 p+oo
 p+ou p+oo
+f-a+r w-a+r
 p-ae t-ae
 p-ai t-ai
 p-ao t-ao
 p-au t-au
-p-oo oo
+f-aa+n
+p-oo p-oo+f
 p-ou
-h+au
+p-uu
+i-N+a
+p-u+k k-u
+p-u+n k-u
+a-p+ai p+ai
+a-p+uu
+f-i+r t-i+r
+f-i+t
+h-aa+N
+ii-m+a
+h+aa h+a
+h+ae
+h+au h+a
 h+ee
 h+ei
 h+ii h+ee
-h+oe h+ei
-h+oi oi-h+oi
-h+ou h
+h+oe
+h+oi h+oe
+h+ou
+h-ae+r
 h-au t-au
 h-ee ee
 h-ei ei
 h-ii ii
 h-oe t-oe
 h-oi t-oi
-h-ou t-ou
-ee-n+ei n
-t-aa+n aa
+h-ou p-ou
+i-a+o i-a
+i-h+i
+n-aa+k
+i-k+a
+i-k+i
+i-m+a
+au-N+a N
+ee-n+aa
+ee-n+ei
+i-r+a uu-r+a
+i-r+i
+i-t+e
+i-t+u
+i-w+a
+i-w+i
+ae-r+e
+o-N+i aa-N+ii
+t-ii+m
+t-aa+n
 oe-t+oe t+oe
+r-ae ae
+o-a+n
+oo-f+i f+i
+a-r+ae
+t-au+h
+o-h+a
+o-h+o
+o-k+o
+k-oo+r
+o-n+o
+oo-r+e
+o-p+u a-p+uu
+e-a+n
+o-r+a
+o-r+i
+o-r+u a-r+u
+r-a+N
+r-a+k
+r-a+t
+r-e+m
+r-e+r t-e+r
+N-a+t m-a+t
 m-ou+t
-e-r+e r
-aa-n+e n
-k+ee k
-k+ei k
-k+ii k
+e-n+o
+aa-h+i
+r-i+N
+r-i+k
+r-i+m
+aa-i+N
+au-h+ou
+e-r+e
+e-r+o
+e-t+e i-t+e
+aa-n+e ee-n+ei
+r-o+h
+aa-o+r
+h-a+p
+k+aa
+k+au
+k+ee
+k+ei
+k+ii k+ee
+aa-t+u
+k+oo k+o
+r-u+a
+k-au
 k-ee ee
 k-ei ei
 k-ii ii
-ou-t+e
+k-oe t-oe
+u-i+a
+h-o+N
+u-k+u k+u
+aa-k+oe
+a-N+a N
+a-N+i aa-N+ii
+u-n+a
+k-a+N
+ou-t+e i-t+e
+k-a+k
+k-a+p h-a+p
+k-a+r

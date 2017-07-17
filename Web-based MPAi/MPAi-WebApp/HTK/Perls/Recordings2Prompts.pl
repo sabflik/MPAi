@@ -34,7 +34,7 @@ sub AnalyzeFileName
         my($name,$path,$suffix) = fileparse($fullname, ($Ext));
         if ($Ext eq ".wav" || $Ext eq ".WAV"){
             my @parts=split(/-/,$name);
-            if(@parts == 4){
+            if(@parts >= 4){
                 print PMPT "$name"." "."$parts[2]\n";
             }
 			else{

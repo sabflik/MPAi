@@ -1,37 +1,91 @@
-SENT-END [] sil
-SENT-START [] sil
-hau        [hau]        h au
-hei        [hei]        h ei
-hoe        [hoe]        h oe
-hoihoi     [hoihoi]     h oi h oi
-hou        [hou]        h ou
-hë         [hë]         h ee 
-hï         [hï]         h ii 
-kei        [kei]        k ei 
-kë         [kë]         k ee 
-kï         [kï]         k ii 
-mao        [mao]        m ao
-matiu      [matiu]      m a t i u
-mau        [mau]        m au
-moutere    [moutere]    m ou t e r e
-mätao      [mätao]      m aa t ao 
-mätau      [mätau]      m aa t au 
-mätou      [mätou]      m aa t ou 
-pae        [pae]        p ae
-pai        [pai]        p ai
-pao        [pao]        p ao
-pau        [pau]        p au
-pou        [pou]        p ou
-pö         [pö]         p oo
-sil        [sil]        sil
-silence    [silence]    sil
-tae        [tae]        t ae
-tai        [tai]        t ai
-toetoe     [toetoe]     t oe t oe
-toi        [toi]        t oi
-täne       [täne]       t aa n e
-tënei      [tënei]      t ee n ei
-tü         [tü]         t uu
-
+SENT-END	[]	sil
+SENT-START	[]	sil
+aroha	[aroha]	a r o h a
+awa	[awa]	a w a
+e_noho	[e_noho]	e sp n o h o
+haere_mai	[haere_mai]	h ae r e sp m ai
+hängï	[hängï]	h aa N ii
+hapü	[hapü]	h a p uu
+hau	[hau]	h au
+hei	[hei]	h ei
+hoe	[hoe]	h oe
+hoihoi	[hoihoi]	h oi h oi
+hongi	[hongi]	h o N i
+hou	[hou]	h ou
+hë	[hë]	h ee 
+hï	[hï]	h ii 
+iwa	[iwa]	i w	a	
+iwi	[iwi]	i w i
+käinga	[käinga]	k aa i N a
+ka_kite_anö	[ka_kite_anö]	k a sp k i t e sp a n oo
+ka_pai	[ka_pai]	k a sp p ai
+karakia	[karakia]	k a r a k i a
+karanga	[karanga]	k a r a N a
+kaumätua	[kaumätua]	k au m aa t u a
+kei	[kei]	k ei
+kete	[kete]	k e t e
+kia_ora	[kia_ora]	k i a sp o r a
+koha	[koha]	k o h a
+körero	[körero]	k oo r e r o
+kuia	[kuia]	k u i a
+kë	[kë]	k ee 
+kï	[kï]	k ii
+mao	[mao]	m ao
+mäori	[mäori] m aa o r i
+marae	[marae] m a r ae
+matariki	[matariki] m a t a r i k i
+matiu	[matiu]	m a t i u
+mau	[mau]	m au
+maunga	[maunga] m au N a
+mihi	[mihi]	m i h i
+moana	[moana]	m o a n a
+mokopuna	[mokopuna]	m o k o p u n a
+moutere	[moutere]	m ou t e r e
+mätao	[mätao]	m aa t ao 
+mätau	[mätau]	m aa t au 
+mätou	[mätou]	m aa t ou 
+ono	[ono]	o n o
+pae	[pae]	p ae
+pai	[pai]	p ai
+pao	[pao]	p ao
+pau	[pau]	p au
+pou	[pou]	p ou
+pöwhiri	[pöwhiri]	p oo f i r i
+puku	[puku]	p u k u
+pö	[pö]	p oo
+rangatiratanga	[rangatiratanga] r a N a t i r a t a N a	
+rima	[rima]	r i m a
+rua	[rua]	r u a
+sil	[sil]	sil
+silence	[silence]	sil
+tae	[tae]	t ae
+tahi	[tahi]	t a h i
+tai	[tai]	t ai
+tamariki	[tamariki]	t a m a r i k i
+tangi	[tangi]	t a N i
+taringa	[taringa]	t a r i N a
+tauhou	[tauhou]	t au h ou
+tekau	[tekau]	t e k au
+tënä_koe	[tënä_koe]	t ee n aa sp k oe
+tikanga	[tikanga]	t i k a N a
+tïmata	[tïmata]	t ii m a t a
+toetoe	[toetoe]	t oe t oe
+toi	[toi]	t oi
+toru	[toru]	t o r u
+türanga	[türanga]	t uu r a N a
+täne	[täne]	t aa n e
+tënei	[tënei]	t ee n ei
+tü	[tü]	t uu
+wä	[wä]	w aa
+waewae	[waewae]	w ae w ae
+wähi	[wähi]	w aa h i
+waiata	[waiata]	w ai a t a
+wairua	[wairua]	w ai r u a
+waka	[waka]	w a k a
+waru	[waru]	w a r u
+whä	[whä]	f aa
+whänau	[whänau]	f aa n au
+whare	[whare]	f a r e
+whitu	[whitu]	f i t u
 
 
