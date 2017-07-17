@@ -15,29 +15,28 @@
 					</span>
 				</div>
 				<label>Category: </label>
-				<select id="category" class="form-control">
-					<option value="youngfemale">Young Female</option>
-					<option value="oldfemale">Old Female</option>
-					<option value="youngmale">Young Male</option>
-					<option value="oldmale">Old Male</option>
-				</select>
+
 				<div class='wrapper text-center'>
 					<div class="btn-group" data-toggle="buttons">
 						<label class="btn btn-default active" style="width:auto; padding:0px">
-							<input type="radio" name="inputWalls" value="YoungFemale" checked>
+							<input type="radio" name="category" value="MODERN_FEMALE" checked>
 							<img src="Resources/Emotikis/YoungFemale.png" />
+							Modern Female
 						</label>
 						<label class="btn btn-default" style="width:auto; padding:0px">
-							<input type="radio" name="inputWalls" value="YoungMale">
+							<input type="radio" name="category" value="MODERN_MALE">
 							<img src="Resources/Emotikis/YoungMale.png" />
+							Modern Male
 						</label>
 						<label class="btn btn-default" style="width:auto; padding:0px">
-							<input type="radio" name="inputWalls" value="OldFemale">
+							<input type="radio" name="category" value="KUIA_FEMALE">
 							<img src="Resources/Emotikis/OldFemale.png" />
+							Kuia Female
 						</label>
 						<label class="btn btn-default" style="width:auto; padding:0px">
-							<input type="radio" name="inputWalls" value="OldMale">
+							<input type="radio" name="category" value="KAUMATUA_MALE">
 							<img src="Resources/Emotikis/OldMale.png" />
+							Kaumatua Male
 						</label>
 					</div>
 				</div>

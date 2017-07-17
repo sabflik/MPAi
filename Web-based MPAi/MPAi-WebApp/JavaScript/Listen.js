@@ -31,8 +31,16 @@ var count = 0;
 
 // Button 'search' action
 document.querySelector('#search').onclick = function () {
+    loadAudio();
+};
+
+$("input[name='category']").change(function () {
+    loadAudio();
+});
+
+function loadAudio() {
     var wordName = maoriWord.value;
-    var wordCategory = category.value;
+    var wordCategory = $("input[name='category']:checked").val();
 
     console.log("Name: " + wordName);
     console.log("Category: " + wordCategory);
@@ -51,7 +59,7 @@ document.querySelector('#search').onclick = function () {
             player.waveform.load(obj.resultJsonTable[0].path);
         }
     });
-};
+}
 
 // Button 'change' action
 document.querySelector('#change').onclick = function () {
