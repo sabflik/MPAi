@@ -5,8 +5,8 @@
 		    height: 200,
 		    plugins: {
 		        wavesurfer: {
-		            waveColor: "#588efb",
-		            progressColor: "#f043a4",
+		            waveColor: "#000000",
+		            progressColor: "#AB0F12",
 		            debug: true,
 		            cursorWidth: 1,
 		            msDisplayMax: 20,

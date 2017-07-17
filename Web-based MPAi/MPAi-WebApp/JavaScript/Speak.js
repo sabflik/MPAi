@@ -6,8 +6,8 @@
 			plugins: {
 				wavesurfer: {
 					src: "live",
-					waveColor: "#588efb",
-					progressColor: "#f043a4",
+					waveColor: "#000000",
+					progressColor: "#AB0F12",
 					debug: true,
 					cursorWidth: 1,
 					msDisplayMax: 20,

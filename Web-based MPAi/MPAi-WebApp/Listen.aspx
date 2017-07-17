@@ -4,32 +4,42 @@
     <!--Listen Page Content-->
 	<div class="container" style="margin: 0 auto;">
 		<section style="padding: 5px;">
-			<div class="container">
-				<label>Category: </label>
-				<select id="category">
-					<option value="youngfemale">Young Female</option>
-					<option value="oldfemale">Old Female</option>
-					<option value="youngmale">Young Male</option>
-					<option value="oldmale">Old Male</option>
-				</select>
+			<div class="container inner">
+				
 				<label for="maoriWord">Maori word:</label>
 				<div id="search-bar" class="input-group input-group-lg">
-					<%--<div class="input-group-btn">
-						
-						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category <span class="caret"></span></button>--%>
-						<%--<img id="category-dropdown" class="btn dropdown-toggle" src="Resources/Emotikis/YoungFemale.png" alt="dropdown image" data-toggle="dropdown">--%>
-						<%--<ul class="dropdown-menu">
-							<li><a href="#">Young Female</a></li>
-							<li><a href="#">Young Male</a></li>
-							<li><a href="#">Old Female</a></li>
-							<li><a href="#">Old Male</a></li>
-						</ul>
-					</div>--%>
 					<input id="maoriWord" class="form-control" autofocus type="text" name="q" placeholder="Search...">
 
 					<span class="input-group-btn">
 						<input id="search" class="btn btn-default" type="button" value="Go!" />
 					</span>
+				</div>
+				<label>Category: </label>
+				<select id="category" class="form-control">
+					<option value="youngfemale">Young Female</option>
+					<option value="oldfemale">Old Female</option>
+					<option value="youngmale">Young Male</option>
+					<option value="oldmale">Old Male</option>
+				</select>
+				<div class='wrapper text-center'>
+					<div class="btn-group" data-toggle="buttons">
+						<label class="btn btn-default active" style="width:auto; padding:0px">
+							<input type="radio" name="inputWalls" value="YoungFemale" checked>
+							<img src="Resources/Emotikis/YoungFemale.png" />
+						</label>
+						<label class="btn btn-default" style="width:auto; padding:0px">
+							<input type="radio" name="inputWalls" value="YoungMale">
+							<img src="Resources/Emotikis/YoungMale.png" />
+						</label>
+						<label class="btn btn-default" style="width:auto; padding:0px">
+							<input type="radio" name="inputWalls" value="OldFemale">
+							<img src="Resources/Emotikis/OldFemale.png" />
+						</label>
+						<label class="btn btn-default" style="width:auto; padding:0px">
+							<input type="radio" name="inputWalls" value="OldMale">
+							<img src="Resources/Emotikis/OldMale.png" />
+						</label>
+					</div>
 				</div>
 			</div>
 		</section>
