@@ -44,17 +44,21 @@
 		</section>
 
 		<section style="padding: 5px;">
-			<div>
-				<p>
-					<input type="button" id="change" value="Change" />
-				</p>
+			<div class="container inner">
+				<div>
+					<p>
+						<input type="button" id="change" value="Change" />
+					</p>
+				</div>
+				<div id="result" style="color: purple"></div>
 			</div>
-			<div id="result" style="color: purple"></div>
 		</section>
 
 		<section style="padding: 5px;">
-			<!--Audio Player-->
-			<audio id="myAudio" class="video-js vjs-default-skin"></audio>
+			<div class="container inner">
+				<!--Audio Player-->
+				<audio id="myAudio" class="video-js vjs-default-skin"></audio>
+			</div>
 		</section>
 	</div>
 

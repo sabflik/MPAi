@@ -1,3623 +1,3623 @@
 {
-  "oldfemale": [
-    {
-      "name": "hau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hau-R001M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hau-R002M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hau-R003M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hau-R004M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hau-R006M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hau-R007M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hau-R008M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hee-R001M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hee-R002M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hee-R003M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hee-R004M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hee-R005M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hee-R006M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hee-R007M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hee-R008M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hei-R001M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hei-R002M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hei-R003M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hei-R004M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hei-R005M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hei-R006M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hei-R007M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hei-R008M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hii-R001M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hii-R002M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hii-R003M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hii-R004M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hii-R005M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hii-R006M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hii-R007M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hii-R008M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoe-R001M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoe-R002M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoe-R003M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoe-R004M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoe-R005M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoe-R006M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoe-R007M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoe-R008M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoihoi-R002M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoihoi-R003M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoihoi-R004M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoihoi-R005M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoihoi-R006M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoihoi-R007M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hoihoi-R008M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hou-R001M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hou-R002M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hou-R003M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hou-R004M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hou-R005M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hou-R006M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hou-R007M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-hou-R008M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kee-R001M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kee-R002M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kee-R003M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kee-R004M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kee-R005M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kee-R006M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kee-R007M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kee-R008M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kei-R001M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kei-R002M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kei-R003M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kei-R004M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kei-R005M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kei-R006M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kei-R007M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kei-R008M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kii-R001M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kii-R002M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kii-R003M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kii-R004M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kii-R005M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kii-R006M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kii-R007M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-kii-R008M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatao-R003M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatao-R004M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatao-R006M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatao-R007M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatao-R008M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatau-R001M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatau-R003M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatau-R004M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatau-R006M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatau-R007M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatau-R008M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatou-R001M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatou-R002M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatou-R003M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatou-R004M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatou-R006M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-maatou-R008M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mao-R001M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mao-R002M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mao-R003M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mao-R004M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mao-R005M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mao-R006M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mao-R007M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mao-R008M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-matiu-R001M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-matiu-R002M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-matiu-R003M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-matiu-R004M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-matiu-R005M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-matiu-R006M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-matiu-R007M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-matiu-R008M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mau-R001M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mau-R002M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mau-R003M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mau-R004M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mau-R005M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mau-R006M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mau-R007M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-mau-R008M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-moutere-R001M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-moutere-R002M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-moutere-R003M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-moutere-R004M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-moutere-R005M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-moutere-R006M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-moutere-R007M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-moutere-R008M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pae-R001M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pae-R002M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pae-R003M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pae-R004M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pae-R005M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pae-R006M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pae-R007M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pae-R008M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pai-R001M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pai-R002M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pai-R003M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pai-R004M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pai-R005M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pai-R006M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pai-R007M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pai-R008M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pao-R001M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pao-R002M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pao-R003M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pao-R004M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pao-R005M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pao-R006M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pao-R007M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pao-R008M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pau-R001M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pau-R002M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pau-R003M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pau-R004M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pau-R005M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pau-R006M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pau-R007M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pau-R008M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-poo-R001M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-poo-R002M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-poo-R003M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-poo-R004M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-poo-R005M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-poo-R007M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-poo-R008M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pou-R002M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pou-R003M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pou-R004M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pou-R005M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pou-R006M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pou-R007M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-pou-R008M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-taane-R001M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-taane-R002M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-taane-R003M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-taane-R004M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-taane-R005M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-taane-R006M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-taane-R007M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-taane-R008M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tae-R001M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tae-R002M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tae-R004M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tae-R005M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tae-R006M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tae-R007M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tae-R008M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tai-R001M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tai-R002M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tai-R003M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tai-R004M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tai-R005M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tai-R006M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tai-R007M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tai-R008M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-teenei-R002M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-teenei-R003M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-teenei-R005M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-teenei-R006M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-teenei-R007M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-teenei-R008M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toetoe-R001M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toetoe-R002M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toetoe-R003M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toetoe-R004M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toetoe-R005M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toetoe-R006M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toetoe-R007M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toetoe-R008M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toi-R001M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toi-R002M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toi-R003M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toi-R004M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toi-R005M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toi-R006M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toi-R007M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-toi-R008M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tuu-R001M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tuu-R002M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tuu-R003M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tuu-R004M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tuu-R005M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tuu-R006M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tuu-R007M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldfemale",
-      "path": "audio\\oldfemale-word-tuu-R008M.wav"
-    }
-  ],
+	"KUIA_FEMALE": [
+		{
+			"name": "hau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hau-R001M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hau-R002M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hau-R003M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hau-R004M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hau-R006M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hau-R007M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hau-R008M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hee-R001M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hee-R002M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hee-R003M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hee-R004M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hee-R005M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hee-R006M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hee-R007M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hee-R008M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hei-R001M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hei-R002M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hei-R003M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hei-R004M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hei-R005M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hei-R006M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hei-R007M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hei-R008M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hii-R001M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hii-R002M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hii-R003M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hii-R004M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hii-R005M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hii-R006M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hii-R007M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hii-R008M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoe-R001M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoe-R002M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoe-R003M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoe-R004M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoe-R005M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoe-R006M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoe-R007M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoe-R008M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoihoi-R002M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoihoi-R003M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoihoi-R004M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoihoi-R005M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoihoi-R006M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoihoi-R007M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hoihoi-R008M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hou-R001M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hou-R002M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hou-R003M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hou-R004M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hou-R005M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hou-R006M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hou-R007M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-hou-R008M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kee-R001M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kee-R002M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kee-R003M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kee-R004M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kee-R005M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kee-R006M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kee-R007M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kee-R008M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kei-R001M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kei-R002M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kei-R003M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kei-R004M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kei-R005M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kei-R006M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kei-R007M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kei-R008M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kii-R001M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kii-R002M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kii-R003M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kii-R004M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kii-R005M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kii-R006M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kii-R007M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-kii-R008M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatao-R003M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatao-R004M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatao-R006M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatao-R007M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatao-R008M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatau-R001M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatau-R003M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatau-R004M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatau-R006M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatau-R007M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatau-R008M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatou-R001M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatou-R002M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatou-R003M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatou-R004M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatou-R006M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-maatou-R008M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mao-R001M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mao-R002M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mao-R003M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mao-R004M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mao-R005M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mao-R006M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mao-R007M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mao-R008M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-matiu-R001M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-matiu-R002M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-matiu-R003M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-matiu-R004M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-matiu-R005M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-matiu-R006M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-matiu-R007M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-matiu-R008M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mau-R001M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mau-R002M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mau-R003M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mau-R004M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mau-R005M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mau-R006M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mau-R007M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-mau-R008M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-moutere-R001M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-moutere-R002M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-moutere-R003M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-moutere-R004M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-moutere-R005M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-moutere-R006M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-moutere-R007M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-moutere-R008M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pae-R001M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pae-R002M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pae-R003M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pae-R004M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pae-R005M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pae-R006M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pae-R007M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pae-R008M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pai-R001M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pai-R002M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pai-R003M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pai-R004M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pai-R005M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pai-R006M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pai-R007M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pai-R008M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pao-R001M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pao-R002M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pao-R003M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pao-R004M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pao-R005M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pao-R006M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pao-R007M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pao-R008M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pau-R001M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pau-R002M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pau-R003M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pau-R004M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pau-R005M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pau-R006M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pau-R007M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pau-R008M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-poo-R001M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-poo-R002M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-poo-R003M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-poo-R004M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-poo-R005M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-poo-R007M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-poo-R008M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pou-R002M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pou-R003M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pou-R004M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pou-R005M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pou-R006M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pou-R007M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-pou-R008M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-taane-R001M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-taane-R002M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-taane-R003M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-taane-R004M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-taane-R005M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-taane-R006M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-taane-R007M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-taane-R008M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tae-R001M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tae-R002M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tae-R004M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tae-R005M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tae-R006M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tae-R007M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tae-R008M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tai-R001M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tai-R002M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tai-R003M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tai-R004M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tai-R005M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tai-R006M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tai-R007M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tai-R008M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-teenei-R002M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-teenei-R003M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-teenei-R005M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-teenei-R006M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-teenei-R007M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-teenei-R008M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toetoe-R001M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toetoe-R002M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toetoe-R003M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toetoe-R004M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toetoe-R005M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toetoe-R006M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toetoe-R007M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toetoe-R008M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toi-R001M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toi-R002M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toi-R003M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toi-R004M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toi-R005M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toi-R006M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toi-R007M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-toi-R008M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tuu-R001M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tuu-R002M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tuu-R003M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tuu-R004M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tuu-R005M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tuu-R006M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tuu-R007M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KUIA_FEMALE",
+			"path": "audio\\oldfemale-word-tuu-R008M.wav"
+		}
+	],
 
-  "oldmale": [
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hau-K004M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hau-K005M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hau-K006M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hau-K007M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hau-K009M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hau-K010M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hee-K004M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hee-K005M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hee-K006M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hee-K007M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hee-K008M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hee-K009M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hei-K004M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hei-K005M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hei-K006M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hei-K007M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hei-K008M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hei-K009M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hii-K004M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hii-K005M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hii-K007M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hii-K008M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hii-K009M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoe-K004M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoe-K005M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoe-K006M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoe-K007M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoe-K008M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoe-K009M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoe-K010M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoihoi-K004M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoihoi-K005M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoihoi-K006M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoihoi-K007M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoihoi-K008M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoihoi-K009M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hoihoi-K010M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hou-K004M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hou-K005M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hou-K006M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hou-K007M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hou-K009M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-hou-K010M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kee-K004M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kee-K005M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kee-K006M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kee-K007M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kee-K008M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kee-K009M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kee-K010M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kei-K004M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kei-K005M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kei-K007M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kei-K008M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kei-K009M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kei-K010M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kii-K004M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kii-K005M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kii-K006M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kii-K007M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kii-K008M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kii-K009M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-kii-K010M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatao-K004M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatao-K005M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatao-K007M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatao-K008M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatao-K009M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatao-K010M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatau-K004M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatau-K005M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatau-K007M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatau-K008M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatau-K009M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatau-K010M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatou-K004M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatou-K005M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatou-K008M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatou-K009M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-maatou-K010M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mao-K004M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mao-K005M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mao-K006M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mao-K007M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mao-K008M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mao-K009M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mao-K010M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-matiu-K004M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-matiu-K005M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-matiu-K006M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-matiu-K007M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-matiu-K008M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-matiu-K009M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-matiu-K010M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mau-K004M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mau-K005M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mau-K006M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mau-K007M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mau-K008M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mau-K009M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-mau-K010M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-moutere-K004M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-moutere-K005M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-moutere-K006M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-moutere-K007M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-moutere-K008M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-moutere-K009M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-moutere-K010M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pae-K005M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pae-K006M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pae-K007M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pae-K008M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pae-K009M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pae-K010M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pai-K005M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pai-K006M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pai-K007M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pai-K008M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pai-K009M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pai-K010M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pao-K004M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pao-K005M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pao-K006M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pao-K007M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pao-K008M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pao-K009M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pao-K010M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pau-K004M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pau-K005M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pau-K006M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pau-K007M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pau-K008M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pau-K009M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pau-K010M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-poo-K004M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-poo-K005M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-poo-K006M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-poo-K007M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-poo-K008M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-poo-K009M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-poo-K010M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pou-K004M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pou-K005M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pou-K006M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pou-K007M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pou-K008M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pou-K009M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-pou-K010M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-taane-K004M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-taane-K005M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-taane-K006M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-taane-K007M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-taane-K008M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-taane-K009M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-taane-K010M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tae-K004M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tae-K005M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tae-K006M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tae-K007M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tae-K008M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tae-K009M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tae-K010M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tai-K004M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tai-K005M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tai-K006M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tai-K007M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tai-K008M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tai-K009M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tai-K010M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-teenei-K004M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-teenei-K005M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-teenei-K006M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-teenei-K007M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-teenei-K008M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-teenei-K009M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-teenei-K010M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toetoe-K004M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toetoe-K005M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toetoe-K006M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toetoe-K007M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toetoe-K008M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toetoe-K009M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toetoe-K010M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toi-K004M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toi-K005M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toi-K006M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toi-K007M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toi-K008M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toi-K009M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-toi-K010M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tuu-K004M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tuu-K005M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tuu-K006M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tuu-K007M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tuu-K008M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tuu-K009M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "oldmale",
-      "path": "audio\\oldmale-word-tuu-K010M.wav"
-    }
-  ],
+	"KAUMATUA_MALE": [
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hau-K004M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hau-K005M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hau-K006M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hau-K007M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hau-K009M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hau-K010M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hee-K004M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hee-K005M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hee-K006M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hee-K007M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hee-K008M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hee-K009M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hei-K004M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hei-K005M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hei-K006M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hei-K007M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hei-K008M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hei-K009M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hii-K004M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hii-K005M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hii-K007M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hii-K008M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hii-K009M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoe-K004M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoe-K005M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoe-K006M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoe-K007M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoe-K008M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoe-K009M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoe-K010M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoihoi-K004M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoihoi-K005M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoihoi-K006M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoihoi-K007M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoihoi-K008M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoihoi-K009M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hoihoi-K010M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hou-K004M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hou-K005M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hou-K006M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hou-K007M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hou-K009M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-hou-K010M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kee-K004M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kee-K005M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kee-K006M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kee-K007M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kee-K008M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kee-K009M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kee-K010M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kei-K004M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kei-K005M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kei-K007M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kei-K008M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kei-K009M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kei-K010M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kii-K004M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kii-K005M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kii-K006M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kii-K007M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kii-K008M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kii-K009M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-kii-K010M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatao-K004M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatao-K005M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatao-K007M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatao-K008M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatao-K009M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatao-K010M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatau-K004M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatau-K005M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatau-K007M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatau-K008M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatau-K009M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatau-K010M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatou-K004M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatou-K005M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatou-K008M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatou-K009M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-maatou-K010M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mao-K004M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mao-K005M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mao-K006M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mao-K007M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mao-K008M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mao-K009M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mao-K010M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-matiu-K004M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-matiu-K005M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-matiu-K006M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-matiu-K007M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-matiu-K008M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-matiu-K009M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-matiu-K010M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mau-K004M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mau-K005M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mau-K006M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mau-K007M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mau-K008M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mau-K009M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-mau-K010M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-moutere-K004M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-moutere-K005M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-moutere-K006M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-moutere-K007M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-moutere-K008M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-moutere-K009M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-moutere-K010M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pae-K005M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pae-K006M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pae-K007M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pae-K008M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pae-K009M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pae-K010M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pai-K005M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pai-K006M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pai-K007M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pai-K008M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pai-K009M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pai-K010M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pao-K004M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pao-K005M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pao-K006M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pao-K007M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pao-K008M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pao-K009M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pao-K010M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pau-K004M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pau-K005M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pau-K006M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pau-K007M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pau-K008M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pau-K009M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pau-K010M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-poo-K004M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-poo-K005M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-poo-K006M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-poo-K007M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-poo-K008M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-poo-K009M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-poo-K010M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pou-K004M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pou-K005M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pou-K006M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pou-K007M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pou-K008M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pou-K009M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-pou-K010M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-taane-K004M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-taane-K005M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-taane-K006M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-taane-K007M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-taane-K008M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-taane-K009M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-taane-K010M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tae-K004M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tae-K005M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tae-K006M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tae-K007M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tae-K008M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tae-K009M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tae-K010M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tai-K004M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tai-K005M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tai-K006M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tai-K007M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tai-K008M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tai-K009M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tai-K010M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-teenei-K004M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-teenei-K005M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-teenei-K006M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-teenei-K007M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-teenei-K008M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-teenei-K009M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-teenei-K010M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toetoe-K004M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toetoe-K005M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toetoe-K006M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toetoe-K007M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toetoe-K008M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toetoe-K009M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toetoe-K010M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toi-K004M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toi-K005M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toi-K006M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toi-K007M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toi-K008M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toi-K009M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-toi-K010M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tuu-K004M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tuu-K005M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tuu-K006M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tuu-K007M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tuu-K008M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tuu-K009M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "KAUMATUA_MALE",
+			"path": "audio\\oldmale-word-tuu-K010M.wav"
+		}
+	],
 
-  "youngfemale": [
-    {
-      "name": "hau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hau-L1H01M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hau-L1H02M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hau-L1H03M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hau-L1H04M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hau-L1H05M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hau-L1H06M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hee-L1H01M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hee-L1H02M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hee-L1H03M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hee-L1H04M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hee-L1H05M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hee-L1H06M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hei-L1H01M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hei-L1H02M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hei-L1H03M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hei-L1H04M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hei-L1H05M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hei-L1H06M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hii-L1H01M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hii-L1H02M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hii-L1H03M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hii-L1H04M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hii-L1H05M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hii-L1H06M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoe-L1H01M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoe-L1H02M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoe-L1H03M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoe-L1H04M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoe-L1H05M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoe-L1H06M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoihoi-L1H01M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoihoi-L1H02M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoihoi-L1H03M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoihoi-L1H04M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoihoi-L1H05M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hoihoi-L1H06M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hou-L1H01M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hou-L1H02M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hou-L1H03M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hou-L1H04M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hou-L1H05M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-hou-L1H06M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kee-L1H01M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kee-L1H02M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kee-L1H03M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kee-L1H04M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kee-L1H05M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kee-L1H06M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kei-L1H01M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kei-L1H02M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kei-L1H03M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kei-L1H04M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kei-L1H05M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kei-L1H06M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kii-L1H01M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kii-L1H02M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kii-L1H03M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kii-L1H04M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kii-L1H05M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-kii-L1H06M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatao-L1H01M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatao-L1H02M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatao-L1H03M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatao-L1H04M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatao-L1H05M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatao-L1H06M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatau-L1H01M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatau-L1H02M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatau-L1H03M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatau-L1H04M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatau-L1H05M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatau-L1H06M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatou-L1H01M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatou-L1H02M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatou-L1H03M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatou-L1H04M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatou-L1H05M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-maatou-L1H06M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mao-L1H01M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mao-L1H02M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mao-L1H03M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mao-L1H04M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mao-L1H05M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mao-L1H06M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-matiu-L1H01M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-matiu-L1H02M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-matiu-L1H03M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-matiu-L1H04M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-matiu-L1H05M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-matiu-L1H06M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mau-L1H01M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mau-L1H02M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mau-L1H03M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mau-L1H04M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mau-L1H05M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-mau-L1H06M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-moutere-L1H01M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-moutere-L1H02M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-moutere-L1H03M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-moutere-L1H04M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-moutere-L1H05M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-moutere-L1H06M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pae-L1H01M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pae-L1H02M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pae-L1H03M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pae-L1H04M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pae-L1H05M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pae-L1H06M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pai-L1H01M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pai-L1H02M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pai-L1H03M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pai-L1H04M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pai-L1H05M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pai-L1H06M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pao-L1H01M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pao-L1H02M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pao-L1H03M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pao-L1H04M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pao-L1H05M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pao-L1H06M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pau-L1H01M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pau-L1H02M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pau-L1H03M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pau-L1H04M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pau-L1H05M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pau-L1H06M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-poo-L1H01M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-poo-L1H02M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-poo-L1H03M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-poo-L1H04M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-poo-L1H05M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-poo-L1H06M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pou-L1H01M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pou-L1H02M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pou-L1H03M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pou-L1H04M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pou-L1H05M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-pou-L1H06M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-taane-L1H01M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-taane-L1H02M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-taane-L1H03M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-taane-L1H04M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-taane-L1H05M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-taane-L1H06M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tae-L1H01M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tae-L1H02M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tae-L1H03M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tae-L1H04M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tae-L1H05M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tae-L1H06M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tai-L1H01M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tai-L1H02M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tai-L1H03M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tai-L1H04M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tai-L1H05M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tai-L1H06M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-teenei-L1H01M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-teenei-L1H02M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-teenei-L1H03M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-teenei-L1H04M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-teenei-L1H05M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-teenei-L1H06M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toetoe-L1H01M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toetoe-L1H02M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toetoe-L1H03M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toetoe-L1H04M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toetoe-L1H05M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toetoe-L1H06M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toi-L1H01M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toi-L1H02M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toi-L1H03M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toi-L1H04M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toi-L1H05M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-toi-L1H06M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tuu-L1H01M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tuu-L1H02M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tuu-L1H03M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tuu-L1H04M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tuu-L1H05M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngfemale",
-      "path": "audio\\youngfemale-word-tuu-L1H06M.wav"
-    }
-  ],
+	"MODERN_FEMALE": [
+		{
+			"name": "hau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hau-L1H01M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hau-L1H02M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hau-L1H03M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hau-L1H04M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hau-L1H05M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hau-L1H06M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hee-L1H01M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hee-L1H02M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hee-L1H03M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hee-L1H04M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hee-L1H05M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hee-L1H06M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hei-L1H01M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hei-L1H02M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hei-L1H03M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hei-L1H04M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hei-L1H05M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hei-L1H06M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hii-L1H01M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hii-L1H02M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hii-L1H03M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hii-L1H04M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hii-L1H05M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hii-L1H06M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoe-L1H01M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoe-L1H02M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoe-L1H03M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoe-L1H04M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoe-L1H05M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoe-L1H06M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoihoi-L1H01M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoihoi-L1H02M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoihoi-L1H03M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoihoi-L1H04M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoihoi-L1H05M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hoihoi-L1H06M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hou-L1H01M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hou-L1H02M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hou-L1H03M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hou-L1H04M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hou-L1H05M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-hou-L1H06M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kee-L1H01M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kee-L1H02M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kee-L1H03M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kee-L1H04M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kee-L1H05M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kee-L1H06M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kei-L1H01M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kei-L1H02M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kei-L1H03M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kei-L1H04M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kei-L1H05M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kei-L1H06M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kii-L1H01M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kii-L1H02M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kii-L1H03M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kii-L1H04M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kii-L1H05M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-kii-L1H06M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatao-L1H01M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatao-L1H02M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatao-L1H03M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatao-L1H04M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatao-L1H05M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatao-L1H06M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatau-L1H01M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatau-L1H02M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatau-L1H03M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatau-L1H04M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatau-L1H05M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatau-L1H06M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatou-L1H01M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatou-L1H02M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatou-L1H03M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatou-L1H04M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatou-L1H05M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-maatou-L1H06M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mao-L1H01M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mao-L1H02M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mao-L1H03M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mao-L1H04M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mao-L1H05M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mao-L1H06M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-matiu-L1H01M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-matiu-L1H02M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-matiu-L1H03M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-matiu-L1H04M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-matiu-L1H05M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-matiu-L1H06M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mau-L1H01M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mau-L1H02M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mau-L1H03M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mau-L1H04M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mau-L1H05M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-mau-L1H06M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-moutere-L1H01M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-moutere-L1H02M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-moutere-L1H03M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-moutere-L1H04M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-moutere-L1H05M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-moutere-L1H06M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pae-L1H01M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pae-L1H02M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pae-L1H03M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pae-L1H04M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pae-L1H05M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pae-L1H06M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pai-L1H01M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pai-L1H02M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pai-L1H03M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pai-L1H04M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pai-L1H05M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pai-L1H06M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pao-L1H01M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pao-L1H02M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pao-L1H03M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pao-L1H04M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pao-L1H05M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pao-L1H06M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pau-L1H01M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pau-L1H02M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pau-L1H03M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pau-L1H04M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pau-L1H05M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pau-L1H06M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-poo-L1H01M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-poo-L1H02M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-poo-L1H03M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-poo-L1H04M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-poo-L1H05M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-poo-L1H06M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pou-L1H01M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pou-L1H02M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pou-L1H03M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pou-L1H04M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pou-L1H05M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-pou-L1H06M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-taane-L1H01M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-taane-L1H02M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-taane-L1H03M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-taane-L1H04M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-taane-L1H05M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-taane-L1H06M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tae-L1H01M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tae-L1H02M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tae-L1H03M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tae-L1H04M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tae-L1H05M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tae-L1H06M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tai-L1H01M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tai-L1H02M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tai-L1H03M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tai-L1H04M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tai-L1H05M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tai-L1H06M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-teenei-L1H01M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-teenei-L1H02M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-teenei-L1H03M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-teenei-L1H04M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-teenei-L1H05M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-teenei-L1H06M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toetoe-L1H01M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toetoe-L1H02M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toetoe-L1H03M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toetoe-L1H04M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toetoe-L1H05M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toetoe-L1H06M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toi-L1H01M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toi-L1H02M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toi-L1H03M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toi-L1H04M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toi-L1H05M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-toi-L1H06M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tuu-L1H01M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tuu-L1H02M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tuu-L1H03M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tuu-L1H04M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tuu-L1H05M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_FEMALE",
+			"path": "audio\\youngfemale-word-tuu-L1H06M.wav"
+		}
+	],
 
-  "youngmale": [
-    {
-      "name": "hau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hau-L1Y01M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hau-L1Y02M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hau-L1Y03M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hau-L1Y05M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hee-L1Y01M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hee-L1Y02M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hee-L1Y03M.wav"
-    },
-    {
-      "name": "hee",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hee-L1Y05M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hei-L1Y01M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hei-L1Y02M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hei-L1Y03M.wav"
-    },
-    {
-      "name": "hei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hei-L1Y05M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hii-L1Y01M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hii-L1Y02M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hii-L1Y03M.wav"
-    },
-    {
-      "name": "hii",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hii-L1Y05M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hoe-L1Y01M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hoe-L1Y02M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hoe-L1Y03M.wav"
-    },
-    {
-      "name": "hoe",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hoe-L1Y05M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hoihoi-L1Y01M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hoihoi-L1Y02M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hoihoi-L1Y03M.wav"
-    },
-    {
-      "name": "hoihoi",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hoihoi-L1Y05M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hou-L1Y01M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hou-L1Y02M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hou-L1Y03M.wav"
-    },
-    {
-      "name": "hou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-hou-L1Y05M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kee-L1Y01M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kee-L1Y02M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kee-L1Y03M.wav"
-    },
-    {
-      "name": "kee",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kee-L1Y05M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kei-L1Y01M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kei-L1Y02M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kei-L1Y03M.wav"
-    },
-    {
-      "name": "kei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kei-L1Y05M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kii-L1Y01M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kii-L1Y02M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kii-L1Y03M.wav"
-    },
-    {
-      "name": "kii",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-kii-L1Y05M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatao-L1Y01M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatao-L1Y02M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatao-L1Y03M.wav"
-    },
-    {
-      "name": "maatao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatao-L1Y05M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatau-L1Y01M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatau-L1Y02M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatau-L1Y03M.wav"
-    },
-    {
-      "name": "maatau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatau-L1Y05M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatou-L1Y01M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatou-L1Y02M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatou-L1Y03M.wav"
-    },
-    {
-      "name": "maatou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-maatou-L1Y05M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-mao-L1Y01M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-mao-L1Y02M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-mao-L1Y03M.wav"
-    },
-    {
-      "name": "mao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-mao-L1Y05M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-matiu-L1Y01M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-matiu-L1Y02M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-matiu-L1Y03M.wav"
-    },
-    {
-      "name": "matiu",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-matiu-L1Y05M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-mau-L1Y01M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-mau-L1Y02M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-mau-L1Y03M.wav"
-    },
-    {
-      "name": "mau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-mau-L1Y05M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-moutere-L1Y01M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-moutere-L1Y02M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-moutere-L1Y03M.wav"
-    },
-    {
-      "name": "moutere",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-moutere-L1Y05M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pae-L1Y01M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pae-L1Y02M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pae-L1Y03M.wav"
-    },
-    {
-      "name": "pae",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pae-L1Y05M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pai-L1Y01M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pai-L1Y02M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pai-L1Y03M.wav"
-    },
-    {
-      "name": "pai",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pai-L1Y05M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pao-L1Y01M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pao-L1Y02M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pao-L1Y03M.wav"
-    },
-    {
-      "name": "pao",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pao-L1Y05M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pau-L1Y01M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pau-L1Y02M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pau-L1Y03M.wav"
-    },
-    {
-      "name": "pau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pau-L1Y05M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-poo-L1Y01M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-poo-L1Y02M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-poo-L1Y03M.wav"
-    },
-    {
-      "name": "poo",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-poo-L1Y05M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pou-L1Y01M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pou-L1Y02M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pou-L1Y03M.wav"
-    },
-    {
-      "name": "pou",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-pou-L1Y05M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-taane-L1Y01M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-taane-L1Y02M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-taane-L1Y03M.wav"
-    },
-    {
-      "name": "taane",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-taane-L1Y05M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tae-L1Y01M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tae-L1Y02M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tae-L1Y03M.wav"
-    },
-    {
-      "name": "tae",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tae-L1Y05M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tai-L1Y01M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tai-L1Y02M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tai-L1Y03M.wav"
-    },
-    {
-      "name": "tai",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tai-L1Y05M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-teenei-L1Y01M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-teenei-L1Y02M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-teenei-L1Y03M.wav"
-    },
-    {
-      "name": "teenei",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-teenei-L1Y05M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-toetoe-L1Y01M.wav"
-    },
-    {
-      "name": "hau",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-toetoe-L1Y02M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-toetoe-L1Y03M.wav"
-    },
-    {
-      "name": "toetoe",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-toetoe-L1Y05M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-toi-L1Y01M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-toi-L1Y03M.wav"
-    },
-    {
-      "name": "toi",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-toi-L1Y05M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tuu-L1Y01M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tuu-L1Y02M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tuu-L1Y03M.wav"
-    },
-    {
-      "name": "tuu",
-      "category": "youngmale",
-      "path": "audio\\youngmale-word-tuu-L1Y05M.wav"
-    }
-  ]
+	"MODERN_MALE": [
+		{
+			"name": "hau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hau-L1Y01M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hau-L1Y02M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hau-L1Y03M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hau-L1Y05M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hee-L1Y01M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hee-L1Y02M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hee-L1Y03M.wav"
+		},
+		{
+			"name": "hee",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hee-L1Y05M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hei-L1Y01M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hei-L1Y02M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hei-L1Y03M.wav"
+		},
+		{
+			"name": "hei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hei-L1Y05M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hii-L1Y01M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hii-L1Y02M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hii-L1Y03M.wav"
+		},
+		{
+			"name": "hii",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hii-L1Y05M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hoe-L1Y01M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hoe-L1Y02M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hoe-L1Y03M.wav"
+		},
+		{
+			"name": "hoe",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hoe-L1Y05M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hoihoi-L1Y01M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hoihoi-L1Y02M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hoihoi-L1Y03M.wav"
+		},
+		{
+			"name": "hoihoi",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hoihoi-L1Y05M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hou-L1Y01M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hou-L1Y02M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hou-L1Y03M.wav"
+		},
+		{
+			"name": "hou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-hou-L1Y05M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kee-L1Y01M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kee-L1Y02M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kee-L1Y03M.wav"
+		},
+		{
+			"name": "kee",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kee-L1Y05M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kei-L1Y01M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kei-L1Y02M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kei-L1Y03M.wav"
+		},
+		{
+			"name": "kei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kei-L1Y05M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kii-L1Y01M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kii-L1Y02M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kii-L1Y03M.wav"
+		},
+		{
+			"name": "kii",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-kii-L1Y05M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatao-L1Y01M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatao-L1Y02M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatao-L1Y03M.wav"
+		},
+		{
+			"name": "maatao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatao-L1Y05M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatau-L1Y01M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatau-L1Y02M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatau-L1Y03M.wav"
+		},
+		{
+			"name": "maatau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatau-L1Y05M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatou-L1Y01M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatou-L1Y02M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatou-L1Y03M.wav"
+		},
+		{
+			"name": "maatou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-maatou-L1Y05M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-mao-L1Y01M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-mao-L1Y02M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-mao-L1Y03M.wav"
+		},
+		{
+			"name": "mao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-mao-L1Y05M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-matiu-L1Y01M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-matiu-L1Y02M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-matiu-L1Y03M.wav"
+		},
+		{
+			"name": "matiu",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-matiu-L1Y05M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-mau-L1Y01M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-mau-L1Y02M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-mau-L1Y03M.wav"
+		},
+		{
+			"name": "mau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-mau-L1Y05M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-moutere-L1Y01M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-moutere-L1Y02M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-moutere-L1Y03M.wav"
+		},
+		{
+			"name": "moutere",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-moutere-L1Y05M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pae-L1Y01M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pae-L1Y02M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pae-L1Y03M.wav"
+		},
+		{
+			"name": "pae",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pae-L1Y05M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pai-L1Y01M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pai-L1Y02M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pai-L1Y03M.wav"
+		},
+		{
+			"name": "pai",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pai-L1Y05M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pao-L1Y01M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pao-L1Y02M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pao-L1Y03M.wav"
+		},
+		{
+			"name": "pao",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pao-L1Y05M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pau-L1Y01M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pau-L1Y02M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pau-L1Y03M.wav"
+		},
+		{
+			"name": "pau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pau-L1Y05M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-poo-L1Y01M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-poo-L1Y02M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-poo-L1Y03M.wav"
+		},
+		{
+			"name": "poo",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-poo-L1Y05M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pou-L1Y01M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pou-L1Y02M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pou-L1Y03M.wav"
+		},
+		{
+			"name": "pou",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-pou-L1Y05M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-taane-L1Y01M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-taane-L1Y02M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-taane-L1Y03M.wav"
+		},
+		{
+			"name": "taane",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-taane-L1Y05M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tae-L1Y01M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tae-L1Y02M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tae-L1Y03M.wav"
+		},
+		{
+			"name": "tae",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tae-L1Y05M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tai-L1Y01M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tai-L1Y02M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tai-L1Y03M.wav"
+		},
+		{
+			"name": "tai",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tai-L1Y05M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-teenei-L1Y01M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-teenei-L1Y02M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-teenei-L1Y03M.wav"
+		},
+		{
+			"name": "teenei",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-teenei-L1Y05M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-toetoe-L1Y01M.wav"
+		},
+		{
+			"name": "hau",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-toetoe-L1Y02M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-toetoe-L1Y03M.wav"
+		},
+		{
+			"name": "toetoe",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-toetoe-L1Y05M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-toi-L1Y01M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-toi-L1Y03M.wav"
+		},
+		{
+			"name": "toi",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-toi-L1Y05M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tuu-L1Y01M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tuu-L1Y02M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tuu-L1Y03M.wav"
+		},
+		{
+			"name": "tuu",
+			"category": "MODERN_MALE",
+			"path": "audio\\youngmale-word-tuu-L1Y05M.wav"
+		}
+	]
 }

@@ -12,25 +12,25 @@ $(function () {
                 // Parse the JSON
                 var jsonOptions = JSON.parse(request.responseText);
 
-                $.each(jsonOptions.oldfemale, function (i, v) {
+                $.each(jsonOptions.KUIA_FEMALE, function (i, v) {
                     if ($.inArray(v.name, words) === -1) {
                         words.push(v.name);
                     }
                 });
 
-                $.each(jsonOptions.oldmale, function (i, v) {
+                $.each(jsonOptions.KAUMATUA_MALE, function (i, v) {
                     if ($.inArray(v.name, words) === -1) {
                         words.push(v.name);
                     }
                 });
 
-                $.each(jsonOptions.youngmale, function (i, v) {
+                $.each(jsonOptions.MODERN_MALE, function (i, v) {
                     if ($.inArray(v.name, words) === -1) {
                         words.push(v.name);
                     }
                 });
 
-                $.each(jsonOptions.youngfemale, function (i, v) {
+                $.each(jsonOptions.MODERN_FEMALE, function (i, v) {
                     if ($.inArray(v.name, words) === -1) {
                         words.push(v.name);
                     }
