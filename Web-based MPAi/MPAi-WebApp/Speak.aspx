@@ -47,6 +47,7 @@
 					<h4 class="modal-title">Score Report</h4>
 				</div>
 				<div class="modal-body">
+					<h3 id="score"></h3>
 					<h3 id="result"></h3>
 				</div>
 				<div class="modal-footer">

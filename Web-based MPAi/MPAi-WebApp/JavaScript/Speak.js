@@ -143,7 +143,7 @@ $("#analyse").click(function () {
     } else {
         console.log("Recording not found :(");
 
-        document.getElementById('result').innerText = "Sorry, your recording could not be analysed :(";
+        document.getElementById('result').innerText = "Sorry, your recording was not found :(";
         $("#score-report").modal();
     }
     reset();
@@ -166,19 +166,18 @@ function analyse(blob) {
     }
 }
 
-function callBack(data) {
-    console.log("Data: " + data);
-
-    var report = $("#score-report");
+function callBack(response) {
+    console.log("Response: " + response);
     
-    if (data === "nothing") {
+    if (response === "nothing" || !response) {
         document.getElementById('result').innerText = "Sorry, your pronunciation cannot be recognised.";
     } else {
-        document.getElementById('result').innerText = "Your pronunciation is recognised as: " + data;
+        var data = JSON.parse(response);
+        document.getElementById('score').innerText = "Your score is: " + data.score;
+        document.getElementById('result').innerText = "Your pronunciation is recognised as: " + data.result;
     }
     
-
-    report.modal();
+    $("#score-report").modal();
 }
 
 // upload audio file to server
@@ -196,6 +195,7 @@ function upload(blob, callBack) {
     var formData = new FormData();
     formData.append('fileName', fileName);
     formData.append('blob', blob);
+    formData.append('target', expectedWord);
 
     xhr('Save.aspx', formData, callBack);
 }
