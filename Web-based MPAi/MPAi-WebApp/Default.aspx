@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 	<!--Home Page content-->
-	<div id="wrapper" class="container">
+	<div id="wrapper" class="container page-content">
 		<section id="section-1">
 			<div class="container" id="menu-cards" style="width: 80%;">
 				<div class="row">

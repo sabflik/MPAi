@@ -2,11 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <!--Listen Page Content-->
-	<div class="container" style="margin: 0 auto;">
+	<div class="container page-content" style="margin: 0 auto;">
 		<section style="padding: 5px;">
 			<div class="container inner">
 				
-				<label for="maoriWord">Maori word:</label>
+				<h4>Select a Maori word to listen</h4>
 				<div id="search-bar" class="input-group input-group-lg">
 					<input id="maoriWord" class="form-control" autofocus type="text" name="q" placeholder="Search...">
 
@@ -14,9 +14,9 @@
 						<input id="search" class="btn btn-default" type="button" value="Go!" />
 					</span>
 				</div>
-				<label>Category: </label>
+				<h4>Choose a category</h4>
 
-				<div class='wrapper text-center'>
+				<div id="category" class='wrapper text-center'>
 					<div class="btn-group" data-toggle="buttons">
 						<label class="btn btn-default active" style="width:auto; padding:0px">
 							<input type="radio" name="category" value="MODERN_FEMALE" checked>
@@ -45,12 +45,8 @@
 
 		<section style="padding: 5px;">
 			<div class="container inner">
-				<div>
-					<p>
-						<input type="button" id="change" value="Change" />
-					</p>
-				</div>
-				<div id="result" style="color: purple"></div>
+				<h5 id="result" style="text-align: center"></h5>
+				<button id="change" type="button" class="btn btn-default" disabled>Change Speaker</button>
 			</div>
 		</section>
 

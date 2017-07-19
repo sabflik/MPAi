@@ -2,11 +2,11 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 	<!--Speak Page Content-->
-	<div class="container" style="margin: 0 auto;">
+	<div class="container page-content" style="margin: 0 auto;">
 
 		<section class="experiment" style="padding: 5px;">
 			<div class="container inner">
-				<h3>Please select a Maori word to pronounce</h3>
+				<h4>Select a Maori word to pronounce</h4>
 				<div id="search-bar" class="input-group input-group-lg">
 					<input id="maoriWord" class="form-control" autofocus type="text" name="q" placeholder="Search...">
 
@@ -19,7 +19,7 @@
 
 		<section style="padding: 5px;">
 			<div class="container inner">
-				<h3 id="message"></h3>
+				<h4 id="message"></h4>
 				<h5>Hint: Double the length of vowels to show long vowels.</h5>
 			</div>
 		</section>
@@ -48,7 +48,7 @@
 				</div>
 				<div class="modal-body">
 					<h3 id="score"></h3>
-					<h3 id="result"></h3>
+					<h4 id="result"></h4>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>

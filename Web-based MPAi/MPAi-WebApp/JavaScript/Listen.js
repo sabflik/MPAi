@@ -49,16 +49,27 @@ function loadAudio() {
     formData.append('wordName', wordName);
     formData.append('wordCategory', wordCategory);
 
-    xhr('Play.aspx', formData, function (responseText) {
-        if (responseText === "nothing") {
-            document.getElementById('result').innerHTML = "Sorry, the word cannot be found.";
-        } else {
-            obj = JSON.parse(responseText);
-            count = 0;
-            document.getElementById("result").innerHTML = +obj.resultJsonTable.length + " different pronunciations available, and this is No." + (count + 1);
-            player.waveform.load(obj.resultJsonTable[0].path);
-        }
-    });
+    if (!wordName || wordName.trim() === "") {
+        document.getElementById('result').innerText = "";
+    } else {
+        xhr('Play.aspx', formData, function (responseText) {
+            if (responseText === "nothing") {
+                document.getElementById('result').innerText = "Sorry, that combination of word and category is not currently supported";
+                document.querySelector('#change').disabled = true;
+            } else {
+                obj = JSON.parse(responseText);
+                count = 0;
+                document.getElementById("result").innerText = "Listening to " + (count + 1) + " of " + obj.resultJsonTable.length + " available speakers";
+                player.waveform.load(obj.resultJsonTable[0].path);
+
+                if (obj.resultJsonTable.length > 1) {
+                    document.querySelector('#change').disabled = false;
+                }
+            }
+        });
+    }
+
+
 }
 
 // Button 'change' action
@@ -68,7 +79,7 @@ document.querySelector('#change').onclick = function () {
         count = 0;
     }
     player.waveform.load(obj.resultJsonTable[count].path);
-    document.getElementById("result").innerHTML = obj.resultJsonTable.length + " different pronunciations available, and this is No." + (count + 1);
+    document.getElementById("result").innerText = "Listening to " + (count + 1) + " of " + obj.resultJsonTable.length + " available speakers";
 };
 
 // xhr fuction

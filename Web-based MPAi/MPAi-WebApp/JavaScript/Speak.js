@@ -130,7 +130,7 @@ document.querySelector('#search').onclick = function () {
     if (!maoriWord.value || maoriWord.value.trim() === "") {
         message.innerText = "";
     } else if (words.indexOf(maoriWord.value) > -1) {
-        message.innerText = "Expected word is: " + maoriWord.value;
+        message.innerText = "Target word is: " + maoriWord.value;
         expectedWord = maoriWord.value;
     } else {
         message.innerText = "Sorry, that word is not currently supported";
