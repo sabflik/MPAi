@@ -129,9 +129,9 @@ var expectedWord = null;
 document.querySelector('#search').onclick = function () {
     if (!maoriWord.value || maoriWord.value.trim() === "") {
         message.innerText = "";
-    } else if (words.indexOf(maoriWord.value) > -1) {
-        message.innerText = "Target word is: " + maoriWord.value;
-        expectedWord = maoriWord.value;
+    } else if (words.indexOf(maoriWord.value.toLowerCase()) > -1) {
+        message.innerText = "Target word is: " + maoriWord.value.toLowerCase();
+        expectedWord = maoriWord.value.toLowerCase();
     } else {
         message.innerText = "Sorry, that word is not currently supported";
     }
