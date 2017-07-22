@@ -42,13 +42,11 @@
 
 			<!-- Score Report content-->
 			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal">&times;</button>
-					<h4 class="modal-title">Score Report</h4>
+				<div id="score-header" class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" style="color:white; opacity:1;">&times;</button>
+					<h4 class="modal-title"></h4>
 				</div>
-				<div class="modal-body">
-					<h3 id="score"></h3>
-					<h4 id="result"></h4>
+				<div id="score-body" class="modal-body">
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>

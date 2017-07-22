@@ -143,8 +143,7 @@ $("#analyse").click(function () {
     } else {
         console.log("Recording not found :(");
 
-        document.getElementById('result').innerText = "Sorry, your recording was not found :(";
-        $("#score-report").modal();
+        showModal("white", ["<h4>Sorry, your recording was not found :(</h4>"]);
     }
     reset();
 });
@@ -170,14 +169,65 @@ function callBack(response) {
     console.log("Response: " + response);
     
     if (response === "nothing" || !response) {
-        document.getElementById('result').innerText = "Sorry, your pronunciation cannot be recognised.";
+        showModal("white", ["<h4>Sorry, your pronunciation cannot be recognised</h4>"]);
     } else {
         var data = JSON.parse(response);
-        document.getElementById('score').innerText = "Your score is: " + data.score;
-        document.getElementById('result').innerText = "Your pronunciation is recognised as: " + data.result;
+        processResult(data);
+    }
+}
+
+function processResult(data) {
+    var categories = {
+        BELOW_AVG: "red", ABOVE_AVG: "orange", EXCELLENT: "yellow", PERFECT: "green", UNDEFINED: "white"
+    };
+
+    var score = data.score;
+    var result = data.result;
+    var category;
+
+    if (score >= 0 && score < 50) {
+        category = categories.BELOW_AVG;
+    } else if (score >= 0 && score < 80) {
+        category = categories.ABOVE_AVG;
+    } else if (score >= 0 && score < 100) {
+        category = categories.EXCELLENT;
+    } else if (score === 100) {
+        category = categories.PERFECT;
+    } else {
+        category = categories.UNDEFINED;
+    }
+
+    var bodyElements;
+
+    if (category === categories.UNDEFINED) {
+        bodyElements = ["<h4>Sorry, your pronunciation cannot be recognised</h4>"];
+    } else if (category === categories.PERFECT) {
+        var introText = "<h3>Your score is</h3>";
+        var scoreText = "<h1>"+ score+"</h1>";
+        var resultText = "<h4>Ka Pai!</h4>";
+
+        bodyElements = [introText, scoreText, resultText];
+    } else {
+        var introText = "<h3>Your score is</h3>";
+        var scoreText = "<h1>" + score + "</h1>";
+        var resultText = "<h4>Your pronunciation is recognised as: " + result+"</h4>";
+
+        bodyElements = [introText, scoreText, resultText];
     }
     
+    showModal(category, bodyElements);
+}
+
+function showModal(colour, bodyElements) {
+
+    $("#score-body").empty();
+    for (i = 0; i < bodyElements.length; i++) {
+        console.log(bodyElements[i]);
+        $("#score-body").append(bodyElements[i]);
+    }
+
     $("#score-report").modal();
+    $("#score-header").css("background-color", colour);
 }
 
 // upload audio file to server

@@ -51,7 +51,7 @@ namespace MPAi_WebApp
 
         private string GetResponse(string target, string result)
         {
-            double score = Math.Round(SimilarityAlgorithm.DamereauLevensheinDistanceAlgorithm(target, result), 1);
+            double score = Math.Round(SimilarityAlgorithm.DamereauLevensheinDistanceAlgorithm(target, result), 2) * 100;
 
             var obj = new JObject();
 

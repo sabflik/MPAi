@@ -184,7 +184,9 @@
   <ItemGroup>
     <Content Include="Content\jquery.auto-complete.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\video-js.min.css" />
     <Content Include="Content\videojs.record.css" />
+    <Content Include="Content\videojs.record.min.css" />
     <Content Include="Dropdown.aspx" />
     <Content Include="HTK\Dictionaries\lexicon.txt" />
     <Content Include="HTK\Evaluations\result.txt" />
@@ -231,9 +233,12 @@
     <Content Include="JavaScript\recorder.js" />
     <Content Include="JavaScript\Scoreboard.js" />
     <Content Include="JavaScript\Speak.js" />
+    <Content Include="JavaScript\video.min.js" />
     <Content Include="JavaScript\videojs.record.js" />
     <Content Include="JavaScript\videojs.record.recorderjs.js" />
     <Content Include="JavaScript\videojs.wavesurfer.js" />
+    <Content Include="JavaScript\videojs.wavesurfer.min.js" />
+    <Content Include="JavaScript\wavesurfer.microphone.min.js" />
     <Content Include="JavaScript\wavesurfer.min.js" />
     <Content Include="Listen.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
