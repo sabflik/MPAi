@@ -17,7 +17,7 @@ namespace MPAi_WebApp.DataModel
             {
                 speaker = Speaker.UNIDENTIFIED;
             }
-            List<Recording> recordingList = context.RecordingSet.Where(x => x.Word.Name.Equals(name) && x.Speaker.Equals(speaker)).ToList();
+            List<Recording> recordingList = context.RecordingSet.ToList().Where(x => x.Word.Name.Equals(name) && x.Speaker.Equals(speaker)).ToList();
             return recordingList;
         }
 
