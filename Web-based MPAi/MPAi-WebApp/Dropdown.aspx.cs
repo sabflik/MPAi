@@ -14,11 +14,13 @@ namespace MPAi_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*
             // get data from Json
             string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\audio.json");
             string json = File.ReadAllText(jsonPath);
-
+            */
             // Get data from database
+            string json;
             using (MPAiContext context = MPAiContext.InitializeDBModel())
             {
                 List<Word> wordList = DbAdapter.GenerateWordList(context);
