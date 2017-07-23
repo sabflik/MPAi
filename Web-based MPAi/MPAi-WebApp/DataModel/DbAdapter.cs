@@ -10,35 +10,21 @@ namespace MPAi_WebApp.DataModel
 {
     public static class DbAdapter
     {
-        public static DataTable GenerateAudioDataTable(MPAiContext context, String name, String category)
+        public static List<Recording> GenerateRecordingList(MPAiContext context, String name, String category)
         {
-            Word word = new Word() { Name = name };
             Speaker speaker;
             if (!(Enum.TryParse(category, out speaker)))
             {
                 speaker = Speaker.UNIDENTIFIED;
             }
-            List<Recording> recordingList = context.RecordingSet.ToList().Where(x => x.Word.Equals(word) && x.Speaker.Equals(speaker)).ToList();
-            DataTable audioDataTable = ToDataTable(recordingList);
-            return audioDataTable;
+            List<Recording> recordingList = context.RecordingSet.Where(x => x.Word.Name.Equals(name) && x.Speaker.Equals(speaker)).ToList();
+            return recordingList;
         }
 
-        // From https://stackoverflow.com/questions/27738238/convert-dbcontext-to-datatable-in-code-first-entity-framework
-        public static DataTable ToDataTable<T>(this IList<T> data)
+       public static List<Word> GenerateWordList(MPAiContext context)
         {
-            PropertyDescriptorCollection properties =
-                TypeDescriptor.GetProperties(typeof(T));
-            DataTable table = new DataTable();
-            foreach (PropertyDescriptor prop in properties)
-                table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
-            foreach (T item in data)
-            {
-                DataRow row = table.NewRow();
-                foreach (PropertyDescriptor prop in properties)
-                    row[prop.Name] = prop.GetValue(item) ?? DBNull.Value;
-                table.Rows.Add(row);
-            }
-            return table;
+            List<Word> wordList = context.WordSet.ToList();
+            return wordList;
         }
     }
 }

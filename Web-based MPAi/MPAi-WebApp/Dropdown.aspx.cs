@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MPAi_WebApp.DataModel;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -16,6 +18,25 @@ namespace MPAi_WebApp
             string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\audio.json");
             string json = File.ReadAllText(jsonPath);
 
+            // Get data from database
+            using (MPAiContext context = MPAiContext.InitializeDBModel())
+            {
+                List<Word> wordList = DbAdapter.GenerateWordList(context);
+                String[] wordNames = new String[wordList.Count];
+                for (int i = 0; i<wordList.Count; i++)
+                {
+                    wordNames[i] = wordList[i].Name;
+                }
+
+                if (wordList.Count == 0)
+                {
+                    json = "nothing";
+                }
+                else
+                {
+                    json = JsonConvert.SerializeObject(wordNames, Formatting.Indented);
+                }
+            }
             // Output result as JSON
             Response.Clear();
             Response.ContentType = "application/json; charset=utf-8";

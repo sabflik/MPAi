@@ -1,6 +1,7 @@
 ﻿using MPAi_WebApp.DataModel;
 using Newtonsoft.Json;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.IO;
@@ -28,36 +29,33 @@ namespace MPAi_WebApp
             */
 
             // Get data from database
-            DataTable dataTable;
             using (MPAiContext context = MPAiContext.InitializeDBModel())
             {
-                dataTable = DbAdapter.GenerateAudioDataTable(context, name, category);
-            }
+                List<Recording> recordingList = DbAdapter.GenerateRecordingList(context, name, category);
 
-            // make a new Dataset
-            DataSet newDataSet = new DataSet("newDataSet");
-            newDataSet.Namespace = "MPAi_WebApp";
-            DataTable newDataTable = new DataTable("resultJsonTable");
-            DataColumn nameColumn = new DataColumn("name", typeof(string));
-            newDataTable.Columns.Add(nameColumn);
-            DataColumn categoryColumn = new DataColumn("category", typeof(string));
-            newDataTable.Columns.Add(categoryColumn);
-            DataColumn pathColumn = new DataColumn("path", typeof(string));
-            newDataTable.Columns.Add(pathColumn);
-            newDataSet.Tables.Add(newDataTable);
+                // make a new Dataset
+                DataSet newDataSet = new DataSet("newDataSet");
+                newDataSet.Namespace = "MPAi_WebApp";
+                DataTable newDataTable = new DataTable("resultJsonTable");
+                DataColumn nameColumn = new DataColumn("name", typeof(string));
+                newDataTable.Columns.Add(nameColumn);
+                DataColumn categoryColumn = new DataColumn("category", typeof(string));
+                newDataTable.Columns.Add(categoryColumn);
+                DataColumn pathColumn = new DataColumn("path", typeof(string));
+                newDataTable.Columns.Add(pathColumn);
+                newDataSet.Tables.Add(newDataTable);
 
-            // set filtered data to a new Json
-                foreach (DataRow row in dataTable.Rows)
+                // set filtered data to a new Json
+                foreach (Recording r in recordingList)
                 {
-                    if (row["name"].Equals(name) && row["category"].Equals(category))
-                    {
-                        DataRow newRow = newDataTable.NewRow();
-                        newRow["name"] = row["name"];
-                        newRow["category"] = row["category"];
-                        newRow["path"] = row["path"];
-                        newDataTable.Rows.Add(newRow);
-                    }
+                    DataRow newRow = newDataTable.NewRow();
+                    newDataTable.Rows.Add();
+                    newRow["name"] = r.Word.Name;
+                    newRow["category"] = Enum.GetName(typeof(Speaker), r.Speaker);
+                    newRow["path"] = r.FilePath;
+                    newDataTable.Rows.Add(newRow);
                 }
+
                 string newJson;
                 if (newDataTable.Rows.Count == 0)
                 {
@@ -67,11 +65,12 @@ namespace MPAi_WebApp
                 {
                     newJson = JsonConvert.SerializeObject(newDataSet, Formatting.Indented);
                 }
-            // Output result as JSON
-            Response.Clear();
-            Response.ContentType = "application/json; charset=utf-8";
-            Response.Write(newJson);
-            Response.End();
+                // Output result as JSON
+                Response.Clear();
+                Response.ContentType = "application/json; charset=utf-8";
+                Response.Write(newJson);
+                Response.End();
+            }
         }
     }
 }
