@@ -134,7 +134,7 @@ namespace MPAi_WebApp.DataModel
     public class MPAiContextInitializer : CreateDatabaseIfNotExists<MPAiContext>
     {
         //private string AudioFolder = "C:\\Users\\adm.Jayden\\Work Folders\\Documents\\GitHub\\SabFlik\\MPAi\\Web-based MPAi\\MPAi-WebApp\\Audio";
-        private string AudioFolder = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, @"Audio");
+        private string AudioFolder = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, @"audio");
         /// <summary>
         /// If the database doesn't exist, it is created.
         /// If it does exist, and the Audio folder a) exists and b) contains at least one .wav file, then
