@@ -1,6 +1,6 @@
 $(function () {
 
-    var words = [];
+    var words;
 
     // Create a new XMLHttpRequest.
     var request = new XMLHttpRequest();
@@ -10,31 +10,7 @@ $(function () {
         if (request.readyState === 4) {
             if (request.status === 200) {
                 // Parse the JSON
-                var jsonOptions = JSON.parse(request.responseText);
-
-                $.each(jsonOptions.oldfemale, function (i, v) {
-                    if ($.inArray(v.name, words) === -1) {
-                        words.push(v.name);
-                    }
-                });
-
-                $.each(jsonOptions.oldmale, function (i, v) {
-                    if ($.inArray(v.name, words) === -1) {
-                        words.push(v.name);
-                    }
-                });
-
-                $.each(jsonOptions.youngmale, function (i, v) {
-                    if ($.inArray(v.name, words) === -1) {
-                        words.push(v.name);
-                    }
-                });
-
-                $.each(jsonOptions.youngfemale, function (i, v) {
-                    if ($.inArray(v.name, words) === -1) {
-                        words.push(v.name);
-                    }
-                });
+                words = JSON.parse(request.responseText);
             }
         }
     };
