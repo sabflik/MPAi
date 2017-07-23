@@ -49,7 +49,6 @@ namespace MPAi_WebApp
                 foreach (Recording r in recordingList)
                 {
                     DataRow newRow = newDataTable.NewRow();
-                    newDataTable.Rows.Add();
                     newRow["name"] = r.Word.Name;
                     newRow["category"] = Enum.GetName(typeof(Speaker), r.Speaker);
                     newRow["path"] = r.FilePath;
