@@ -2,10 +2,10 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <!--Scoreboard content-->
-    <div class="container" style="margin: 0 auto;">
+    <div class="container page-content" style="margin: 0 auto;">
 
 		<section style="padding: 5px;">
-			<div class="container">
+			<div class="container" style="min-width: 300px;">
 				<div class="row">
 					<div class="col-xs-12 col-sm-8">
 						<div class="chart">

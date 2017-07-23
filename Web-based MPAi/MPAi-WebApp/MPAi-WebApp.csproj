@@ -4705,7 +4705,9 @@
     <Content Include="Audio\youngmale-word-wähi-L1Y05M-02.wav" />
     <Content Include="Content\jquery.auto-complete.css" />
     <Content Include="Content\style.css" />
+    <Content Include="Content\video-js.min.css" />
     <Content Include="Content\videojs.record.css" />
+    <Content Include="Content\videojs.record.min.css" />
     <Content Include="Dropdown.aspx" />
     <Content Include="HTK\Dictionaries\lexicon.txt" />
     <Content Include="HTK\Evaluations\result.txt" />
@@ -4752,9 +4754,12 @@
     <Content Include="JavaScript\recorder.js" />
     <Content Include="JavaScript\Scoreboard.js" />
     <Content Include="JavaScript\Speak.js" />
+    <Content Include="JavaScript\video.min.js" />
     <Content Include="JavaScript\videojs.record.js" />
     <Content Include="JavaScript\videojs.record.recorderjs.js" />
     <Content Include="JavaScript\videojs.wavesurfer.js" />
+    <Content Include="JavaScript\videojs.wavesurfer.min.js" />
+    <Content Include="JavaScript\wavesurfer.microphone.min.js" />
     <Content Include="JavaScript\wavesurfer.min.js" />
     <Content Include="Listen.aspx" />
     <Content Include="Account\AddPhoneNumber.aspx" />
@@ -5754,13 +5759,11 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="Statistics.aspx" />
-    <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
-    <Content Include="Site.Mobile.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -5947,13 +5950,6 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
     <Compile Include="Startup.cs" />
     <Compile Include="Statistics.aspx.cs">
       <DependentUpon>Statistics.aspx</DependentUpon>
@@ -5961,13 +5957,6 @@
     </Compile>
     <Compile Include="Statistics.aspx.designer.cs">
       <DependentUpon>Statistics.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
