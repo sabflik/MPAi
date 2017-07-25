@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using MPAi_WebApp.DataModel;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace MPAi_WebApp
             foreach (string upload in Request.Files)
             {
                 // get target word
-                string targetWord = Request.Form["maoriWord"];
+                string targetWord = Request.Form["target"];
 
                 // upload audio file
                 string dictionary = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"uploads");
@@ -39,6 +40,32 @@ namespace MPAi_WebApp
                 else
                 {
                     result = htkResult.Values.ToArray()[0];
+                }
+
+                // Store result in database here.
+                using (MPAiContext context = MPAiContext.InitializeDBModel())
+                {
+                    // Get user where the name matches the signed in user
+                    User currentUser = context.UserSet.Where(x =>
+                        x.Username.Equals(System.Web.HttpContext.Current.User.Identity.Name)
+                    ).SingleOrDefault();
+
+                    Word currentWord = context.WordSet.Where( x => 
+                        x.Name.ToLower().Equals(targetWord.ToLower())
+                        ).SingleOrDefault();
+
+                    // Create new score with that user, the current time, and the result value
+                    Score score = new Score()
+                    {
+                        Date = DateTime.Now,
+                        user = currentUser,
+                        word = currentWord,
+                        Percentage = Math.Round(SimilarityAlgorithm.DamereauLevensheinDistanceAlgorithm(Request.Form["target"], result), 2) * 100
+                    };
+
+                    // Save score
+                    context.ScoreSet.Add(score);
+                    context.SaveChanges();
                 }
 
                 // Output result as JSON

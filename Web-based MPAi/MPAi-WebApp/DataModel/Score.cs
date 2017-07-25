@@ -22,7 +22,7 @@ namespace MPAi_WebApp.DataModel
         public int WordId { get; set; }
 
         [Required]
-        public float Percentage { get; set; }
+        public double Percentage { get; set; }
 
         [Required]
         public DateTime Date { get; set; }
