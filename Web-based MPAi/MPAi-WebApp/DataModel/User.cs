@@ -17,9 +17,5 @@ namespace MPAi_WebApp.DataModel
         [StringLength(64)]
         [Index(IsUnique = true)]
         public string Username { get; set; }
-
-        [Required]
-        [StringLength(64)]
-        public string Password { get; set; }
     }
 }
