@@ -34,7 +34,7 @@ namespace MPAi_WebApp
                 {
                     totalScores += s.Percentage;
                 }
-                double currentScore = totalScores / scoreList.Count();  // Get this into JSON somehow
+                double currentScore = Math.Round(totalScores / scoreList.Count());  // Get this into JSON somehow
                 // Format scores and dates as JSON
 
                 // make a new Dataset
