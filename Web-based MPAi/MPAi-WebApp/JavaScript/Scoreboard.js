@@ -3,16 +3,27 @@ $(document).ready(function () {
     var formData = new FormData();
 
     xhr('Statistics.aspx', formData, function (responseText) {
+        console.log(responseText);
         var data = JSON.parse(responseText);
 
         if (data === undefined || data === null) {
             console.log("ERROR: Couldn't retrieve data");
         } else {
-            console.log("Current Score" + data.currentScore);
-            populateDonut(data.currentScore);
+            try {
+                console.log("Current Score" + data.donutScore[0].donutScore);
+                populateDonut(data.donutScore[0].donutScore);
+            }
+            catch (exception) {
+                console.log("Could not populate donut");
+            };
 
-            console.log("Number of Scores" + data.scores.length);
-            populateTimeScale(data.scores);
+            try {
+                console.log("Number of Scores" + data.scores.length);
+                populateTimeScale(data.scores);
+            }
+            catch (exception) {
+                console.log("Could not populate time scale");
+            };
         }
     });  
 });
@@ -32,11 +43,11 @@ function populateDonut(score) {
               data: [score, 100 - score],
               backgroundColor: [
                 "#FF6384",
-                "#FFFFFF"
+                "#f8f8f8"
               ],
               hoverBackgroundColor: [
                 "#FF6384",
-                "#FFFFFF"
+                "#f8f8f8"
               ]
           }]
     };
