@@ -39,7 +39,7 @@ $("input[name='category']").change(function () {
 });
 
 function loadAudio() {
-    var wordName = maoriWord.value.toLowerCase();
+    var wordName = maoriWord.value.toLowerCase().replace(/ /g, "_");
     var wordCategory = $("input[name='category']:checked").val();
 
     console.log("Name: " + wordName);

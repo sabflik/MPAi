@@ -54,7 +54,7 @@
 			</Scripts>
 		</asp:ScriptManager>
 
-		<nav class="navbar navbar-default navbar-fixed-top" id="navigation" role="navigation" style="background-color:#ffffff;">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#ffffff;">
 		<div class="container">
 			<div class="navbar-header">
 					<a class="navbar-brand" runat="server" href="~/" style="padding:0">
@@ -63,7 +63,7 @@
 				</div>
 		</div>
 	</nav>
-		<div class="navbar navbar-default navbar-static-top" role="navigation" style="background-color:#ffffff;">
+		<div class="navbar navbar-default navbar-static-top" id="navigation" role="navigation" style="background-color:#ffffff;">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

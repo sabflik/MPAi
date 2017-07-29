@@ -64,7 +64,7 @@ ul {
 }
 
 #navigation {
-    background-color: white;
+    margin-bottom: 0px;
 }
 
 #wrapper {
@@ -104,6 +104,8 @@ ul {
     overflow: auto;
     padding: 20px;
     background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-card > h2 {
@@ -163,7 +165,6 @@ section {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -199,4 +200,8 @@ section {
   text-align: left;
   vertical-align: middle;
   text-align: center;
+}
+
+.body-content {
+    max-width: 100%;
 }

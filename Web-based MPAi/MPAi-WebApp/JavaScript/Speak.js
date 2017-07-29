@@ -65,7 +65,7 @@ request.onreadystatechange = function (response) {
     if (request.readyState === 4) {
         if (request.status === 200) {
             // Parse the JSON
-            words = request.responseText;
+            words = JSON.parse(request.responseText);
         }
     }
 };
@@ -85,12 +85,18 @@ var expectedWord = null;
 document.querySelector('#search').onclick = function () {
     if (!maoriWord.value || maoriWord.value.trim() === "") {
         message.innerText = "";
-    } else if (words.indexOf(maoriWord.value.toLowerCase()) > -1) {
-        message.innerText = "Target word is: " + maoriWord.value.toLowerCase();
-        expectedWord = maoriWord.value.toLowerCase();
     } else {
-        message.innerText = "Sorry, that word is not currently supported";
+        var target = maoriWord.value.toLowerCase();
+
+        if (words.indexOf(target) > -1) {
+            message.innerText = "Target word is: " + target;
+            expectedWord = target.replace(/ /g, "_");
+        } else {
+            message.innerText = "Sorry, that word is not currently supported";
+            expectedWord = null;
+        }
     }
+    console.log("Target: "+expectedWord);
 };
 
 $("#analyse").click(function () {
