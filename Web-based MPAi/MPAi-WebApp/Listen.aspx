@@ -7,7 +7,7 @@
 
 			<h4>Select a Maori word to listen</h4>
 			<div id="search-bar" class="input-group input-group-lg">
-				<input id="maoriWord" class="form-control" autofocus type="text" name="q" placeholder="Search...">
+				<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
 
 				<span class="input-group-btn">
 					<input id="search" class="btn btn-default" type="button" value="Go!" />
@@ -44,7 +44,7 @@
 
 	<section>
 		<div class="container inner">
-			<h5 id="result" style="text-align: center"></h5>
+			<h4 id="result" style="text-align: center"></h4>
 			<button id="change" type="button" class="btn btn-default" disabled>Change Speaker</button>
 		</div>
 	</section>

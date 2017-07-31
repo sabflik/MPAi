@@ -25,6 +25,25 @@ player.on('error', function (error) {
 //    player.wavesurfer.drawBuffer();
 //});
 
+var words = [];
+
+// Create a new XMLHttpRequest.
+var request = new XMLHttpRequest();
+
+// Handle state changes for the request.
+request.onreadystatechange = function (response) {
+    if (request.readyState === 4) {
+        if (request.status === 200) {
+            // Parse the JSON
+            words = JSON.parse(request.responseText);
+        }
+    }
+};
+
+// Set up and make the request.
+request.open('GET', 'Dropdown.aspx', true);
+request.send();
+
 
 var obj;
 var count = 0;
@@ -35,10 +54,32 @@ document.querySelector('#search').onclick = function () {
 };
 
 $("input[name='category']").change(function () {
-    loadAudio();
+    var wordCategory = $("input[name='category']:checked").val();
+
+    if (wordCategory) {
+        loadAudio();
+    }
+});
+
+$('#maoriWord').keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+        loadAudio();
+        return false;
+    }
 });
 
 function loadAudio() {
+
+    if (!maoriWord.value || maoriWord.value.trim() === "") {
+        return;
+    }
+
+    if (words.indexOf(maoriWord.value.toLowerCase()) <= -1) {
+        document.getElementById('result').innerText = "Sorry, that word is not currently supported";
+        return;
+    }
+
     var wordName = maoriWord.value.toLowerCase().replace(/ /g, "_");
     var wordCategory = $("input[name='category']:checked").val();
 
@@ -54,7 +95,7 @@ function loadAudio() {
     } else {
         xhr('Play.aspx', formData, function (responseText) {
             if (responseText === "nothing") {
-                document.getElementById('result').innerText = "Sorry, that combination of word and category is not currently supported";
+                document.getElementById('result').innerText = "Sorry, there are no recordings for that category";
                 document.querySelector('#change').disabled = true;
             } else {
                 obj = JSON.parse(responseText);

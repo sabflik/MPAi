@@ -54,7 +54,7 @@
 			</Scripts>
 		</asp:ScriptManager>
 
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#ffffff;">
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#ffffff; opacity:0.95;">
 		<div class="container">
 			<div class="navbar-header">
 					<a class="navbar-brand" runat="server" href="~/" style="padding:0">

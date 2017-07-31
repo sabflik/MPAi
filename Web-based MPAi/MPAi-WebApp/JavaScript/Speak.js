@@ -79,10 +79,22 @@ window.onbeforeunload = function () {
     document.getElementById(maoriWord.id).value = "";
 };
 
+$('#maoriWord').keypress(function (event) {
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if (keycode == '13') {
+        getTarget();
+        return false;
+    }
+});
+
 var expectedWord = null;
 
 // Button 'search' action
 document.querySelector('#search').onclick = function () {
+    getTarget();
+};
+
+function getTarget() {
     if (!maoriWord.value || maoriWord.value.trim() === "") {
         message.innerText = "";
     } else {
@@ -96,8 +108,8 @@ document.querySelector('#search').onclick = function () {
             expectedWord = null;
         }
     }
-    console.log("Target: "+expectedWord);
-};
+    console.log("Target: " + expectedWord);
+}
 
 $("#analyse").click(function () {
     if (blob) {

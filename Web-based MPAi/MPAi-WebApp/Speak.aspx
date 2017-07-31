@@ -6,7 +6,7 @@
 		<div class="container inner">
 			<h4>Select a Maori word to pronounce</h4>
 			<div id="search-bar" class="input-group input-group-lg">
-				<input id="maoriWord" class="form-control" autofocus type="text" name="q" placeholder="Search...">
+				<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
 
 				<span class="input-group-btn">
 					<input id="search" class="btn btn-default" type="button" value="Go!" />
