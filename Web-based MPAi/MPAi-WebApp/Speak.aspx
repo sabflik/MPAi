@@ -4,7 +4,7 @@
 	<!--Speak Page Content-->
 	<section>
 		<div class="container inner">
-			<h4>Select a Maori word to pronounce</h4>
+			<h4>Select a M&#257;ori word to pronounce</h4>
 			<div id="search-bar" class="input-group input-group-lg">
 				<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
 
@@ -55,4 +55,5 @@
 	<script src="JavaScript/jquery.auto-complete.js"></script>
 	<script src="JavaScript/dropdown.js"></script>
 	<script src="JavaScript/Speak.js"></script>
+	<link rel="stylesheet" type="text/css" href="Content/style.css">
 </asp:Content>

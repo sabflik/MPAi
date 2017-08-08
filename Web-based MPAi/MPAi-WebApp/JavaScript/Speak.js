@@ -22,8 +22,16 @@ var player = videojs("myAudio",
 		            debug: true,
 		            audioEngine: "recorder.js"
 		        }
+		    },
+		    controlBar: {
+		        fullscreenToggle: false
 		    }
 		});
+
+player.on('ready', function () {
+    console.log('videojs is ready');
+    player.recorder.getDevice();
+});
 
 // error handling
 player.on('deviceError', function () {

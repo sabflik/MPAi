@@ -205,3 +205,15 @@ section {
 .body-content {
     max-width: 100%;
 }
+
+.video-js {
+    font-size: 14px;
+}
+
+.vjs-icon-record-start {
+    color: #FF6461;
+}
+
+.vjs-device-button.vjs-control {
+    display: none;
+}

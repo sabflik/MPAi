@@ -5,13 +5,15 @@
 	<section>
 		<div class="container inner">
 
-			<h4>Select a Maori word to listen</h4>
+			<h4>Choose a M&#257;ori word to listen</h4>
 			<div id="search-bar" class="input-group input-group-lg">
 				<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
 
 				<span class="input-group-btn">
 					<input id="search" class="btn btn-default" type="button" value="Go!" />
 				</span>
+
+				<h5 id="search-message" style="text-align: center; color:red;"></h5>
 			</div>
 			<h4>Choose a category</h4>
 
@@ -35,7 +37,7 @@
 					<label class="btn btn-default" style="width: auto; padding: 0px">
 						<input type="radio" name="category" value="KAUMATUA_MALE">
 						<img src="Resources/Emotikis/OldMale.png" />
-						Kaumatua Male
+						Kaum&#257;tua Male
 					</label>
 				</div>
 			</div>
@@ -60,4 +62,5 @@
 	<script src="JavaScript/jquery.auto-complete.js"></script>
 	<script src="JavaScript/dropdown.js"></script>
 	<script src="JavaScript/Listen.js"></script>
+	<link rel="stylesheet" type="text/css" href="Content/style.css">
 </asp:Content>

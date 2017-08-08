@@ -12,6 +12,9 @@
 		            msDisplayMax: 20,
 		            hideScrollbar: true
 		        }
+		    },
+		    controlBar: {
+		        fullscreenToggle: false
 		    }
 		});
 
