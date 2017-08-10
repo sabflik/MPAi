@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 	<!--Scoreboard content-->
-	<section>
+	<section class="padding-top padding-bottom">
 		<div class="container" style="min-width: 300px;">
 			<div class="row">
 				<div class="col-xs-12 col-sm-8">

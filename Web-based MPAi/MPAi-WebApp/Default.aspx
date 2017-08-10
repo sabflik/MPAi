@@ -2,8 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 	<!--Home Page content-->
-	<section id="section-1">
-		<div class="container inner">
+	<section id="section-1" class="padding-top padding-bottom">
+		<div class="container outer">
 			<div class="row">
 				<div class="col-xs-12 col-sm-4">
 					<a href="Listen.aspx">
@@ -36,8 +36,8 @@
 		</div>
 	</section>
 
-	<section id="section-2">
-		<div id="about-content" class="container inner">
+	<section id="section-2" class="padding-top padding-bottom">
+		<div id="about-content" class="container outer">
 			<h1>About MPAi</h1>
 			<p>
 				"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

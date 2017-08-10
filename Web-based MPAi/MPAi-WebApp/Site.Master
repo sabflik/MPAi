@@ -16,20 +16,6 @@
 
 	<%-- References --%>
 	<link rel="stylesheet" type="text/css" href="Content/style.css">
-
-	<link href="Content/video-js.min.css" rel="stylesheet">
-	<link href="Content/videojs.record.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="Content/jquery.auto-complete.css">
-
-	<script src="JavaScript/video.min.js"></script>
-
-	<script src="JavaScript/recorder.js"></script>
-	<script src="JavaScript/wavesurfer.min.js"></script>
-	<script src="JavaScript/wavesurfer.microphone.min.js"></script>
-	<script src="JavaScript/videojs.wavesurfer.min.js"></script>
-
-	<script src="JavaScript/videojs.record.js"></script>
-	<script src="JavaScript/videojs.record.recorderjs.js"></script>
 </head>
 <body>
 	<form runat="server">
@@ -102,7 +88,6 @@
 		<div class="container body-content">
 			<asp:ContentPlaceHolder ID="MainContent" runat="server">
 			</asp:ContentPlaceHolder>
-			<hr />
 			<div id="footer-image"></div>
 			<footer>
 				<p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>

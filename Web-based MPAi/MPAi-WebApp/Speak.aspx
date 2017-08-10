@@ -2,30 +2,34 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 	<!--Speak Page Content-->
-	<section>
-		<div class="container inner">
-			<h4>Select a M&#257;ori word to pronounce</h4>
-			<div id="search-bar" class="input-group input-group-lg">
-				<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
+	<section id="word-search" class="padding-top">
+		<div class="container outer">
+			<div class="inner">
+				
+				<h3 style="text-align:center;">Select a M&#257;ori word to pronounce</h3>
 
-				<span class="input-group-btn">
-					<input id="search" class="btn btn-default" type="button" value="Go!" />
-				</span>
+				<div id="search-bar" class="input-group input-group-lg">
+					<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
+
+					<span class="input-group-btn">
+						<button id="search" type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
+					</span>
+				</div>
+
+				<h5 id="searchErrorMessage" style="color: #FF6461;"></h5>
+
 			</div>
 		</div>
 	</section>
 
-	<section>
-		<div class="container inner">
-			<h4 id="message"></h4>
-			<h5>Hint: Double the length of vowels to show long vowels.</h5>
-		</div>
-	</section>
+	<section class="padding-bottom">
+		<div class="container outer">
+			<h3 id="recordMessage" style="text-align:center;"></h3>
 
-	<section>
-		<div class="container inner">
 			<!--Audio Player-->
 			<audio id="myAudio" class="video-js vjs-default-skin"></audio>
+
+			<h5>Hint: Double the length of vowels to show long vowels.</h5>
 
 			<!-- Analyse button -->
 			<button id="analyse" type="button" class="btn btn-info btn-lg" disabled>Analyse</button>
@@ -51,6 +55,21 @@
 
 		</div>
 	</div>
+
+	<!--References-->
+	<link href="Content/video-js.min.css" rel="stylesheet">
+	<link href="Content/videojs.record.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="Content/jquery.auto-complete.css">
+
+	<script src="JavaScript/video.min.js"></script>
+
+	<script src="JavaScript/recorder.js"></script>
+	<script src="JavaScript/wavesurfer.min.js"></script>
+	<script src="JavaScript/wavesurfer.microphone.min.js"></script>
+	<script src="JavaScript/videojs.wavesurfer.min.js"></script>
+
+	<script src="JavaScript/videojs.record.js"></script>
+	<script src="JavaScript/videojs.record.recorderjs.js"></script>
 
 	<script src="JavaScript/jquery.auto-complete.js"></script>
 	<script src="JavaScript/dropdown.js"></script>

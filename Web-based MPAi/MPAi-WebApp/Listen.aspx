@@ -2,8 +2,8 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 	<!--Listen Page Content-->
-	<section>
-		<div class="container inner">
+	<section class="padding-top">
+		<div class="container outer">
 
 			<h4>Choose a M&#257;ori word to listen</h4>
 			<div id="search-bar" class="input-group input-group-lg">
@@ -13,7 +13,7 @@
 					<input id="search" class="btn btn-default" type="button" value="Go!" />
 				</span>
 
-				<h5 id="search-message" style="text-align: center; color:red;"></h5>
+				<h5 id="searchErrorMessage" style="text-align: center; color:#FF6461;"></h5>
 			</div>
 			<h4>Choose a category</h4>
 
@@ -45,19 +45,27 @@
 	</section>
 
 	<section>
-		<div class="container inner">
+		<div class="container outer">
 			<h4 id="result" style="text-align: center"></h4>
 			<button id="change" type="button" class="btn btn-default" disabled>Change Speaker</button>
 		</div>
 	</section>
 
-	<section>
-		<div class="container inner">
+	<section class="padding-bottom">
+		<div class="container outer">
 			<!--Audio Player-->
 			<audio id="myAudio" class="video-js vjs-default-skin"></audio>
 		</div>
 	</section>
 
+	<!--References-->
+	<link href="Content/video-js.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="Content/jquery.auto-complete.css">
+
+	<script src="JavaScript/video.min.js"></script>
+
+	<script src="JavaScript/wavesurfer.min.js"></script>
+	<script src="JavaScript/videojs.wavesurfer.min.js"></script>
 
 	<script src="JavaScript/jquery.auto-complete.js"></script>
 	<script src="JavaScript/dropdown.js"></script>
