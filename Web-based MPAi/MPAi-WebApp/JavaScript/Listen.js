@@ -28,6 +28,11 @@ player.on('error', function (error) {
 //    player.wavesurfer.drawBuffer();
 //});
 
+$('document').ready(function (e) {
+    $('#listen').collapse({ toggle: false });
+    $('#recordings').collapse({ toggle: false });
+});
+
 var words = [];
 
 // Create a new XMLHttpRequest.
@@ -75,11 +80,16 @@ $('#maoriWord').keypress(function (event) {
 function loadAudio() {
 
     if (!maoriWord.value || maoriWord.value.trim() === "") {
+        searchErrorMessage.innerText = "You must choose a M\u0101ori word";
+        maoriWord.value = "";
+        $('#listen').collapse('hide');
         return;
     }
 
     if (words.indexOf(maoriWord.value.toLowerCase()) <= -1) {
-        document.getElementById('result').innerText = "Sorry, that word is not currently supported";
+        searchErrorMessage.innerText = "Sorry, '" + maoriWord.value + "' is not recognised\nClick on the search bar to see a list of supported words";
+        maoriWord.value = "";
+        $('#listen').collapse('hide');
         return;
     }
 
@@ -94,16 +104,23 @@ function loadAudio() {
     formData.append('wordCategory', wordCategory);
 
     if (!wordName || wordName.trim() === "") {
-        document.getElementById('result').innerText = "";
+        searchErrorMessage.innerText = "You must choose a M\u0101ori word";
+        maoriWord.value = "";
+        $('#listen').collapse('hide');
     } else {
+        searchErrorMessage.innerText = "";
         xhr('Play.aspx', formData, function (responseText) {
             if (responseText === "nothing") {
                 document.getElementById('result').innerText = "Sorry, there are no recordings for that category";
+                $('#recordings').collapse('hide');
+                $('#listen').collapse('show');
                 document.querySelector('#change').disabled = true;
             } else {
                 obj = JSON.parse(responseText);
                 count = 0;
                 document.getElementById("result").innerText = "Listening to " + (count + 1) + " of " + obj.resultJsonTable.length + " available speakers";
+                $('#listen').collapse('show');
+                $('#recordings').collapse('show');
                 player.waveform.load(obj.resultJsonTable[0].path);
 
                 if (obj.resultJsonTable.length > 1) {
@@ -116,6 +133,10 @@ function loadAudio() {
 
 }
 
+document.querySelector('#maoriWord').oninput = function () {
+    searchErrorMessage.innerText = "";
+};
+
 // Button 'change' action
 document.querySelector('#change').onclick = function () {
     count++;
@@ -124,6 +145,8 @@ document.querySelector('#change').onclick = function () {
     }
     player.waveform.load(obj.resultJsonTable[count].path);
     document.getElementById("result").innerText = "Listening to " + (count + 1) + " of " + obj.resultJsonTable.length + " available speakers";
+    $('#listen').collapse('show');
+    $('#recordings').collapse('show');
 };
 
 // xhr fuction

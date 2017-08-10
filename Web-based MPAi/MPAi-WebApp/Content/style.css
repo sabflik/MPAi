@@ -231,3 +231,7 @@ section {
 .vjs-device-button.vjs-control {
     display: none;
 }
+
+.emotiki {
+    max-width:125px;
+}

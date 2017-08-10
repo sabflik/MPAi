@@ -94,7 +94,6 @@ $('#maoriWord').keypress(function (event) {
     var keycode = (event.keyCode ? event.keyCode : event.which);
     if (keycode == '13') {
         getTarget();
-        maoriWord.value = "";
         return false;
     }
 });
@@ -104,7 +103,6 @@ var expectedWord = null;
 // Button 'search' action
 document.querySelector('#search').onclick = function () {
     getTarget();
-    maoriWord.value = "";
 };
 
 document.querySelector('#maoriWord').oninput = function () {
@@ -114,6 +112,7 @@ document.querySelector('#maoriWord').oninput = function () {
 function getTarget() {
     if (!maoriWord.value || maoriWord.value.trim() === "") {
         searchErrorMessage.innerText = "You must choose a M\u0101ori word";
+        maoriWord.value = "";
         recordMessage.innerText = "";
         expectedWord = null;
         $('#record').collapse('hide');
@@ -127,6 +126,7 @@ function getTarget() {
             $('#record').collapse('show');
         } else {
             searchErrorMessage.innerText = "Sorry, '"+maoriWord.value+"' is not recognised\nClick on the search bar to see a list of supported words";
+            maoriWord.value = "";
             recordMessage.innerText = "";
             expectedWord = null;
             $('#record').collapse('hide');
