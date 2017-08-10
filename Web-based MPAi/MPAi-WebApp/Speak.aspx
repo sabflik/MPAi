@@ -22,7 +22,7 @@
 		</div>
 	</section>
 
-	<section class="padding-bottom">
+	<section id="record" class="padding-bottom collapse">
 		<div class="container outer">
 			<h3 id="recordMessage" style="text-align:center;"></h3>
 

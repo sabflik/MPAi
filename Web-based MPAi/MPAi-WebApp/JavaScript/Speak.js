@@ -62,6 +62,9 @@ player.on('finishRecord', function () {
 //    player.wavesurfer.drawBuffer();
 //});
 
+$('document').ready(function (e) {
+    $('#record').collapse({ toggle: false });
+});
 
 var words = [];
 
@@ -113,6 +116,7 @@ function getTarget() {
         searchErrorMessage.innerText = "You must choose a M\u0101ori word";
         recordMessage.innerText = "";
         expectedWord = null;
+        $('#record').collapse('hide');
     } else {
         var target = maoriWord.value.toLowerCase();
 
@@ -120,10 +124,12 @@ function getTarget() {
             searchErrorMessage.innerText = "";
             recordMessage.innerText = "Please record your pronounciation of the word '" + target+"' below";
             expectedWord = target.replace(/ /g, "_");
+            $('#record').collapse('show');
         } else {
             searchErrorMessage.innerText = "Sorry, '"+maoriWord.value+"' is not recognised\nClick on the search bar to see a list of supported words";
             recordMessage.innerText = "";
             expectedWord = null;
+            $('#record').collapse('hide');
         }
     }
     console.log("Target: " + expectedWord);
