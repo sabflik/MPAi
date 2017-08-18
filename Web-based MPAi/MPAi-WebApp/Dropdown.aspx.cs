@@ -27,7 +27,7 @@ namespace MPAi_WebApp
                 String[] wordNames = new String[wordList.Count];
                 for (int i = 0; i<wordList.Count; i++)
                 {
-                    wordNames[i] = wordList[i].Name;
+                    wordNames[i] = wordList[i].Name.Replace("_", " ");
                 }
 
                 if (wordList.Count == 0)

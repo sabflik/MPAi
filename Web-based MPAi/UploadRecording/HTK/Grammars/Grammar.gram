@@ -1,3 +1,0 @@
-$word = hau | hei | hoe | hoihoi | hou | hë | hï | kei | kë | kï | mao | matiu | mau | moutere | mätao | mätau | mätou | pae | pai | pao | pau | pou | pö | tae | tai | toetoe | toi | täne | tënei | tü;
-
-( SENT-START ($word) SENT-END )

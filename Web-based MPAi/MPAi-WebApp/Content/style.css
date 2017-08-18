@@ -64,7 +64,7 @@ ul {
 }
 
 #navigation {
-    background-color: white;
+    margin-bottom: 0px;
 }
 
 #wrapper {
@@ -104,6 +104,8 @@ ul {
     overflow: auto;
     padding: 20px;
     background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-card > h2 {
@@ -147,30 +149,43 @@ p {
 }
 
 section {
-    padding: 50px 0;
+    padding: 20px 0;
     border-width: 0 0 1px;
     border: 1px solid #e7e7e7;
 }
 
+.padding-top {
+    padding-top: 50px;
+}
+
+.padding-bottom {
+    padding-bottom: 50px;
+}
+
 #myAudio {
-    background-color: #FFFFFF;
+    background-color: #f8f8f8;
     margin-left: auto;
     width: 100%;
+    margin-right: auto;
+}
+
+.outer {
+    width: 80%;
+    margin-left: auto;
     margin-right: auto;
 }
 
 .inner {
-    width: 80%;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media (max-width: 768px) {
-    .inner {
-    width: 100%;
-}
+    .outer {
+        width: 100%;
+    }
 }
 
 #footer-image {
@@ -199,4 +214,24 @@ section {
   text-align: left;
   vertical-align: middle;
   text-align: center;
+}
+
+.body-content {
+    max-width: 100%;
+}
+
+.video-js {
+    font-size: 14px;
+}
+
+.vjs-icon-record-start {
+    color: #FF6461;
+}
+
+.vjs-device-button.vjs-control {
+    display: none;
+}
+
+.emotiki {
+    max-width:125px;
 }

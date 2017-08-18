@@ -15,6 +15,7 @@ $(document).ready(function () {
             }
             catch (exception) {
                 console.log("Could not populate donut");
+                console.log(exception);
             };
 
             try {
@@ -23,6 +24,7 @@ $(document).ready(function () {
             }
             catch (exception) {
                 console.log("Could not populate time scale");
+                console.log(exception);
             };
         }
     });  
@@ -32,6 +34,8 @@ $(document).ready(function () {
 This graph shows current average score of user
 */
 function populateDonut(score) {
+
+    score = parseFloat(score).toFixed(2);
 
     var data = {
         labels: [
