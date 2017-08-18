@@ -7,13 +7,13 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-8">
 					<div class="chart">
-						<h4>My Progress</h4>
+						<h3 style="text-align:center;">Progress Over Time</h3>
 						<canvas id="timeScale"></canvas>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4">
 					<div class="chart">
-						<h4>My Average Score</h4>
+						<h3 style="text-align:center;">Average Score</h3>
 						<canvas id="doughnut"></canvas>
 					</div>
 				</div>

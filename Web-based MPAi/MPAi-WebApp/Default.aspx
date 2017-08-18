@@ -10,7 +10,7 @@
 						<div class="menu-card">
 							<img src="Resources/Sound-Music-icon.png" alt="Pattern" />
 							<h2>Listen</h2>
-							<p class="menu-description">Listen and learn to pronounce common Maori words and phrases</p>
+							<p class="menu-description">Listen and learn to pronounce common M&#257;ori words and phrases</p>
 						</div>
 					</a>
 				</div>
@@ -19,7 +19,7 @@
 						<div class="menu-card">
 							<img src="Resources/Microphone-icon.png" alt="Pattern" />
 							<h2>Speak</h2>
-							<p class="menu-description">Test your Maori pronunciation skills and receive feedback</p>
+							<p class="menu-description">Test your M&#257;ori pronunciation skills and receive feedback</p>
 						</div>
 					</a>
 				</div>
@@ -28,7 +28,7 @@
 						<div class="menu-card">
 							<img src="Resources/Document-icon.png" alt="Pattern" />
 							<h2>Scoreboard</h2>
-							<p class="menu-description">Keep track of your pronunciation history and your progress</p>
+							<p class="menu-description">Keep track of your pronunciation history and your score</p>
 						</div>
 					</a>
 				</div>

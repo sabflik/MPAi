@@ -235,3 +235,9 @@ section {
 .emotiki {
     max-width:125px;
 }
+
+.pager li
+{
+   display:inline-block;
+   margin:0;
+}

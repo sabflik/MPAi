@@ -6,7 +6,7 @@
 		<div class="container outer">
 			<div class="inner">
 
-				<h3 style="text-align:center;">Select a M&#257;ori word to listen</h3>
+				<h3 style="text-align: center;">Select a M&#257;ori word to listen</h3>
 				<div id="search-bar" class="input-group input-group-lg">
 					<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
 
@@ -14,11 +14,11 @@
 						<button id="search" type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
 					</span>
 				</div>
-				<h5 id="searchErrorMessage" style="text-align: center; color: #FF6461;"></h5>
+				<h5 id="searchErrorMessage" class="collapse" style="text-align: center; color: #FF6461;"></h5>
 
 				<hr />
 
-				<h3 style="text-align:center;">Choose a category</h3>
+				<h3 style="text-align: center;">Choose a category</h3>
 
 				<div id="category" class='wrapper text-center'>
 					<div class="btn-group" data-toggle="buttons">
@@ -50,7 +50,18 @@
 
 	<section id="listen" class="padding-bottom collapse">
 		<div class="container outer">
-			<h4 id="result" style="text-align: center"></h4>
+
+			<ul class="pager" style="display:flex;">
+				<li class="previous col-xs-2">
+					<button id="previous" type="button" class="btn btn-info" style="width: auto; float: left; height: 100%;"><span aria-hidden="true">&larr;</span></button>
+				</li>
+				<li class="col-xs-8" style="vertical-align: text-bottom;">
+					<h3 id="result" style="text-align: center"></h3>
+				</li>
+				<li class="next col-xs-2">
+					<button id="next" type="button" class="btn btn-info" style="width: auto; float: right; height: 100%;"><span aria-hidden="true">&rarr;</span></button>
+				</li>
+			</ul>
 
 			<div id="recordings" class="collapse">
 				<button id="change" type="button" class="btn btn-info" disabled>Change Speaker</button>

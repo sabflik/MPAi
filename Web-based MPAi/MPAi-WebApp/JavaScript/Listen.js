@@ -31,6 +31,7 @@ player.on('error', function (error) {
 $('document').ready(function (e) {
     $('#listen').collapse({ toggle: false });
     $('#recordings').collapse({ toggle: false });
+    $('#searchErrorMessage').collapse({ toggle: false });
 });
 
 var words = [];
@@ -81,6 +82,7 @@ function loadAudio() {
 
     if (!maoriWord.value || maoriWord.value.trim() === "") {
         searchErrorMessage.innerText = "You must choose a M\u0101ori word";
+        $('#searchErrorMessage').collapse('show');
         maoriWord.value = "";
         $('#listen').collapse('hide');
         return;
@@ -88,6 +90,7 @@ function loadAudio() {
 
     if (words.indexOf(maoriWord.value.toLowerCase()) <= -1) {
         searchErrorMessage.innerText = "Sorry, '" + maoriWord.value + "' is not recognised\nClick on the search bar to see a list of supported words";
+        $('#searchErrorMessage').collapse('show');
         maoriWord.value = "";
         $('#listen').collapse('hide');
         return;
@@ -105,10 +108,11 @@ function loadAudio() {
 
     if (!wordName || wordName.trim() === "") {
         searchErrorMessage.innerText = "You must choose a M\u0101ori word";
+        $('#searchErrorMessage').collapse('show');
         maoriWord.value = "";
         $('#listen').collapse('hide');
     } else {
-        searchErrorMessage.innerText = "";
+        $('#searchErrorMessage').collapse('hide');
         xhr('Play.aspx', formData, function (responseText) {
             if (responseText === "nothing") {
                 document.getElementById('result').innerText = "Sorry, there are no recordings for that category";
@@ -134,7 +138,7 @@ function loadAudio() {
 }
 
 document.querySelector('#maoriWord').oninput = function () {
-    searchErrorMessage.innerText = "";
+    $('#searchErrorMessage').collapse('hide');
 };
 
 // Button 'change' action

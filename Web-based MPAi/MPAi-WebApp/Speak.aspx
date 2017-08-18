@@ -16,7 +16,7 @@
 					</span>
 				</div>
 
-				<h5 id="searchErrorMessage" style="color: #FF6461;"></h5>
+				<h5 id="searchErrorMessage" class="collapse" style="color: #FF6461;"></h5>
 
 			</div>
 		</div>

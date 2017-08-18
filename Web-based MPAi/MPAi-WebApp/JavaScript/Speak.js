@@ -64,6 +64,7 @@ player.on('finishRecord', function () {
 
 $('document').ready(function (e) {
     $('#record').collapse({ toggle: false });
+    $('#searchErrorMessage').collapse({ toggle: false });
 });
 
 var words = [];
@@ -106,12 +107,13 @@ document.querySelector('#search').onclick = function () {
 };
 
 document.querySelector('#maoriWord').oninput = function () {
-    searchErrorMessage.innerText = "";
+    $('#searchErrorMessage').collapse('hide');
 };
 
 function getTarget() {
     if (!maoriWord.value || maoriWord.value.trim() === "") {
         searchErrorMessage.innerText = "You must choose a M\u0101ori word";
+        $('#searchErrorMessage').collapse('show');
         maoriWord.value = "";
         recordMessage.innerText = "";
         expectedWord = null;
@@ -120,12 +122,13 @@ function getTarget() {
         var target = maoriWord.value.toLowerCase();
 
         if (words.indexOf(target) > -1) {
-            searchErrorMessage.innerText = "";
+            $('#searchErrorMessage').collapse('hide');
             recordMessage.innerText = "Please record your pronounciation of the word '" + target+"' below";
             expectedWord = target.replace(/ /g, "_");
             $('#record').collapse('show');
         } else {
             searchErrorMessage.innerText = "Sorry, '"+maoriWord.value+"' is not recognised\nClick on the search bar to see a list of supported words";
+            $('#searchErrorMessage').collapse('show');
             maoriWord.value = "";
             recordMessage.innerText = "";
             expectedWord = null;
@@ -154,13 +157,7 @@ function reset() {
 // analyse function
 function analyse(blob) {
     console.log("Maori word: " + expectedWord);
-    if (!expectedWord || expectedWord.trim() === "") {
-        recordMessage.innerText = "";
-        document.getElementById(maoriWord.id).focus();
-        document.getElementById(maoriWord.id).select();
-    } else {
-        upload(blob, callBack);
-    }
+    upload(blob, callBack);
 }
 
 function callBack(response) {
