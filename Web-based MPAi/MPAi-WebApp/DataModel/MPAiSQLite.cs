@@ -12,11 +12,11 @@ namespace MPAi_WebApp.DataModel
         SQLiteConnection connection;
         public MPAiSQLite()
         {
-            if (!(System.IO.File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"Database"))))
+            if (!(System.IO.File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"MPAiDb.sqlite"))))
             {
-                SQLiteConnection.CreateFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Database"));
+                SQLiteConnection.CreateFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite"));
             }
-            connection = new SQLiteConnection("Data Source="+Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"Database")+"; Version=3;");
+            connection = new SQLiteConnection("Data Source="+Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite") +"; Version=3;");
             connection.Open();
             createTables();
             populatetables();
@@ -54,7 +54,7 @@ namespace MPAi_WebApp.DataModel
         private void populatetables()
         {
             //Set audio folder properly
-            DirectoryInfo dirInfo = new DirectoryInfo("C:\\Users\\adm.Jayden\\Work Folders\\Documents\\GitHub\\SabFlik\\MPAi\\Web-based MPAi\\MPAi-WebApp\\Audio");
+            DirectoryInfo dirInfo = new DirectoryInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"Audio"));
             foreach (FileInfo fInfo in dirInfo.GetFiles("*.wav", SearchOption.AllDirectories))   // Also searches subdirectories.
             {
                 if (fInfo.Extension.Contains("wav"))

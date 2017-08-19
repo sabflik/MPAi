@@ -7,13 +7,13 @@ namespace MPAi_WebApp
 {
     public partial class Startup {
         public void Configuration(IAppBuilder app) {
+            MPAiSQLite test = new MPAiSQLite();
             ConfigureAuth(app);
             //using(MPAiContext context = MPAiContext.InitializeDBModel())
             //{
             //    // Force the database to be seeded on startup
             //    context.Database.Initialize(true);
             //}
-            MPAiSQLite test = new MPAiSQLite();
         }
     }
 }
