@@ -25,14 +25,14 @@ namespace MPAi_WebApp.Account
                 //string callbackUrl = IdentityHelper.GetUserConfirmationRedirectUrl(code, user.Id, Request);
                 //manager.SendEmail(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>.");
 
-                using(MPAiContext context = MPAiContext.InitializeDBModel())
-                {
-                    context.UserSet.Add(new User()
-                    {
-                        Username = user.UserName
-                    });
-                    context.SaveChanges();
-                }
+                //using(MPAiContext context = MPAiContext.InitializeDBModel())
+                //{
+                //    context.UserSet.Add(new User()
+                //    {
+                //        Username = user.UserName
+                //    });
+                //    context.SaveChanges();
+                //}
 
                 signInManager.SignIn( user, isPersistent: false, rememberBrowser: false);
                 IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);

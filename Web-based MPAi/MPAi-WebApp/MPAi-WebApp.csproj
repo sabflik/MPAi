@@ -82,7 +82,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.SQLite">
-      <HintPath>..\..\..\..\..\..\Downloads\GettingStartedWithSQLitePart1\SQLiteSamples\SQLiteSamples\SQLite\System.Data.SQLite.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Downloads\System.Data.SQLite.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
@@ -5762,7 +5762,9 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="Statistics.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />

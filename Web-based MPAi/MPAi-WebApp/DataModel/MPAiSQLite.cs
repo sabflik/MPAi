@@ -12,11 +12,16 @@ namespace MPAi_WebApp.DataModel
         SQLiteConnection connection;
         public MPAiSQLite()
         {
-            if (!(System.IO.File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"MPAiDb.sqlite"))))
+            if (!(System.IO.File.Exists(Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "test.txt"))))
             {
-                SQLiteConnection.CreateFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite"));
+                File.Create(Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "test.txt"));
             }
-            connection = new SQLiteConnection("Data Source="+Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite") +"; Version=3;");
+
+            if (!(System.IO.File.Exists(Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "MPAiDb.sqlite"))))
+            {
+                SQLiteConnection.CreateFile(Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "MPAiDb.sqlite"));
+            }
+            connection = new SQLiteConnection("Data Source="+Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "MPAiDb.sqlite") +"; Version=3;");
             connection.Open();
             createTables();
             populatetables();
