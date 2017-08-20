@@ -12,7 +12,15 @@ namespace MPAi_WebApp.DataModel
     {
         public MPAiSQLite()
         {
-            if (!(File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),"MPAiDb.sqlite"))))
+            if (!(File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite"))))
+            {
+                initaliseDatabase();
+            }
+        }
+
+        public void initaliseDatabase()
+        {
+            if (!(File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite"))))
             {
                 SQLiteConnection.CreateFile(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite"));
             }

@@ -7,7 +7,6 @@ namespace MPAi_WebApp
 {
     public partial class Startup {
         public void Configuration(IAppBuilder app) {
-            MPAiSQLite test = new MPAiSQLite();
             ConfigureAuth(app);
             //using(MPAiContext context = MPAiContext.InitializeDBModel())
             //{
