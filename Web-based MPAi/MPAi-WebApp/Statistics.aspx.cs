@@ -15,11 +15,6 @@ namespace MPAi_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
-             * Old JSON Implementation:
-            string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\dummy.json");
-            string json = File.ReadAllText(jsonPath);
-            */
             // Get all scores from the database for the current user.
             using (MPAiContext context = MPAiContext.InitializeDBModel())
             {

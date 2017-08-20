@@ -20,14 +20,6 @@ namespace MPAi_WebApp
             Debug.WriteLine("Name: " + name);
             Debug.WriteLine("Category: " + category);
 
-            /*
-            // get data from Json
-            string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\audio.json");
-            string json = File.ReadAllText(jsonPath);
-            DataSet dataSet = JsonConvert.DeserializeObject<DataSet>(json);
-            DataTable dataTable = dataSet.Tables[category];
-            */
-
             // Get data from database
             using (MPAiContext context = MPAiContext.InitializeDBModel())
             {
