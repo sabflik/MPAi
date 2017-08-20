@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MPAi_WebApp.DataModel;
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.IO;
@@ -18,39 +19,9 @@ namespace MPAi_WebApp.DataModel
             createTables();
             populatetables();
         }
-        /// <summary>
-        /// Returns a word from the given file path, according to MPAi naming conventions.
-        /// </summary>
-        /// <param name="fileName">The recording file name</param>
-        /// <returns>A speaker object representing the speaker of the recording.</returns>
-        private String WordNameFromFile(String fileName)
-        {
-            return fileName.Split('-')[2];
-        }
-        /// <summary>
-        /// Returns a Speaker object from the given file path, according to MPAi naming conventions.
-        /// </summary>
-        /// <param name="fileName">The recording file name</param>
-        /// <returns>A speaker object representing the speaker of the recording.</returns>
-        private Speaker SpeakerFromFile(String fileName)
-        {
-            switch (fileName.Split('-')[0])
-            {
-                case ("oldfemale"):
-                    return Speaker.KUIA_FEMALE;
-                case ("oldmale"):
-                    return Speaker.KAUMATUA_MALE;
-                case ("youngfemale"):
-                    return Speaker.MODERN_FEMALE;
-                case ("youngmale"):
-                    return Speaker.MODERN_MALE;
-                default:
-                    return Speaker.UNIDENTIFIED;
-            }
-        }
+        
         private void populatetables()
         {
-            //Set audio folder properly
             DirectoryInfo dirInfo = new DirectoryInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"Audio"));
             foreach (FileInfo fInfo in dirInfo.GetFiles("*.wav", SearchOption.AllDirectories))   // Also searches subdirectories.
             {
@@ -58,8 +29,8 @@ namespace MPAi_WebApp.DataModel
                 {
                     // Dynamically create recordings and words.
                     String fileName = Path.GetFileName(fInfo.FullName);
-                    String wordName = WordNameFromFile(fileName);
-                    Speaker speaker = SpeakerFromFile(fileName);
+                    String wordName = NameParser.WordNameFromFile(fileName);
+                    Speaker speaker = NameParser.SpeakerFromFile(fileName);
 
                     // Create the word if it doesn't exist, get the name from the filename.
                     using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite") + "; Version=3;"))
@@ -142,6 +113,40 @@ namespace MPAi_WebApp.DataModel
                 command = new SQLiteCommand(sql, connection);
                 command.ExecuteNonQuery();
             }
+        }
+    }
+}
+
+static class NameParser
+{
+    /// <summary>
+    /// Returns a word from the given file path, according to MPAi naming conventions.
+    /// </summary>
+    /// <param name="fileName">The recording file name</param>
+    /// <returns>A speaker object representing the speaker of the recording.</returns>
+    public static String WordNameFromFile(String fileName)
+    {
+        return fileName.Split('-')[2];
+    }
+    /// <summary>
+    /// Returns a Speaker object from the given file path, according to MPAi naming conventions.
+    /// </summary>
+    /// <param name="fileName">The recording file name</param>
+    /// <returns>A speaker object representing the speaker of the recording.</returns>
+    public static Speaker SpeakerFromFile(String fileName)
+    {
+        switch (fileName.Split('-')[0])
+        {
+            case ("oldfemale"):
+                return Speaker.KUIA_FEMALE;
+            case ("oldmale"):
+                return Speaker.KAUMATUA_MALE;
+            case ("youngfemale"):
+                return Speaker.MODERN_FEMALE;
+            case ("youngmale"):
+                return Speaker.MODERN_MALE;
+            default:
+                return Speaker.UNIDENTIFIED;
         }
     }
 }
