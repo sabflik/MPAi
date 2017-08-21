@@ -43,7 +43,7 @@ namespace MPAi_WebApp
                 }
 
                 MPAiSQLite context = new MPAiSQLite();
-                context.SaveScore(System.Web.HttpContext.Current.User.Identity.Name, targetWord.ToLower(), (int)(Math.Round(SimilarityAlgorithm.DamereauLevensheinDistanceAlgorithm(Request.Form["target"], result), 0) * 100));
+                context.SaveScore(System.Web.HttpContext.Current.User.Identity.Name, targetWord.ToLower(), (int)(Math.Round(SimilarityAlgorithm.DamereauLevensheinDistanceAlgorithm(Request.Form["target"], result) * 100, 0)));
 
                 // Output result as JSON
                 Response.Clear();

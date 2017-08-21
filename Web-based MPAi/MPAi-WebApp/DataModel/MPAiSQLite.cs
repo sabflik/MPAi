@@ -27,7 +27,7 @@ namespace MPAi_WebApp.DataModel
             createTables();
             populatetables();
         }
-        
+
         private void populatetables()
         {
             DirectoryInfo dirInfo = new DirectoryInfo(Path.Combine(AppDomain.CurrentDomain.BaseDirectory,"Audio"));
@@ -235,6 +235,47 @@ namespace MPAi_WebApp.DataModel
                 command = new SQLiteCommand(sql, connection);
                 command.ExecuteNonQuery();
             }
+        }
+
+        public List<Score> GenerateScoreList(string username)
+        {
+            // Get all scores from the database for the current user.
+            List<Score> scoreList = new List<Score>();
+            using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "MPAiDb.sqlite") + "; Version=3;"))
+            {
+                connection.Open();
+                string sql = "select * " +
+                    "from User " +
+                    "where username = '" + username.ToLower() + "'";
+                SQLiteCommand command = new SQLiteCommand(sql, connection);
+                SQLiteDataReader reader = command.ExecuteReader();
+                // Usernames should be unique; so only read first result.
+                reader.Read();
+                User newUser = new User()
+                {
+                    UserId = Int32.Parse(reader["userId"].ToString()),
+                    Username = reader["username"].ToString()
+                };
+
+                sql = "select * " +
+                    "from Score " +
+                    "where userId = " + newUser.UserId.ToString();
+                command = new SQLiteCommand(sql, connection);
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    scoreList.Add(new Score()
+                    {
+                        ScoreId = Int32.Parse(reader["scoreId"].ToString()),
+                        user = newUser,
+                        UserId = newUser.UserId,
+                        WordId = Int32.Parse(reader["wordId"].ToString()),
+                        Percentage = Int32.Parse(reader["percentage"].ToString()),
+                        Date = DateTime.Parse(reader["date"].ToString())
+                    });
+                }
+            }
+            return scoreList;
         }
     }
 }

@@ -35,8 +35,6 @@ This graph shows current average score of user
 */
 function populateDonut(score) {
 
-    score = parseFloat(score).toFixed(2);
-
     var data = {
         labels: [
           "Data",
