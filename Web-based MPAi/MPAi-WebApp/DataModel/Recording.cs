@@ -7,21 +7,19 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MPAi_WebApp.DataModel
 {
-    [Table("Recording")]
-    public partial class Recording
+    /**
+     * Wrapper class to hold values from the recording table.
+     */
+    public class Recording
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int RecordingId { get; set; }
 
-        [Required]
         public Speaker Speaker { get; set; }
  
-        [ForeignKey("WordId")]
-        public virtual Word Word { get; set; }
+        public Word Word { get; set; }
+
         public int WordId { get; set; }
 
-        [Required]
-        [StringLength(256)]
         public string FilePath { get; set; }
     }
 }
