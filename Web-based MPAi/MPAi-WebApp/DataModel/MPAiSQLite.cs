@@ -126,16 +126,6 @@ namespace MPAi_WebApp.DataModel
         }
         public List<Recording> GenerateRecordingList(String name, String category)
         {
-            /*
-            Speaker speaker;
-            if (!(Enum.TryParse(category, out speaker)))
-            {
-                speaker = Speaker.UNIDENTIFIED;
-            }
-            List<Recording> recordingList = context.RecordingSet.ToList().Where(x => x.Word.Name.Equals(name) && x.Speaker.Equals(speaker)).ToList();
-            return recordingList;
-            */
-
            List<Recording> recordingSet = new List<Recording>();
 
             using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "MPAiDb.sqlite") + "; Version=3;"))
@@ -193,6 +183,18 @@ namespace MPAi_WebApp.DataModel
                 }
             }
             return wordSet;
+        }
+
+        public void AddUser(String username)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "MPAiDb.sqlite") + "; Version=3;"))
+            {
+                connection.Open();
+                String sql = "insert into User(username) " +
+                    "values('" + username + "')";
+                SQLiteCommand command = new SQLiteCommand(sql, connection);
+                command.ExecuteNonQuery();
+            }
         }
     }
 }
