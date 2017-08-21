@@ -21,9 +21,11 @@ namespace MPAi_WebApp
             Debug.WriteLine("Category: " + category);
 
             // Get data from database
-            using (MPAiContext context = MPAiContext.InitializeDBModel())
-            {
-                List<Recording> recordingList = DbAdapter.GenerateRecordingList(context, name, category);
+            //using (MPAiContext context = MPAiContext.InitializeDBModel())
+            //{
+            MPAiSQLite context = new MPAiSQLite();
+
+                List<Recording> recordingList = context.GenerateRecordingList(name, category);
 
                 // make a new Dataset
                 DataSet newDataSet = new DataSet("newDataSet");
@@ -41,7 +43,7 @@ namespace MPAi_WebApp
                 foreach (Recording r in recordingList)
                 {
                     DataRow newRow = newDataTable.NewRow();
-                    newRow["name"] = r.Word.Name;
+                    newRow["name"] = r.Word.WordName;
                     newRow["category"] = Enum.GetName(typeof(Speaker), r.Speaker);
                     newRow["path"] = r.FilePath;
                     newDataTable.Rows.Add(newRow);
@@ -61,7 +63,7 @@ namespace MPAi_WebApp
                 Response.ContentType = "application/json; charset=utf-8";
                 Response.Write(newJson);
                 Response.End();
-            }
+            //}
         }
     }
 }

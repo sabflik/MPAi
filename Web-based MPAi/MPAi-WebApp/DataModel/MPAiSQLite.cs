@@ -45,13 +45,13 @@ namespace MPAi_WebApp.DataModel
                     {
                         connection.Open();
                         string sql = "select count(*) from Word " +
-                            "where wordName = '" + fileName + "'";
+                            "where wordName = '" + wordName + "'";
                         SQLiteCommand command = new SQLiteCommand(sql, connection);
                         int count = Int32.Parse(command.ExecuteScalar().ToString());
                         if (count <= 0)
                         {
                             sql = "insert into Word (wordName)" +
-                                "values('" + fileName +
+                                "values('" + wordName +
                                 "')";
                             command = new SQLiteCommand(sql, connection);
                             command.ExecuteNonQuery();
@@ -66,7 +66,7 @@ namespace MPAi_WebApp.DataModel
                         if (count <= 0)
                         {
                             sql = "select wordId from Word " +
-                           "where wordName = '" + fileName + "'";
+                           "where wordName = '" + wordName + "'";
                             command = new SQLiteCommand(sql, connection);
                             int wordID = Int32.Parse(command.ExecuteScalar().ToString());
 
@@ -74,6 +74,8 @@ namespace MPAi_WebApp.DataModel
                                 "values(" + Convert.ToInt32(speaker).ToString() +
                                 ", " + wordID.ToString() +
                                 ", '" + fInfo.FullName + "')";
+                            command = new SQLiteCommand(sql, connection);
+                            command.ExecuteNonQuery();
                         }
                     }
                 }
@@ -121,6 +123,76 @@ namespace MPAi_WebApp.DataModel
                 command = new SQLiteCommand(sql, connection);
                 command.ExecuteNonQuery();
             }
+        }
+        public List<Recording> GenerateRecordingList(String name, String category)
+        {
+            /*
+            Speaker speaker;
+            if (!(Enum.TryParse(category, out speaker)))
+            {
+                speaker = Speaker.UNIDENTIFIED;
+            }
+            List<Recording> recordingList = context.RecordingSet.ToList().Where(x => x.Word.Name.Equals(name) && x.Speaker.Equals(speaker)).ToList();
+            return recordingList;
+            */
+
+           List<Recording> recordingSet = new List<Recording>();
+
+            using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite") + "; Version=3;"))
+            {
+                connection.Open();
+                Speaker speaker;
+                if (!(Enum.TryParse(category, out speaker)))
+                {
+                    speaker = Speaker.UNIDENTIFIED;
+                }
+                string sql = "select * " +
+                    "from Word natural join Recording " +
+                    "where wordName = '" + name + "' " +
+                    "and speaker = " + Convert.ToInt32(speaker).ToString();
+                SQLiteCommand command = new SQLiteCommand(sql, connection);
+                SQLiteDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Word newWord = new Word()
+                    {
+                        WordId = Int32.Parse(reader["wordId"].ToString()),
+                        WordName = reader["wordName"].ToString()
+                    };
+                    Recording newRecording = new Recording()
+                    {
+                        RecordingId = Int32.Parse(reader["recordingId"].ToString()),
+                        Speaker = (Speaker)Int32.Parse(reader["speaker"].ToString()),
+                        Word = newWord,
+                        WordId = newWord.WordId,
+                        FilePath = reader["filePath"].ToString()
+                    };
+                    recordingSet.Add(newRecording);
+                }
+            }
+            return recordingSet;
+        }
+
+        public List<Word> GenerateWordList()
+        {
+            List<Word> wordSet = new List<Word>();
+            using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "MPAiDb.sqlite") + "; Version=3;"))
+            {
+                connection.Open();
+                string sql = "select * from Word";
+                SQLiteCommand command = new SQLiteCommand(sql, connection);
+                SQLiteDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    Word newWord = new Word()
+                    {
+                        WordId = Int32.Parse(reader["wordId"].ToString()),
+                        WordName = reader["wordName"].ToString()
+                    };
+                    wordSet.Add(newWord);
+                }
+            }
+            return wordSet;
         }
     }
 }
