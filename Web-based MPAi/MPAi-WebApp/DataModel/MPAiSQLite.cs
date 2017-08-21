@@ -190,9 +190,49 @@ namespace MPAi_WebApp.DataModel
             using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "MPAiDb.sqlite") + "; Version=3;"))
             {
                 connection.Open();
-                String sql = "insert into User(username) " +
-                    "values('" + username + "')";
+                string sql = "insert into User(username) " +
+                    "values('" + username.ToLower() + "')";
                 SQLiteCommand command = new SQLiteCommand(sql, connection);
+                command.ExecuteNonQuery();
+            }
+        }
+        public void SaveScore(string username, string wordName, int percentage)
+        {
+            using (SQLiteConnection connection = new SQLiteConnection("Data Source=" + Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "MPAiDb.sqlite") + "; Version=3;"))
+            {
+                connection.Open();
+                string sql = "select * " +
+                    "from User " +
+                    "where username = '" + username.ToLower() + "'";
+                SQLiteCommand command = new SQLiteCommand(sql, connection);
+                SQLiteDataReader reader = command.ExecuteReader();
+                // Usernames should be unique; so only read first result.
+                reader.Read();
+                User newUser = new User()
+                {
+                    UserId = Int32.Parse(reader["userId"].ToString()),
+                    Username = reader["username"].ToString()
+                };
+
+                sql = "select * " +
+                    "from Word " +
+                    "where wordName = '" + wordName + "'";
+                command = new SQLiteCommand(sql, connection);
+                reader = command.ExecuteReader();
+                // Word names should be unique; so only read first result.
+                reader.Read();
+                Word newWord = new Word()
+                {
+                    WordId = Int32.Parse(reader["wordId"].ToString()),
+                    WordName = reader["wordName"].ToString()
+                };
+
+                sql = "insert into Score(wordId, userId, percentage, date) " +
+                    "values(" + newWord.WordId.ToString() + ", " +
+                    newUser.UserId.ToString() + ", " +
+                    percentage.ToString() + ", '" +
+                    DateTime.Now.ToString() + "')";
+                command = new SQLiteCommand(sql, connection);
                 command.ExecuteNonQuery();
             }
         }
