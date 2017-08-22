@@ -21,13 +21,14 @@ namespace MPAi_WebApp
             */
             // Get data from database
             string json;
-            using (MPAiContext context = MPAiContext.InitializeDBModel())
-            {
-                List<Word> wordList = DbAdapter.GenerateWordList(context);
+            //using (MPAiContext context = MPAiContext.InitializeDBModel())
+            //{
+            MPAiSQLite context = new MPAiSQLite();
+                List<Word> wordList = context.GenerateWordList();
                 String[] wordNames = new String[wordList.Count];
-                for (int i = 0; i<wordList.Count; i++)
+                for (int i = 0; i < wordList.Count; i++)
                 {
-                    wordNames[i] = wordList[i].Name.Replace("_", " ");
+                    wordNames[i] = wordList[i].WordName.Replace("_", " ");
                 }
 
                 if (wordList.Count == 0)
@@ -38,7 +39,7 @@ namespace MPAi_WebApp
                 {
                     json = JsonConvert.SerializeObject(wordNames, Formatting.Indented);
                 }
-            }
+            //}
             // Output result as JSON
             Response.Clear();
             Response.ContentType = "application/json; charset=utf-8";

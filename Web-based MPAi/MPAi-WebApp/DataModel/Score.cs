@@ -7,24 +7,20 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MPAi_WebApp.DataModel
 {
-    [Table("Score")]
-    public partial class Score
+    public class Score
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ScoreId { get; set; }
 
-        [ForeignKey("UserId")]
-        public virtual User user { get; set; }
+        public User user { get; set; }
+
         public int UserId { get; set; }
 
-        [ForeignKey("WordId")]
-        public virtual Word word { get; set; }
+        public Word word { get; set; }
+
         public int WordId { get; set; }
 
-        [Required]
         public double Percentage { get; set; }
 
-        [Required]
         public DateTime Date { get; set; }
         // Add other fields if the scoreboard calls for it
     }

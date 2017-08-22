@@ -7,15 +7,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MPAi_WebApp.DataModel
 {
-    [Table("User")]
-    public partial class User
+    public class User
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int UserId { get; set; }
 
-        [Required]
-        [StringLength(64)]
-        [Index(IsUnique = true)]
         public string Username { get; set; }
     }
 }

@@ -15,74 +15,63 @@ namespace MPAi_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
-             * Old JSON Implementation:
-            string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\dummy.json");
-            string json = File.ReadAllText(jsonPath);
-            */
-            // Get all scores from the database for the current user.
-            using (MPAiContext context = MPAiContext.InitializeDBModel())
+            MPAiSQLite context = new MPAiSQLite();
+            List<Score> scoreList = context.GenerateScoreList(HttpContext.Current.User.Identity.Name);
+
+            // Calculate current score (That is, the score in the donut, which I assume to be the average)
+            double totalScores = 0;
+            foreach (Score s in scoreList)
             {
-                List<Score> scoreList = context.ScoreSet.Where(x =>
-                x.user.Username.Equals(HttpContext.Current.User.Identity.Name)
-                //&& x.word.Name.Equals(wordname)       // This code will allow selection by word, should we implement that.
-                ).ToList();
+                totalScores += s.Percentage;
+            }
+            double currentScore = Math.Round(totalScores / scoreList.Count());  // Get this into JSON somehow
+                                                                                // Format scores and dates as JSON
 
-                // Calculate current score (That is, the score in the donut, which I assume to be the average)
-                double totalScores = 0;
-                foreach (Score s in scoreList)
-                {
-                    totalScores += s.Percentage;
-                }
-                double currentScore = totalScores / scoreList.Count();  // Get this into JSON somehow
-                // Format scores and dates as JSON
+            // make a new Dataset
+            DataSet newDataSet = new DataSet("newDataSet");
+            newDataSet.Namespace = "MPAi_WebApp";
 
-                // make a new Dataset
-                DataSet newDataSet = new DataSet("newDataSet");
-                newDataSet.Namespace = "MPAi_WebApp";
+            // Current Scores table
+            DataTable donutDataTable = new DataTable("donutScore");
+            DataColumn currentScoreColumn = new DataColumn("donutScore");
+            donutDataTable.Columns.Add(currentScoreColumn);
+            newDataSet.Tables.Add(donutDataTable);
 
-                // Current Scores table
-                DataTable donutDataTable = new DataTable("donutScore");
-                DataColumn currentScoreColumn = new DataColumn("donutScore");
-                donutDataTable.Columns.Add(currentScoreColumn);
-                newDataSet.Tables.Add(donutDataTable);
+            DataRow donutRow = donutDataTable.NewRow();
+            donutRow["donutScore"] = currentScore;
+            donutDataTable.Rows.Add(donutRow);
 
-                DataRow donutRow = donutDataTable.NewRow();
-                donutRow["donutScore"] = currentScore;
-                donutDataTable.Rows.Add(donutRow);
+            // Scores table
+            DataTable scoresDataTable = new DataTable("scores");
+            DataColumn timeColumn = new DataColumn("time", typeof(string));
+            scoresDataTable.Columns.Add(timeColumn);
+            DataColumn scoreColumn = new DataColumn("score", typeof(string));
+            scoresDataTable.Columns.Add(scoreColumn);
+            newDataSet.Tables.Add(scoresDataTable);
 
-                // Scores table
-                DataTable scoresDataTable = new DataTable("scores");
-                DataColumn timeColumn = new DataColumn("time", typeof(string));
-                scoresDataTable.Columns.Add(timeColumn);
-                DataColumn scoreColumn = new DataColumn("score", typeof(string));
-                scoresDataTable.Columns.Add(scoreColumn);
-                newDataSet.Tables.Add(scoresDataTable);
+            foreach (Score s in scoreList)
+            {
+                DataRow newRow = scoresDataTable.NewRow();
+                newRow["time"] = s.Date.ToString();
+                newRow["score"] = s.Percentage;
+                scoresDataTable.Rows.Add(newRow);
+            }
 
-                foreach (Score s in scoreList)
-                {
-                    DataRow newRow = scoresDataTable.NewRow();
-                    newRow["time"] = s.Date.ToShortDateString();
-                    newRow["score"] = s.Percentage;
-                    scoresDataTable.Rows.Add(newRow);
-                }
+            string newJson;
+            if (scoresDataTable.Rows.Count == 0)
+            {
+                newJson = "nothing";
+            }
+            else
+            {
+                newJson = JsonConvert.SerializeObject(newDataSet, Formatting.Indented);
+            }
 
-                string newJson;
-                if (scoresDataTable.Rows.Count == 0)
-                {
-                    newJson = "nothing";
-                }
-                else
-                {
-                    newJson = JsonConvert.SerializeObject(newDataSet, Formatting.Indented);
-                }
-
-                // Output result as JSON
-                Response.Clear();
-                Response.ContentType = "application/json; charset=utf-8";
-                Response.Write(newJson);
-                Response.End();
+            // Output result as JSON
+            Response.Clear();
+            Response.ContentType = "application/json; charset=utf-8";
+            Response.Write(newJson);
+            Response.End();
             }
         }
     }
-}
