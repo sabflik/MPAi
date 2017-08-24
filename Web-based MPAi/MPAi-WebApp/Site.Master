@@ -13,9 +13,6 @@
 	</asp:PlaceHolder>
 	<webopt:BundleReference runat="server" Path="~/Content/css" />
 	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
-	<%-- References --%>
-	<link rel="stylesheet" type="text/css" href="Content/style.css">
 </head>
 <body>
 	<form runat="server">
@@ -44,7 +41,7 @@
 		<div class="container">
 			<div class="navbar-header">
 					<a class="navbar-brand" runat="server" href="~/" style="padding:0">
-						<img id="headerLogo" src="Resources/headerImage.png" alt="MPAi: A Maori Pronunciation Aid" style="max-height:50px; width:auto;">
+						<img id="headerLogo" runat="server" src="~/Resources/headerImage.png" alt="MPAi: A Maori Pronunciation Aid" style="max-height:50px; width:auto;">
 					</a>
 				</div>
 		</div>
