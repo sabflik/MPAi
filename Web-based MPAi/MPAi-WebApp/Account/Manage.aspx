@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Manage Account" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Manage.aspx.cs" Inherits="MPAi_WebApp.Account.Manage" %>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-	<div class="container outer">
+	<div class="container outer padding-top">
 		<h2><%: Title %>.</h2>
 
 		<div>

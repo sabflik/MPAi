@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Forgot password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Forgot.aspx.cs" Inherits="MPAi_WebApp.Account.ForgotPassword" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-	<div class="container outer">
+	<div class="container outer padding-top">
 		<h2><%: Title %>.</h2>
 
 		<div class="row">

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="MPAi_WebApp.Account.Register" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-	<div class="container outer">
+	<div class="container outer padding-top">
 		<h2><%: Title %>.</h2>
 		<p class="text-danger">
 			<asp:Literal runat="server" ID="ErrorMessage" />

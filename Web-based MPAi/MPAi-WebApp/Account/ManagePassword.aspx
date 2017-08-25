@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Manage Password" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManagePassword.aspx.cs" Inherits="MPAi_WebApp.Account.ManagePassword" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-	<div class="container outer">
+	<div class="container outer padding-top">
 		<h2><%: Title %>.</h2>
 		<div class="form-horizontal">
 			<section id="passwordForm">

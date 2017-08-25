@@ -67,6 +67,10 @@ ul {
     margin-bottom: 0px;
 }
 
+.navbar-nav > li > a {
+    font-size: 18px;
+}
+
 #wrapper {
     margin: 0;
     background-color: white;
@@ -96,7 +100,7 @@ ul {
 }
 
 /* Base Button Style */
-.btn {
+.btn-wide {
   width: 100%;
 }
 
@@ -124,10 +128,6 @@ ul {
    border: #AB0F12 solid 1px;
    background-color: #7f0b0d;
 }
-
-    .kwicks > li {
-        background-color: white;
-    }
 
 .menu-description {
     color: white;

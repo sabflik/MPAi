@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Log in" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="MPAi_WebApp.Account.Login" Async="true" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-	<div class="container outer">
+	<div class="container outer padding-top">
 		<h2><%: Title %>.</h2>
 
 		<div class="row">
