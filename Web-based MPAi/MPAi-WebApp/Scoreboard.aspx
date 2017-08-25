@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Soreboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Scoreboard.aspx.cs" Inherits="MPAi_WebApp.Scoreboard" %>
+﻿<%@ Page Title="Scoreboard" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Scoreboard.aspx.cs" Inherits="MPAi_WebApp.Scoreboard" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 	<!--Scoreboard content-->
@@ -6,9 +6,16 @@
 		<div class="container" style="min-width: 300px;">
 			<div class="row">
 				<div class="col-xs-12 col-sm-8">
-					<div class="chart">
-						<h3 style="text-align:center;">Progress Over Time</h3>
-						<canvas id="timeScale"></canvas>
+					<div id="timeScaleParent" class="chart">
+						<h3 style="text-align: center;">Progress Over Time</h3>
+						<div class="form-group">
+							<h4>See progress for:</h4>
+							<select class="form-control" id="timeUnit">
+								<option>past day</option>
+								<option selected>past month</option>
+								<option>past year</option>
+							</select>
+						</div>
 					</div>
 				</div>
 				<div class="col-xs-12 col-sm-4">

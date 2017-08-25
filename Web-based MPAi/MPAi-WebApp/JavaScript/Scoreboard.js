@@ -1,4 +1,6 @@
-﻿//Populate all graphs
+﻿var scores;
+
+//Populate all graphs
 $(document).ready(function () {
     var formData = new FormData();
 
@@ -20,14 +22,15 @@ $(document).ready(function () {
 
             try {
                 console.log("Number of Scores" + data.scores.length);
-                populateTimeScale(data.scores);
+                scores = data.scores;
+                populateTimeScale(getTimeUnitInfo('past month'));
             }
             catch (exception) {
                 console.log("Could not populate time scale");
                 console.log(exception);
             };
         }
-    });  
+    });
 });
 
 /*DONUT graph
@@ -92,23 +95,17 @@ function populateDonut(score) {
 /*TIME SCALE graph
 This graph shows progress of user's scores over time
 */
-function populateTimeScale(scores) {
+function populateTimeScale(timeInfo) {
+
+    $('#timeScale').remove(); // this is my <canvas> element
+    $('#timeScaleParent').append('<canvas id="timeScale"><canvas>');
 
     var ctx = document.getElementById("timeScale");
-
-    var dataset = [];
-
-    for (var i = 0; i < scores.length; i++) {
-        dataset.push({
-            x: moment(scores[i].time, 'DD/MM/YYYY'),
-            y: scores[i].score
-        });
-    }
 
     var data = {
         datasets: [{
             label: 'MPAi Score',
-            data: dataset,
+            data: timeInfo.dataset,
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
 
             borderColor: 'rgba(54, 162, 235, 1)',
@@ -117,7 +114,6 @@ function populateTimeScale(scores) {
     };
 
     var options = {
-        animation: false,
         layout: {
             padding: {
                 left: 20,
@@ -129,11 +125,29 @@ function populateTimeScale(scores) {
         legend: {
             display: false
         },
+        tooltips: {
+            enabled: true,
+            mode: 'single',
+            callbacks: {
+                title: function (tooltipItems, data) {
+                    return "Date: " + tooltipItems[0].xLabel.format(timeInfo.toolTipFormat);
+                },
+                label: function (tooltipItems, data) {
+                    return "Average Score: " + parseFloat(tooltipItems.yLabel).toFixed(2);
+                }
+            }
+        },
         scales: {
             xAxes: [{
                 type: 'time',
                 time: {
-                    unit: 'month'
+                    unit: timeInfo.unit,
+                    displayFormats: {
+                        'hour': 'h:mm a',
+                        'day': 'MMM DD',
+                        'month': 'YYYY MMM',
+                        'year': 'YYYY',
+                    }
                 },
                 scaleLabel: {
                     display: true,
@@ -165,6 +179,98 @@ function populateTimeScale(scores) {
     Chart.defaults.global.defaultFontStyle = 500;
 }
 
+$("#timeUnit").change(function () {
+    var timeInfo = getTimeUnitInfo(this.value);
+
+    populateTimeScale(timeInfo);
+});
+
+function getTimeUnitInfo(timeUnit) {
+    if (timeUnit === "past day") {
+        return {
+            unit: 'hour',
+            dataset: getDisplayScores(moment().subtract(24, "hours"), isSameHour, roundToHour),
+            toolTipFormat: 'LT'
+        };
+    } else if (timeUnit === "past year") {
+        return {
+            unit: 'month',
+            dataset: getDisplayScores(moment().subtract(12, "months"), isSameMonth, roundToMonth),
+            toolTipFormat: 'MMM YYYY'
+        };
+    } else {
+        return {
+            unit: 'day',
+            dataset: getDisplayScores(moment().subtract(31, "days"), isSameDay, roundToDay),
+            toolTipFormat: 'Do MMM'
+        };
+    }
+}
+
+function getDisplayScores(minTime, comparator, rounder) {
+    var dataset = [];
+    var prevDate;
+    var scoresForDate = [];
+
+    for (var i = 0; i < scores.length; i++) {
+        var currentDate = moment(scores[i].time, 'DD/MM/YYYY h:mm:ss A');
+
+        if (minTime === null || currentDate.isSameOrAfter(minTime)) {
+            if (prevDate && !comparator(prevDate, currentDate) && scoresForDate.length > 0) {
+                dataset.push({
+                    x: rounder(prevDate),
+                    y: calculateAverage(scoresForDate)
+                });
+                scoresForDate = [];
+            }
+            scoresForDate.push(scores[i].score);
+            prevDate = currentDate;
+        }
+    }
+
+    if (scoresForDate.length > 0) {
+        dataset.push({
+            x: rounder(prevDate),
+            y: calculateAverage(scoresForDate)
+        });
+        scoresForDate = [];
+    }
+
+    return dataset;
+}
+
+function roundToHour(moment) {
+    return moment.startOf('hour');
+}
+
+function roundToDay(moment) {
+    return moment.startOf('day');
+}
+
+function roundToMonth(moment) {
+    return moment.startOf('month');
+}
+
+function isSameHour(moment1, moment2) {
+    return moment1.isSame(moment2, "hour");
+}
+
+function isSameDay(moment1, moment2) {
+    return moment1.isSame(moment2, "day");
+}
+
+function isSameMonth(moment1, moment2) {
+    return moment1.isSame(moment2, "month");
+}
+
+function calculateAverage(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        sum = sum + parseInt(array[i]);
+    }
+    console.log(array);
+    return (sum / array.length);
+}
 
 
 // xhr fuction
