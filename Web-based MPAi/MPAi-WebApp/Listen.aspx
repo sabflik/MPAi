@@ -8,7 +8,7 @@
 
 				<h3 style="text-align: center;">Select a M&#257;ori word to listen</h3>
 				<div id="search-bar" class="input-group input-group-lg">
-					<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
+					<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Loading words..." disabled>
 
 					<span class="input-group-btn">
 						<button id="search" type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
@@ -64,7 +64,7 @@
 			</ul>
 
 			<div id="recordings" class="collapse">
-				<button id="change" type="button" class="btn btn-info" disabled>Change Speaker</button>
+				<button id="change" type="button" class="btn btn-info btn-wide" disabled>Change Speaker</button>
 
 				<!--Audio Player-->
 				<audio id="myAudio" class="video-js vjs-default-skin"></audio>

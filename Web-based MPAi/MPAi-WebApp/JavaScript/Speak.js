@@ -54,7 +54,7 @@ player.on('finishRecord', function () {
 
     blob = player.recordedData;
 
-    document.querySelector('#analyse').disabled = false;
+    $('#analyse').collapse('show');
 });
 
 //$(window).resize(function () {
@@ -65,6 +65,7 @@ player.on('finishRecord', function () {
 $('document').ready(function (e) {
     $('#record').collapse({ toggle: false });
     $('#searchErrorMessage').collapse({ toggle: false });
+    $('#analyse').collapse({ toggle: false });
 });
 
 var words = [];
@@ -111,6 +112,8 @@ document.querySelector('#maoriWord').oninput = function () {
 };
 
 function getTarget() {
+    player.recorder.reset();
+
     if (!maoriWord.value || maoriWord.value.trim() === "") {
         searchErrorMessage.innerText = "You must choose a M\u0101ori word";
         $('#searchErrorMessage').collapse('show');
@@ -118,6 +121,7 @@ function getTarget() {
         recordMessage.innerText = "";
         expectedWord = null;
         $('#record').collapse('hide');
+        $('#analyse').collapse('hide');
     } else {
         var target = maoriWord.value.toLowerCase();
 
@@ -133,6 +137,7 @@ function getTarget() {
             recordMessage.innerText = "";
             expectedWord = null;
             $('#record').collapse('hide');
+            $('#analyse').collapse('hide');
         }
     }
     console.log("Target: " + expectedWord);
@@ -150,7 +155,7 @@ $("#analyse").click(function () {
 });
 
 function reset() {
-    document.querySelector('#analyse').disabled = true;
+    $('#analyse').collapse('hide');
     blob = null;
 }
 
@@ -177,7 +182,7 @@ function processResult(data) {
     };
 
     var score = data.score;
-    var result = data.result;
+    var result = data.result.replace(/_/g, ' ');
     var category;
 
     if (score >= 0 && score < 50) {
@@ -204,8 +209,8 @@ function processResult(data) {
         bodyElements = [introText, scoreText, resultText];
     } else {
         var introText = "<h3>Your score is</h3>";
-        var scoreText = "<h1>" + score + "</h1>";
-        var resultText = "<h4>Your pronunciation is recognised as: " + result+"</h4>";
+        var scoreText = "<h1>" + score + "%</h1>";
+        var resultText = "<h4>The word you pronounced is recognised as: \"" + result + "\"</h4>";
 
         bodyElements = [introText, scoreText, resultText];
     }

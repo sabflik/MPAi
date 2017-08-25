@@ -9,7 +9,7 @@
 				<h3 style="text-align:center;">Select a M&#257;ori word to pronounce</h3>
 
 				<div id="search-bar" class="input-group input-group-lg">
-					<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Search...">
+					<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Loading words..." disabled>
 
 					<span class="input-group-btn">
 						<button id="search" type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
@@ -29,10 +29,10 @@
 			<!--Audio Player-->
 			<audio id="myAudio" class="video-js vjs-default-skin"></audio>
 
-			<h5>Hint: Double the length of vowels to show long vowels.</h5>
+			<br />
 
 			<!-- Analyse button -->
-			<button id="analyse" type="button" class="btn btn-info btn-lg" disabled>Analyse</button>
+			<button id="analyse" type="button" class="btn btn-info btn-lg btn-wide collapse">Analyse</button>
 		</div>
 	</section>
 
@@ -49,7 +49,7 @@
 				<div id="score-body" class="modal-body">
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Okay</button>
+					<button type="button" class="btn btn-default btn-wide" data-dismiss="modal">Okay</button>
 				</div>
 			</div>
 

@@ -10,6 +10,9 @@ $(function () {
                 // Parse the JSON
                 var words = JSON.parse(request.responseText);
 
+                $('#maoriWord').attr('placeholder', 'Search...');
+                $('#maoriWord').attr('disabled', false);
+
                 $('#maoriWord').autoComplete({
                     minChars: 0,
                     source: function (term, suggest) {
@@ -27,6 +30,7 @@ $(function () {
                     },
                     onSelect: function (e, term, item) {
                         $('#maoriWord').val(item.data('word'));
+                        $('#search').click();
                     }
                 });
             }
