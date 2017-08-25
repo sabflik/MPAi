@@ -72,7 +72,7 @@
 							</ul>
 
 							<ul class="nav navbar-nav navbar-right">
-								<li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+								<li><a runat="server" href="~/Account/Manage" title="Manage your account">Kia Ora, <%: Context.User.Identity.GetUserName()  %> !</a></li>
 								<li>
 									<asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
 								</li>
@@ -87,7 +87,12 @@
 			</asp:ContentPlaceHolder>
 			<div id="footer-image"></div>
 			<footer>
-				<p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
+				<h4 style="text-align:center; padding-top: 10px;">Acknowledgements</h4>
+				<div class="container" style="text-align:center;">
+					<img runat="server" src="~/Resources/wakahuia1.png" style="max-height:50px;display: inline-block;">
+					<img runat="server" src="~/Resources/Emotiki_logo_hori_black.jpg" style="max-height:50px;display: inline-block;">
+					<img runat="server" src="~/Resources/TP_logo_hori_colour_fulltext.jpg" style="max-height:50px;display: inline-block;">
+				</div>
 			</footer>
 		</div>
 	</form>
