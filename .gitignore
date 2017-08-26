@@ -259,3 +259,8 @@ Audio/
 # MFCs
 MFCs/
 *.mfc
+
+#Databases
+*.sqlite
+*.mdf
+*.ldf
