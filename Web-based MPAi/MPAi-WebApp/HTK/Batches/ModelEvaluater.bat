@@ -118,7 +118,7 @@ Perl "%Perls%Script2Train.pl" "%MFCs%script.scp" "%Evaluations%evaluation.scp"
 REM	****************************
 REM	Recognize the recordings on evaluation.scp and then output the transcript "RecMLF.mlf"
 REM	****************************
-"%Tools%HVite" -o ST -H -C "%Params%HMMs.conf" "%HMMs%hmm15/macros" -H "%HMMs%hmm15/hmmdefs" -S "%Evaluations%evaluation.scp" -l * -T 4 -i "%MLFs%RecMLF.mlf" -w "%Grammars%WordNet.wdnet" -p 0.0 -s 5.0 "%Dictionaries%dictionary" "%Dictionaries%tiedlist"> HVite.log
+"%Tools%HVite" -o ST -H -C "%Params%configLR.conf" "%HMMs%hmm15/macros" -H "%HMMs%hmm15/hmmdefs" -S "%Evaluations%evaluation.scp" -l * -T 4 -i "%MLFs%RecMLF.mlf" -w "%Grammars%WordNet.wdnet" -p 0.0 -s 5.0 "%Dictionaries%dictionary" "%Dictionaries%tiedlist"> HVite.log
 
 ("%Tools%HResults" -I "%MLFs%WordMLF.mlf" "%Dictionaries%tiedlist" "%MLFs%RecMLF.mlf")> "%Evaluations%result.txt"
 
