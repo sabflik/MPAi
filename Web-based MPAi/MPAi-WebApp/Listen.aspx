@@ -15,6 +15,7 @@
 					</span>
 				</div>
 				<h5 id="searchErrorMessage" class="collapse" style="text-align: center; color: #FF6461;"></h5>
+				</div>
 
 				<hr />
 
@@ -44,7 +45,6 @@
 						</label>
 					</div>
 				</div>
-			</div>
 		</div>
 	</section>
 

@@ -29,21 +29,25 @@ player.on('error', function (error) {
 //    player.wavesurfer.drawBuffer();
 //});
 
+var obj;
+var count = 0;
+var wordCategory;
+
 $('document').ready(function (e) {
     $('#listen').collapse({ toggle: false });
     $('#recordings').collapse({ toggle: false });
     $('#searchErrorMessage').collapse({ toggle: false });
-});
 
-var obj;
-var count = 0;
+    wordCategory = $("input[name='category']:checked").val();
+});
 
 // Button 'search' action
 $('#search').click(loadAudio);
 
 $("input[name='category']").change(function () {
-    var wordCategory = $("input[name='category']:checked").val();
-    if (wordCategory) {
+    var category = $("input[name='category']:checked").val();
+    if (category) {
+        wordCategory = category;
         loadAudio();
     }
 });
@@ -76,7 +80,8 @@ function loadAudio() {
         return;
     }
 
-    var wordCategory = $("input[name='category']:checked").val();
+    //var wordCategory = $('.active input').prop('value');
+    //var wordCategory = $("input[name='category']:checked").val();
 
     console.log("Name: " + wordName);
     console.log("Category: " + wordCategory);

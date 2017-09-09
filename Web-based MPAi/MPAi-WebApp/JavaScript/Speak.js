@@ -150,11 +150,15 @@ function analyse(blob) {
 function callBack(response) {
     console.log("Response: " + response);
     
-    if (!response || response === "nothing" || response.result === "nothing") {
+    if (!response || response === "nothing") {
         showModal("white", ["<h4>Sorry, your pronunciation cannot be recognised</h4>"]);
     } else {
         var data = JSON.parse(response);
-        processResult(data);
+        if (data.result === "nothing") {
+            showModal("white", ["<h4>Sorry, your pronunciation cannot be recognised</h4>"]);
+        } else {
+            processResult(data);
+        }
     }
 }
 
@@ -164,6 +168,7 @@ function processResult(data) {
     };
 
     var score = data.score;
+    var score = 100;
     var result = data.result.replace(/_/g, ' ');
     var category;
 

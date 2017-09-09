@@ -190,6 +190,9 @@ section {
     .outer {
         width: 100%;
     }
+    .modal-dialog {
+        width: 90%;
+    }
 }
 
 #footer-image {
