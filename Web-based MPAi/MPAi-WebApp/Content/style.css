@@ -55,6 +55,10 @@ ul {
     list-style: none;
 }
 
+.col-xs-12 {
+    padding-bottom: 5px;
+}
+
 * {
     border-radius: 0 !important;
 }
@@ -228,16 +232,22 @@ section {
     color: #FF6461;
 }
 
-.vjs-device-button.vjs-control {
+.vjs-device-button.vjs-control{
     display: none;
+}
+
+.vjs-time-divider {
+    display: none !important;
+}
+
+.vjs-duration {
+    display: none !important;
 }
 
 .emotiki {
     max-width:125px;
 }
 
-.pager li
-{
-   display:inline-block;
-   margin:0;
+.btn-group > .btn, .btn-group-vertical > .btn {
+    float: none;
 }

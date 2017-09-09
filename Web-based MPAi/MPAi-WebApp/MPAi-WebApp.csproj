@@ -4750,10 +4750,9 @@
     <Content Include="HTK\Tools\LSubset.exe" />
     <Content Include="JavaScript\BackUpMediaStreamRecorder.js" />
     <Content Include="JavaScript\Chart.bundle.js" />
-    <Content Include="JavaScript\dropdown.js" />
+    <Content Include="JavaScript\main.js" />
     <Content Include="JavaScript\jquery.auto-complete.js" />
     <Content Include="JavaScript\Listen.js" />
-    <Content Include="JavaScript\main.js" />
     <Content Include="JavaScript\recorder.js" />
     <Content Include="JavaScript\Scoreboard.js" />
     <Content Include="JavaScript\Speak.js" />

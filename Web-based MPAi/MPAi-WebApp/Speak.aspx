@@ -32,7 +32,7 @@
 			<br />
 
 			<!-- Analyse button -->
-			<button id="analyse" type="button" class="btn btn-info btn-lg btn-wide collapse">Analyse</button>
+			<button id="analyse" type="button" class="btn btn-info btn-lg btn-wide">Analyse</button>
 		</div>
 	</section>
 
@@ -49,7 +49,7 @@
 				<div id="score-body" class="modal-body">
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-default btn-wide" data-dismiss="modal">Okay</button>
+					<button type="button" class="btn btn-default btn-wide" style="background-color: #f8f8f8;" data-dismiss="modal">Okay</button>
 				</div>
 			</div>
 
@@ -72,7 +72,7 @@
 	<script src="JavaScript/videojs.record.recorderjs.js"></script>
 
 	<script src="JavaScript/jquery.auto-complete.js"></script>
-	<script src="JavaScript/dropdown.js"></script>
+	<script src="JavaScript/main.js"></script>
 	<script src="JavaScript/Speak.js"></script>
 	<link rel="stylesheet" type="text/css" href="Content/style.css">
 </asp:Content>

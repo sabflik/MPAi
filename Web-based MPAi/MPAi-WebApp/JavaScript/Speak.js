@@ -54,7 +54,7 @@ player.on('finishRecord', function () {
 
     blob = player.recordedData;
 
-    $('#analyse').collapse('show');
+    $('#analyse').show();
 });
 
 //$(window).resize(function () {
@@ -65,27 +65,7 @@ player.on('finishRecord', function () {
 $('document').ready(function (e) {
     $('#record').collapse({ toggle: false });
     $('#searchErrorMessage').collapse({ toggle: false });
-    $('#analyse').collapse({ toggle: false });
 });
-
-var words = [];
-
-// Create a new XMLHttpRequest.
-var request = new XMLHttpRequest();
-
-// Handle state changes for the request.
-request.onreadystatechange = function (response) {
-    if (request.readyState === 4) {
-        if (request.status === 200) {
-            // Parse the JSON
-            words = JSON.parse(request.responseText);
-        }
-    }
-};
-
-// Set up and make the request.
-request.open('GET', 'Dropdown.aspx', true);
-request.send();
 
 // initialization
 window.onbeforeunload = function () {
@@ -103,43 +83,45 @@ $('#maoriWord').keypress(function (event) {
 var expectedWord = null;
 
 // Button 'search' action
-document.querySelector('#search').onclick = function () {
-    getTarget();
-};
+$('#search').click(getTarget);
 
-document.querySelector('#maoriWord').oninput = function () {
+$('#maoriWord').on('input', function () {
     $('#searchErrorMessage').collapse('hide');
-};
+});
 
 function getTarget() {
     player.recorder.reset();
 
-    if (!maoriWord.value || maoriWord.value.trim() === "") {
-        searchErrorMessage.innerText = "You must choose a M\u0101ori word";
+    if (wordIsEmpty()) {
+        searchErrorMessage.innerText = "You must choose a Māori word";
         $('#searchErrorMessage').collapse('show');
         maoriWord.value = "";
         recordMessage.innerText = "";
         expectedWord = null;
         $('#record').collapse('hide');
-        $('#analyse').collapse('hide');
-    } else {
-        var target = maoriWord.value.toLowerCase();
-
-        if (words.indexOf(target) > -1) {
-            $('#searchErrorMessage').collapse('hide');
-            recordMessage.innerText = "Please record your pronounciation of the word '" + target+"' below";
-            expectedWord = target.replace(/ /g, "_");
-            $('#record').collapse('show');
-        } else {
-            searchErrorMessage.innerText = "Sorry, '"+maoriWord.value+"' is not recognised\nClick on the search bar to see a list of supported words";
-            $('#searchErrorMessage').collapse('show');
-            maoriWord.value = "";
-            recordMessage.innerText = "";
-            expectedWord = null;
-            $('#record').collapse('hide');
-            $('#analyse').collapse('hide');
-        }
+        $('#analyse').hide();
+        return;
     }
+
+    var wordName = getApprovedWord();
+
+    if (wordName === "none") {
+        searchErrorMessage.innerText = "Sorry, '" + maoriWord.value + "' is not recognised\nClick on the search bar to see a list of supported words";
+        $('#searchErrorMessage').collapse('show');
+        maoriWord.value = "";
+        recordMessage.innerText = "";
+        expectedWord = null;
+        $('#record').collapse('hide');
+        $('#analyse').hide();
+        return;
+    }
+
+    $('#searchErrorMessage').collapse('hide');
+    recordMessage.innerText = "Please record your pronounciation of the word '" + wordName + "' below";
+    expectedWord = wordName.replace(/ /g, "_");
+    $('#record').collapse('show');
+    $('#analyse').hide();
+
     console.log("Target: " + expectedWord);
 }
 
@@ -155,7 +137,7 @@ $("#analyse").click(function () {
 });
 
 function reset() {
-    $('#analyse').collapse('hide');
+    $('#analyse').hide();
     blob = null;
 }
 
@@ -168,7 +150,7 @@ function analyse(blob) {
 function callBack(response) {
     console.log("Response: " + response);
     
-    if (response === "nothing" || !response) {
+    if (!response || response === "nothing" || response.result === "nothing") {
         showModal("white", ["<h4>Sorry, your pronunciation cannot be recognised</h4>"]);
     } else {
         var data = JSON.parse(response);
@@ -202,14 +184,14 @@ function processResult(data) {
     if (category === categories.UNDEFINED) {
         bodyElements = ["<h4>Sorry, your pronunciation cannot be recognised</h4>"];
     } else if (category === categories.PERFECT) {
+        var resultText = "<h2>Ka Pai!</h2>";
         var introText = "<h3>Your score is</h3>";
-        var scoreText = "<h1>"+ score+"</h1>";
-        var resultText = "<h4>Ka Pai!</h4>";
+        var scoreText = "<h1>100%</h1>";
 
-        bodyElements = [introText, scoreText, resultText];
+        bodyElements = [resultText, introText, scoreText];
     } else {
         var introText = "<h3>Your score is</h3>";
-        var scoreText = "<h1>" + score + "%</h1>";
+        var scoreText = "<h1>" + Math.floor(score) + "%</h1>";
         var resultText = "<h4>The word you pronounced is recognised as: \"" + result + "\"</h4>";
 
         bodyElements = [introText, scoreText, resultText];
@@ -248,15 +230,4 @@ function upload(blob, callBack) {
     formData.append('target', expectedWord);
 
     xhr('Save.aspx', formData, callBack);
-}
-
-function xhr(url, formData, callback) {
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function () {
-        if (request.readyState === 4 && request.status === 200) {
-            callback(request.responseText);
-        }
-    };
-    request.open('POST', url);
-    request.send(formData);
 }

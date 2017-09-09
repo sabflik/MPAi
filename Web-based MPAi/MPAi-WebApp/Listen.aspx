@@ -8,7 +8,7 @@
 
 				<h3 style="text-align: center;">Select a M&#257;ori word to listen</h3>
 				<div id="search-bar" class="input-group input-group-lg">
-					<input id="maoriWord" class="form-control" type="text" name="q" placeholder="Loading words..." disabled>
+					<input id="maoriWord" class="form-control" type="text" placeholder="Loading words..." disabled>
 
 					<span class="input-group-btn">
 						<button id="search" type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
@@ -51,7 +51,7 @@
 	<section id="listen" class="padding-bottom collapse">
 		<div class="container outer">
 
-			<ul class="pager" style="display:flex;">
+			<%--<ul class="pager" style="display:flex;">
 				<li class="previous col-xs-2">
 					<button id="previous" type="button" class="btn btn-info" style="width: auto; float: left; height: 100%;"><span aria-hidden="true">&larr;</span></button>
 				</li>
@@ -61,11 +61,13 @@
 				<li class="next col-xs-2">
 					<button id="next" type="button" class="btn btn-info" style="width: auto; float: right; height: 100%;"><span aria-hidden="true">&rarr;</span></button>
 				</li>
-			</ul>
+			</ul>--%>
+			<div style="margin-bottom:20px;text-align:center;">
+				<button id="change" type="button" class="btn btn-info" style="margin:0px auto 0px auto; font-size: 20px;">Click</button>
+				<h3 id="result" style="text-align: center;display:inline-block;vertical-align:bottom;"></h3>
+			</div>
 
 			<div id="recordings" class="collapse">
-				<button id="change" type="button" class="btn btn-info btn-wide" disabled>Change Speaker</button>
-
 				<!--Audio Player-->
 				<audio id="myAudio" class="video-js vjs-default-skin"></audio>
 			</div>
@@ -82,7 +84,7 @@
 	<script src="JavaScript/videojs.wavesurfer.min.js"></script>
 
 	<script src="JavaScript/jquery.auto-complete.js"></script>
-	<script src="JavaScript/dropdown.js"></script>
+	<script src="JavaScript/main.js"></script>
 	<script src="JavaScript/Listen.js"></script>
 	<link rel="stylesheet" type="text/css" href="Content/style.css">
 </asp:Content>
