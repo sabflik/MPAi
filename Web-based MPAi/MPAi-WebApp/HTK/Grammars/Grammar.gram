@@ -1,3 +1,3 @@
 $word = aroha | awa | e_noho | haere_mai | hapü | hau | hei | hoe | hoihoi | hongi | hou | hängï | hë | hï | iwa | iwi | ka_kite_anö | ka_pai | karakia | karanga | kaumätua | kei | kete | kia_ora | koha | kuia | käinga | kë | kï | körero | mao | marae | matariki | matiu | mau | maunga | mihi | moana | mokopuna | moutere | mäori | mätao | mätau | mätou | ono | pae | pai | pao | pau | pou | puku | pö | pöwhiri | rangatiratanga | rima | rua | tae | tahi | tai | tamariki | tangi | taringa | tauhou | tekau | tikanga | toetoe | toi | toru | täne | tënei | tënä_koe | tïmata | tü | türanga | waewae | waiata | wairua | waka | waru | whare | whitu | whä | whänau | wä | wähi;
 
-( SENT-START (sil $word sil) SENT-END )
+( SENT-START ($word) SENT-END )
