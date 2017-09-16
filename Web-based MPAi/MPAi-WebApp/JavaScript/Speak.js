@@ -90,7 +90,9 @@ $('#maoriWord').on('input', function () {
 });
 
 function getTarget() {
-    player.recorder.reset();
+    player.recorder.surfer.surfer.empty();
+
+    $('#preview').hide();
 
     if (wordIsEmpty()) {
         searchErrorMessage.innerText = "You must choose a Māori word";
@@ -119,11 +121,40 @@ function getTarget() {
     $('#searchErrorMessage').collapse('hide');
     recordMessage.innerText = "Please record your pronounciation of the word '" + wordName + "' below";
     expectedWord = wordName.replace(/ /g, "_");
+
+    showPreview(expectedWord);
+
     $('#record').collapse('show');
     $('#analyse').hide();
 
     console.log("Target: " + expectedWord);
 }
+
+
+function showPreview(word) {
+    var wordCategories = ["MODERN_FEMALE", "MODERN_MALE", "KUIA_FEMALE", "KAUMATUA_MALE"];
+
+    for (var category in wordCategories) {
+        var formData = new FormData();
+        formData.append('wordName', word);
+        formData.append('wordCategory', category);
+
+        xhr('Play.aspx', formData, function (responseText) {
+            if (responseText !== "nothing") {
+                var previewPath = JSON.parse(responseText).resultJsonTable[0].path;
+                //$("$previewMedia").load(previewPath);
+                previewMedia.src = previewPath;
+
+                $('#preview').show();
+                return;
+            }
+        });
+    }  
+}
+
+$("#preview").click(function () {
+    previewMedia.play();
+});
 
 $("#analyse").click(function () {
     if (blob) {
@@ -168,7 +199,6 @@ function processResult(data) {
     };
 
     var score = data.score;
-    var score = 100;
     var result = data.result.replace(/_/g, ' ');
     var category;
 

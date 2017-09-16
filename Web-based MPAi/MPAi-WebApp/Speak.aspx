@@ -14,6 +14,10 @@
 					<span class="input-group-btn">
 						<button id="search" type="button" class="btn btn-info"><span class="glyphicon glyphicon-search"></span></button>
 					</span>
+					<span class="input-group-btn">
+						<button id="preview" type="button" class="btn btn-default"><span class="glyphicon glyphicon-volume-up"></span></button>
+					</span>
+					<audio id="previewMedia"></audio>
 				</div>
 
 				<h5 id="searchErrorMessage" class="collapse" style="color: #FF6461;"></h5>

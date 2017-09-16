@@ -254,3 +254,7 @@ section {
 .btn-group > .btn, .btn-group-vertical > .btn {
     float: none;
 }
+
+#preview {
+    display: none;
+}
