@@ -23,33 +23,6 @@ img {
     display: block;
 }
 
-.cd-switcher:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.cd-switcher li {
-    width: 50%;
-    float: left;
-    text-align: center;
-}
-
-.cd-switcher a {
-    display: block;
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    background: #d2d8d8;
-    color: #809191;
-    text-decoration: none;
-}
-
-    .cd-switcher a.selected {
-        background: #FFF;
-        color: #505260;
-    }
-
 ul {
     padding: 0;
     list-style: none;
@@ -86,11 +59,6 @@ ul {
     margin: 5px;
     position: relative;
     margin: 1.4em 0;
-}
-
-.loginLogo {
-    display: block;
-    margin: auto;
 }
 
 .btn-red {

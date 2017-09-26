@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MPAi_WebApp.SiteMaster" %>
 
+<%-- This page is the container within which other pages are embedded. It contains the header, navigation bar, and footer --%>
+<%-- All images must have runat="server" property for them to show up --%>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -37,17 +39,20 @@
 			</Scripts>
 		</asp:ScriptManager>
 
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#ffffff; opacity:0.95;">
-		<div class="container">
-			<div class="navbar-header">
-					<a class="navbar-brand" runat="server" href="~/" style="padding:0">
-						<img id="headerLogo" runat="server" src="~/Resources/headerImage.png" alt="MPAi: A Maori Pronunciation Aid" style="max-height:50px; width:auto;">
+		<%-- The header with MPAi logo --%>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color: #ffffff; opacity: 0.95;">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" runat="server" href="~/" style="padding: 0">
+						<img id="headerLogo" runat="server" src="~/Resources/headerImage.png" alt="MPAi: A Maori Pronunciation Aid" style="max-height: 50px; width: auto;">
 					</a>
 				</div>
-		</div>
-	</nav>
-		<div class="navbar navbar-default navbar-static-top" id="navigation" role="navigation" style="background-color:#ffffff;">
+			</div>
+		</nav>
+		<%-- Navigation bar --%>
+		<div class="navbar navbar-default navbar-static-top" id="navigation" role="navigation" style="background-color: #ffffff;">
 			<div class="container">
+				<%-- This is the hamburger sign that show up when the navigation bar collapses on mobile devices --%>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 						<span class="icon-bar"></span>
@@ -57,12 +62,14 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<asp:LoginView runat="server" ViewStateMode="Disabled">
+						<%-- If user isn't logged in, show Register and Log in menu options --%>
 						<AnonymousTemplate>
 							<ul class="nav navbar-nav navbar-right">
 								<li><a runat="server" href="~/Account/Register">Register</a></li>
 								<li><a runat="server" href="~/Account/Login">Log in</a></li>
 							</ul>
 						</AnonymousTemplate>
+						<%-- If user is logged in, show application menu options --%>
 						<LoggedInTemplate>
 							<ul class="nav navbar-nav">
 								<li><a runat="server" href="~/">Home</a></li>
@@ -71,6 +78,7 @@
 								<li><a runat="server" href="~/Scoreboard">Scoreboard</a></li>
 							</ul>
 
+							<%-- If user is logged in, display their user name and log off menu options --%>
 							<ul class="nav navbar-nav navbar-right">
 								<li><a runat="server" href="~/Account/Manage" title="Manage your account">Kia Ora, <%: Context.User.Identity.GetUserName()  %> !</a></li>
 								<li>
@@ -82,16 +90,19 @@
 				</div>
 			</div>
 		</div>
+		<%-- Footer --%>
 		<div class="container body-content">
 			<asp:ContentPlaceHolder ID="MainContent" runat="server">
 			</asp:ContentPlaceHolder>
+			<%-- Fence image --%>
 			<div id="footer-image"></div>
+			<%-- Acknowlegements footer --%>
 			<footer>
-				<h4 style="text-align:center; padding-top: 10px;">Acknowledgements</h4>
-				<div class="container" style="text-align:center;">
-					<img runat="server" src="~/Resources/wakahuia1.png" style="max-height:50px;display: inline-block;">
-					<img runat="server" src="~/Resources/Emotiki_logo_hori_black.jpg" style="max-height:50px;display: inline-block;">
-					<img runat="server" src="~/Resources/TP_logo_hori_colour_fulltext.jpg" style="max-height:50px;display: inline-block;">
+				<h4 style="text-align: center; padding-top: 10px;">Acknowledgements</h4>
+				<div class="container" style="text-align: center;">
+					<img runat="server" src="~/Resources/wakahuia1.png" style="max-height: 50px; display: inline-block;">
+					<img runat="server" src="~/Resources/Emotiki_logo_hori_black.jpg" style="max-height: 50px; display: inline-block;">
+					<img runat="server" src="~/Resources/TP_logo_hori_colour_fulltext.jpg" style="max-height: 50px; display: inline-block;">
 				</div>
 			</footer>
 		</div>
