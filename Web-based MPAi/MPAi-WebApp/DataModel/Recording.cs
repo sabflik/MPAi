@@ -7,9 +7,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MPAi_WebApp.DataModel
 {
-    /**
-     * Wrapper class to hold values from the recording table.
-     */
+    /// <summary>
+    /// Wrapper class to hold values from the recording table. 
+    /// Each field corresponds to a row in the Recording SQL table.
+    /// These classes make it easier to move results from queries around the program.
+    /// </summary>
     public class Recording
     {
         public int RecordingId { get; set; }
