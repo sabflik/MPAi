@@ -14,32 +14,29 @@ namespace MPAi_WebApp
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
-            // get data from Json
-            string jsonPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Json\audio.json");
-            string json = File.ReadAllText(jsonPath);
-            */
-            // Get data from database
+            // Output JSON file
             string json;
-            //using (MPAiContext context = MPAiContext.InitializeDBModel())
-            //{
+            
+            // Connect to database class and call query method.
             MPAiSQLite context = new MPAiSQLite();
-                List<Word> wordList = context.GenerateWordList();
-                String[] wordNames = new String[wordList.Count];
-                for (int i = 0; i < wordList.Count; i++)
-                {
-                    wordNames[i] = wordList[i].WordName.Replace("_", " ");
-                }
+            List<Word> wordList = context.GenerateWordList();
+            // Create an array of strings representing the words retreived from the database.
+            String[] wordNames = new String[wordList.Count];
+            for (int i = 0; i < wordList.Count; i++)
+            {
+                wordNames[i] = wordList[i].WordName.Replace("_", " ");
+            }
 
-                if (wordList.Count == 0)
-                {
-                    json = "nothing";
-                }
-                else
-                {
-                    json = JsonConvert.SerializeObject(wordNames, Formatting.Indented);
-                }
-            //}
+            // Create a JSON file containing the words in the correct format.
+            if (wordList.Count == 0)
+            {
+                json = "nothing";
+            }
+            else
+            {
+                json = JsonConvert.SerializeObject(wordNames, Formatting.Indented);
+            }
+            
             // Output result as JSON
             Response.Clear();
             Response.ContentType = "application/json; charset=utf-8";
