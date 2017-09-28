@@ -9,16 +9,19 @@ using System.Web.UI.WebControls;
 
 namespace MPAi_WebApp
 {
+    /// <summary>
+    /// Uploads, analyses, and records the results, from the server, of a recording.
+    /// </summary>
     public partial class Save : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             foreach (string upload in Request.Files)
             {
-                // get target word
+                // Get target word
                 string targetWord = Request.Form["target"];
 
-                // upload audio file
+                // Upload audio file
                 string dictionary = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"uploads");
                 Directory.CreateDirectory(dictionary);
                 var file = Request.Files[upload];
@@ -26,12 +29,13 @@ namespace MPAi_WebApp
                 string recordingPath = Path.Combine(dictionary, Request.Form["fileName"]);
                 file.SaveAs(recordingPath);
 
-                // analyse audio file
+                // Analyse audio file
                 HTKEngine engine = new HTKEngine();
                 Dictionary<string, string> htkResult = engine.Recognize(recordingPath).ToDictionary(x => x.Key, x => x.Value);
 
                 Console.WriteLine(recordingPath);
 
+                // Convert results to JSON
                 string result = "";
                 if (htkResult.Count == 0)
                 {
@@ -41,11 +45,11 @@ namespace MPAi_WebApp
                 {
                     result = htkResult.Values.ToArray()[0];
                 }
-
+                // Add scores to database.
                 MPAiSQLite context = new MPAiSQLite();
                 context.SaveScore(System.Web.HttpContext.Current.User.Identity.Name, targetWord.ToLower(), (int)(Math.Round(SimilarityAlgorithm.DamereauLevensheinDistanceAlgorithm(Request.Form["target"], result) * 100, 0)));
 
-                // Output result as JSON
+                // Output result as JSON.
                 Response.Clear();
                 Response.ContentType = "application/json; charset=utf-8";
                 Response.Write(GetResponse(Request.Form["target"], result));
@@ -53,6 +57,12 @@ namespace MPAi_WebApp
             }
         }
 
+        /// <summary>        
+        /// Converts two words into a JSON object, containing the word and the score.
+        /// </summary>
+        /// <param name="target">The word that the user was attempting to say.</param>
+        /// <param name="result">The word returned by the HTK engine.</param>
+        /// <result>The JSON object containing the word and score.</result>
         private string GetResponse(string target, string result)
         {
             double score = Math.Round(SimilarityAlgorithm.DamereauLevensheinDistanceAlgorithm(target, result), 2) * 100;
