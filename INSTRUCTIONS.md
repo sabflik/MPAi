@@ -18,7 +18,10 @@ Changes to files within the /HTK folder can be done directly on the server. Sinc
 
 # Future Work
 * Improve the accuracy of the speech recognition system, for example, by filtering out background noise and accounting for silences on either end of the word.
-* Support Apple devices.
+* Support for Apple devices.
 * Expand analysis to test pronunciation for entire sentences instead of simple words and phrases.
 * Introduce more gamification elements such as user levels or spendable points.
-* Include more features from Desktop MPAi.
+* Add other features from [MPAi](https://github.com/ciwatson/MPAi)
+* SSL certificate is currently self-signed.
+* Improve security of application to allow access to server from outside the Univeristy network.
+* [Known Issues](https://github.com/sabflik/MPAi/issues).
