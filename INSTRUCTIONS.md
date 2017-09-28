@@ -13,6 +13,9 @@ The following programs must be installed on your local machine:
 ## Deploying the Website
 Once cloned from Github, the application must be compiled by running it through Microsoft Visual Studio. Launching the website for the first time will take a while, as all the back-end code is compiled and databases are built. A /bin folder containing all the compiled C# code will be generated and the database files inside /App_Data folder as well as MPAiDb.sqlite are created. All files excluding the /obj folder must be copied over to the C:\Users\Public\Documents\Updated MPAi directory on the server (This path can be changed through the IIS8 manager by clicking MPAi under 'Sites' and changing the physical path under 'Basic Settings...' as well as under 'View Virtual Directories'). The website should then be live!
 
+## Changes to the Speech Recogniser
+Changes to files within the /HTK folder can be done directly on the server. Since the application starts the reognition process through the HTKEngine.cs class, changes made to this requires compilation for changes to take effect. Adding or removing audio files from the training dataset will cause the database to be inconsistent with the speech recogniser, therefore, all databases (files inside /App_Data and MPAiDb.sqlite) must be deleted. Once the databases are deleted, opening the website again will automatically re-build the databases with the updated audio files.
+
 # Future Work
 * Improve the accuracy of the speech recognition system, for example, by filtering out background noise and accounting for silences on either end of the word.
 * Support Apple devices.
