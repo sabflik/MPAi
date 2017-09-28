@@ -8,11 +8,14 @@ using System.IO;
 
 namespace MPAi_WebApp
 {
+    /// <summary>
+    /// Retrieves a recording from the server.
+    /// </summary>    
     public partial class Play : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            // get target word name and category
+            // Get target word name and category from server.
             string name = Request.Form["wordName"];
             string category = Request.Form["wordCategory"];
 
@@ -20,12 +23,12 @@ namespace MPAi_WebApp
             Debug.WriteLine("Name: " + name);
             Debug.WriteLine("Category: " + category);
 
-
+            // Create list of recording objects.
             MPAiSQLite context = new MPAiSQLite();
-
             List<Recording> recordingList = context.GenerateRecordingList(name, category);
             
-                // make a new Dataset
+            // make a new Dataset containing recordings.
+            // This way was selected as it serialises into JSON well.
             DataSet newDataSet = new DataSet("newDataSet");
             newDataSet.Namespace = "MPAi_WebApp";
             DataTable newDataTable = new DataTable("resultJsonTable");
@@ -37,7 +40,7 @@ namespace MPAi_WebApp
             newDataTable.Columns.Add(pathColumn);
             newDataSet.Tables.Add(newDataTable);
 
-            // set filtered data to a new Json
+            // Add each recording object to the DataTable.
             foreach (Recording r in recordingList)
             {
                 DataRow newRow = newDataTable.NewRow();
@@ -47,6 +50,7 @@ namespace MPAi_WebApp
                 newDataTable.Rows.Add(newRow);
             }
 
+            // Serialise the DataTable
             string newJson;
             if (newDataTable.Rows.Count == 0)
             {
@@ -56,12 +60,12 @@ namespace MPAi_WebApp
             {
                 newJson = JsonConvert.SerializeObject(newDataSet, Formatting.Indented);
             }
+            
             // Output result as JSON
             Response.Clear();
             Response.ContentType = "application/json; charset=utf-8";
             Response.Write(newJson);
             Response.End();
-            
         }
     }
 }
